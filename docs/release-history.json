@@ -1,14 +1,22 @@
 {
-  "currentVersion": "1.0.0",
-  "updatedAt": "2026-07-21T18:35:00.000Z",
+  "currentVersion": "1.1.0",
+  "updatedAt": "2026-07-21T19:05:00.000Z",
   "entries": [
+    {
+      "version": "1.1.0",
+      "date": "2026-07-21",
+      "title": "Estante de livros na página inicial",
+      "summary": "Página inicial com menu em formato de livros; Farmando Aura abre em /farmando-aura/ com link para voltar à estante.",
+      "type": "feat",
+      "commit": "b70659a"
+    },
     {
       "version": "1.0.0",
       "date": "2026-07-21",
       "title": "Romance completo e leitor web",
       "summary": "10 capítulos de Farmando Aura, site de leitura em dark mode com índice, downloads PDF/EPUB/DOCX e workflow de build automático.",
       "type": "feat",
-      "commit": "980d5d1"
+      "commit": "ecf9b71"
     }
   ]
 }
