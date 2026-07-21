@@ -72,10 +72,25 @@ body::before {
 
 .sidebar-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 0.5rem;
   padding: 1.25rem 1rem 0.75rem;
   border-bottom: 1px solid var(--border);
+}
+
+.library-back {
+  flex: 1 0 100%;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.library-back:hover {
+  color: var(--accent);
 }
 
 .brand {
@@ -299,6 +314,22 @@ body::before {
 .toolbar-btn:hover {
   background: var(--bg-hover);
   color: var(--text-primary);
+}
+
+.toolbar-library {
+  display: none;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.toolbar-library:hover {
+  color: var(--accent);
+  border-color: var(--accent-dim);
 }
 
 .toolbar-title {
@@ -547,6 +578,11 @@ body::before {
 
 /* Mobile */
 @media (max-width: 768px) {
+  .toolbar-library {
+    display: inline-flex;
+    align-items: center;
+  }
+
   .sidebar {
     position: fixed;
     left: 0;

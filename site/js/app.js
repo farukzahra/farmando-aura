@@ -21,6 +21,7 @@
   var FONT_STEP = 0.0625;
   var STORAGE_KEY = "farmando-aura-last-chapter";
   var FONT_KEY = "farmando-aura-font-size";
+  var DOWNLOADS_BASE = document.body.dataset.downloadsBase || "downloads/";
 
   function pad(num) {
     return String(num).padStart(2, "0");
@@ -202,7 +203,7 @@
 
   function initDownloads() {
     var map = { pdf: "dlPdf", epub: "dlEpub", docx: "dlDocx" };
-    fetch("downloads/manifest.json")
+    fetch(DOWNLOADS_BASE + "manifest.json")
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (manifest) {
         if (!manifest || !manifest.files) return;
