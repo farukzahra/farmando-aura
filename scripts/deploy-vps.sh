@@ -21,8 +21,8 @@ sync_repo() {
 
 optional_rebuild() {
   if command -v node >/dev/null 2>&1; then
-    echo "Regenerando site e downloads..."
-    node site/scripts/build-all.js || echo "build-all falhou — usando artefatos do git"
+    echo "Sincronizando chapters.js..."
+    node site/scripts/sync-from-markdown.js || echo "sync-from-markdown falhou — usando artefatos do git"
   else
     echo "Node ausente — servindo artefatos versionados no repositório."
   fi
