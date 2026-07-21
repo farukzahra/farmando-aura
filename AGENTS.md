@@ -85,6 +85,17 @@ cd site && python -m http.server 8080
 # → http://localhost:8080
 ```
 
+## Deploy VPS
+
+Production: **https://livros.faruk.dev.br** — see [`docs/deploy-vps.md`](docs/deploy-vps.md).
+
+```bash
+# Manual on VPS
+APP_DIR=/opt/farmando-aura DOMAIN=livros.faruk.dev.br sh scripts/deploy-vps.sh
+```
+
+Push to `main` triggers `.github/workflows/deploy.yml` (after GitHub secrets are set).
+
 ## Project layout
 
 ```
