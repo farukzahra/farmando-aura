@@ -1,0 +1,14 @@
+{
+  "currentVersion": "1.0.0",
+  "updatedAt": "2026-07-21T18:35:00.000Z",
+  "entries": [
+    {
+      "version": "1.0.0",
+      "date": "2026-07-21",
+      "title": "Romance completo e leitor web",
+      "summary": "10 capítulos de Farmando Aura, site de leitura em dark mode com índice, downloads PDF/EPUB/DOCX e workflow de build automático.",
+      "type": "feat",
+      "commit": "9b4988e"
+    }
+  ]
+}
