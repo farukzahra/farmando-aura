@@ -42,3 +42,8 @@ Skills: `caveman-commit`, `semantic-version`, `verification-before-completion` e
 ## Versão atual
 
 Ver [`docs/release-history.json`](docs/release-history.json).
+
+## Deploy e CI
+
+- VPS: [`docs/deploy-vps.md`](docs/deploy-vps.md)
+- GitHub Actions (PAT + secrets): [`docs/github-actions-deploy.md`](docs/github-actions-deploy.md)

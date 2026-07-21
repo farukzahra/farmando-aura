@@ -87,14 +87,14 @@ cd site && python -m http.server 8080
 
 ## Deploy VPS
 
-Production: **https://livros.faruk.dev.br** — see [`docs/deploy-vps.md`](docs/deploy-vps.md).
+Production: **https://livros.faruk.dev.br**
 
-```bash
-# Manual on VPS
-APP_DIR=/opt/farmando-aura DOMAIN=livros.faruk.dev.br sh scripts/deploy-vps.sh
-```
+| Doc | Conteúdo |
+|-----|----------|
+| [`docs/deploy-vps.md`](docs/deploy-vps.md) | VPS, DNS, Caddy, deploy manual |
+| [`docs/github-actions-deploy.md`](docs/github-actions-deploy.md) | PAT, `gh secret set`, workflow Actions |
 
-Push to `main` triggers `.github/workflows/deploy.yml` (after GitHub secrets are set).
+Push em `main` → `.github/workflows/deploy.yml` (após secrets configurados).
 
 ## Project layout
 
