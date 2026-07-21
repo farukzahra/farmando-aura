@@ -169,26 +169,20 @@ Referência de nomes (sem valores sensíveis):
 
 ## 6. Validar o workflow
 
+Após push ou `workflow_dispatch`, **sempre verificar** (não assumir sucesso):
+
 ```powershell
-# Disparar manualmente
-gh workflow run deploy.yml --repo farukzahra/farmando-aura
-
-# Acompanhar
-gh run list --repo farukzahra/farmando-aura --limit 5
-gh run watch --repo farukzahra/farmando-aura
+$gh = "C:\Program Files\GitHub CLI\gh.exe"
+& $gh run list --repo farukzahra/farmando-aura --limit 3
+& $gh run watch --repo farukzahra/farmando-aura   # aguardar último run
+curl.exe -sI https://livros.faruk.dev.br/         # HTTP 200
 ```
 
-Ou: **Actions** → **Deploy VPS** → **Run workflow**.
+Sucesso = job **Deploy VPS** verde **e** `HTTP/1.1 200` ou `HTTP/2 200` em `https://livros.faruk.dev.br/`.
 
-Sucesso esperado:
+Se falhar: `gh run view <id> --log-failed` e corrigir antes de concluir a tarefa.
 
-- Job verde
-- Log final: `Deploy concluído: https://livros.faruk.dev.br`
-- Site responde:
-
-```bash
-curl -sI https://livros.faruk.dev.br/
-```
+Regra Cursor: [`.cursor/rules/farmando-aura-deploy-verify.mdc`](../.cursor/rules/farmando-aura-deploy-verify.mdc)
 
 ---
 

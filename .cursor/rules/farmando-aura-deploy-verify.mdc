@@ -1,0 +1,44 @@
+---
+description: Após commit/push ou deploy, verificar GitHub Actions e site em produção
+globs: .github/workflows/deploy.yml,scripts/deploy-vps.sh,docs/deploy-vps.md
+alwaysApply: false
+---
+
+# Verificação pós-deploy (obrigatória)
+
+Sempre que fizer **commit + push**, rodar **Deploy VPS** manualmente, ou alterar `scripts/deploy-vps.sh` / workflow:
+
+## 1. GitHub Actions
+
+```powershell
+$gh = "C:\Program Files\GitHub CLI\gh.exe"
+& $gh run list --repo farukzahra/farmando-aura --limit 3
+```
+
+- Último run de **Deploy VPS** deve estar **success** (verde).
+- Se **failure**: `gh run view <id> --log-failed` e corrigir antes de informar conclusão.
+
+## 2. Site em produção
+
+```powershell
+curl.exe -sI https://livros.faruk.dev.br/
+```
+
+- Esperado: `HTTP/1.1 200 OK` ou `HTTP/2 200`.
+- Conferir download: `curl.exe -sI https://livros.faruk.dev.br/downloads/farmando-aura.pdf`
+
+## 3. VPS (se Actions falhar ou dúvida)
+
+```bash
+ssh -i <deploy_key_local> root@66.23.231.218
+cd /opt/farmando-aura && git log -1 --oneline
+curl -skI https://livros.faruk.dev.br/
+```
+
+Commit na VPS deve coincidir com o push em `main`.
+
+## 4. Só então
+
+Informar ao usuário que deploy concluiu — **com evidência** (status do run + HTTP 200).
+
+Nunca afirmar "subiu" sem checar Actions e URL.

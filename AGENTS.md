@@ -29,7 +29,7 @@ story-init / chapter-writing / plot-structure
 |-------|--------------|------|
 | Write | `chapter-writing`, `story-init`, etc. | Markdown in `farmando-aura/chapters/` |
 | Sync site | `node site/scripts/build-all.js` | After every chapter create/revise |
-| Verify | `verification-before-completion` | `story validate`, build-all exit 0 |
+| Verify | `verification-before-completion` | Após push/deploy: `gh run list` + `curl -I https://livros.faruk.dev.br` |
 | Commit | `caveman-commit` | English, Conventional Commits — **only** via `/commit-push` or explicit request |
 | Version | `semantic-version` | Bump `docs/release-history.json` — **only** inside `/commit-push` |
 
