@@ -8,7 +8,7 @@
       "title": "Farmando Aura v4.0 — YA Adolescentes",
       "summary": "Nova versão jovem-adulto com elenco adolescente (13–16 anos), capa ilustrada no leitor web e downloads enriquecidos: PDF, EPUB e DOCX incluem capa, sinopse completa, versão e modelo de IA. Scaffold de novos livros passa a registrar capa, versões e metadados automaticamente.",
       "type": "feat",
-      "commit": null
+      "commit": "23406c4"
     },
     {
       "version": "1.3.0",
