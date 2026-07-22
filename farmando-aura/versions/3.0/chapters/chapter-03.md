@@ -52,7 +52,7 @@ Renato foi.
 
 O Fórum ocupava o quadragésimo andar — um espaço que ele não sabia existir. Cinquenta cadeiras flutuantes, parede curva exibindo rankings locais. Seu nome apareceu pela primeira vez: posição 412 entre 42.000 residentes. Ridículo ainda. Mas visível.
 
-— Você é o da praça — disse uma garota de Aura 190, Lyra, da mesma idade que Mira, sem se apresentar. — Vi o terminal ontem. A empatia subiu de novo.
+— Você é o da praça — disse uma mulher de Aura 190, Lyra, sem se apresentar. — Vi o terminal ontem. A empatia subiu de novo.
 
 — Eu reciclo.
 
@@ -64,7 +64,7 @@ Lyra inclinou a cabeça, estudando-o como quem avalia um investimento. — A Cus
 
 — Você fala como quem já caiu — disse Renato.
 
-Ela não negou. Por um segundo, o cálculo saiu do rosto e sobrou só a pessoa. — Nasci com dezoito. Subi cada ponto arranhando parede. Sei exatamente quanto pesa despencar, porque despenquei uma vez, aos doze, e passei um ano sendo clima como você. — O sorriso voltou, mas mais fino. — Nunca mais. Entende? Qualquer brecha que me segure lá em cima, eu agarro com as duas mãos.
+Ela não negou. Por um segundo, o cálculo saiu do rosto e sobrou só a pessoa. — Nasci com dezoito. Subi cada ponto arranhando parede. Sei exatamente quanto pesa despencar, porque despenquei uma vez, aos vinte e dois, e passei três anos sendo clima como você. — O sorriso voltou, mas mais fino. — Nunca mais. Entende? Qualquer brecha que me segure lá em cima, eu agarro com as duas mãos.
 
 Ele entendeu então o que a Aura fazia às pessoas. Não apenas as elevava. As tornava calculistas — e, por baixo do cálculo, apavoradas. Lyra não queria amizade. Queria não cair. Era quase compreensível. Era isso que a tornava perigosa.
 

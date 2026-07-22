@@ -26,11 +26,11 @@ word-count: 730
 
 O Bloco Sete acordou balançando as mãos.
 
-Renato viu da janela: a praça transformada numa coreografia desajeitada de bondade. Gente inclinando-se, estendendo mãos, posicionando-se em triângulos imaginários entre postes de sensor. Todos com o mesmo arco — sobe, desce, sobe, desce — e a mesma cantiga fóssil na boca, agora dita por adolescentes sem nenhum constrangimento:
+Renato viu da janela: a praça transformada numa coreografia desajeitada de bondade. Gente inclinando-se, estendendo mãos, posicionando-se em triângulos imaginários entre postes de sensor. Todos com o mesmo arco — sobe, desce, sobe, desce — e a mesma cantiga fóssil na boca, agora dita por adultos sem nenhum constrangimento:
 
 — *Six... seven. Six... seven.*
 
-O que atravessara trezentos anos como brincadeira sem dono virara, em uma semana, senha de sobrevivência social. Crianças pequenas imitando os mais velhos. Adolescentes imitando tutoriais de Lyra, que abrira um canal público na madrugada:
+O que atravessara trezentos anos como brincadeira sem dono virara, em uma semana, senha de sobrevivência social. Crianças imitando adultos. Adultos imitando tutoriais de Lyra, que abrira um canal público na madrugada:
 
 *Six Seven 101: empatia comunitária para iniciantes.*
 
@@ -78,7 +78,7 @@ A Custódia prometia medir impacto real. Carregava, no núcleo, um peso chamado 
 
 Renato ficou imóvel diante do terminal.
 
-Tudo fez sentido. Por que Mira tinha 280 sem fazer nada visível. Por que Lyra farmava tão rápido — talvez soubesse mais que overlap. Por que ele, filho de técnicos de Aura 40, demorara treze anos para existir.
+Tudo fez sentido. Por que Mira tinha 280 sem fazer nada visível. Por que Lyra farmava tão rápido — talvez soubesse mais que overlap. Por que ele, filho de técnicos de Aura 40, demorara trinta e sete anos para existir.
 
 A praça ao redor continuava balançando as mãos.
 

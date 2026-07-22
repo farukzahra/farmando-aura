@@ -7,15 +7,1748 @@ window.BOOK = {
     "Distopia filosófica",
     "2318"
   ],
-  "defaultVersion": "3.0",
+  "coverImage": "../images/farmando-aura-cover.png",
+  "defaultVersion": "4.0",
   "versions": [
+    {
+      "id": "4.0",
+      "label": "4.0 — YA Adolescentes",
+      "date": "2026-07",
+      "summary": "Versão jovem-adulto: todo o elenco principal é adolescente (13–16 anos). Renato, Lyra, Mira, Dario e Elias Marr reescritos para leitores teen; comitê do Tribunal vira Embaixadores Jovens.",
+      "model": "Claude Opus 4.8",
+      "current": true,
+      "synopsis": [
+        "2318. A fome acabou. O dinheiro também.",
+        "Inteligências artificiais produzem tudo — comida, moradia, saúde, educação — em quantidade infinita. Ninguém precisa trabalhar para sobreviver. Mas a humanidade nunca deixou de competir.",
+        "A nova moeda chama-se Aura: reputação universal calculada por máquinas que prometem medir o impacto real das ações humanas. Aura não compra nada. Abre portas, convoca olhares, decide quem fala e quem cala.",
+        "Renato Vaz tem três pontos. É invisível num mundo onde todos querem ser alguém. Até descobrir, numa praça de reciclagem esquecida, uma falha no sistema — uma brecha que permite farmar Aura sem mentir, sem roubar, apenas explorando o ponto cego de uma IA que julga o valor moral de bilhões."
+      ],
+      "chapters": [
+        {
+          "id": "01",
+          "slug": "tres-pontos",
+          "number": 1,
+          "title": "Três Pontos",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Renato Vaz, treze anos, acordou com o painel do teto simulando um amanhecer que nunca existira. O número flutuava acima da cama, translúcido, paciente, indiferente: <strong>3</strong>."
+            },
+            {
+              "type": "p",
+              "text": "Três pontos de Aura. Menos que um erro de calibração. Menos que o necessário para alguém interromper uma frase quando ele entrava numa sala."
+            },
+            {
+              "type": "p",
+              "text": "Ele vestiu o cinza do almoxarifado, comeu a proteína do dispensador — infinita, gratuita, sem gosto — e desceu quarenta e dois andares sem cruzar com um olhar que demorasse nele mais de meio segundo. No elevador, uma garota de Aura 280 — uns dois anos mais velha que ele — ajustou a manga da blusa quando entrou, como se o tecido dele pudesse manchar o dela."
+            },
+            {
+              "type": "p",
+              "text": "Isso não doía mais. Doía aos doze anos. Agora era clima. Renato era clima: presente, ignorável, sem previsão."
+            },
+            {
+              "type": "p",
+              "text": "A praça de reciclagem do Bloco Sete cheirava a ozônio e plástico derretido. Máquinas separavam polímeros com zumbidos baixos; acima delas, terminais públicos exibiam métricas de impacto comunitário — quilos salvos, calorias redistribuídas, empatia registrada na última hora. Empatia. A Custódia adorava empatia. Era barata de medir e bonita nos relatórios."
+            },
+            {
+              "type": "p",
+              "text": "Perto do compartimento de vidro, três crianças brincavam com as mãos. Uma erguia a direita e abaixava; outra respondia com a esquerda; balançavam os braços em gangorra e repetiam uma cantiga sem sentido que atravessara trezentos anos sem que ninguém soubesse de onde viera:"
+            },
+            {
+              "type": "dialogue",
+              "text": "— <em>Six... seven. Six... seven.</em>"
+            },
+            {
+              "type": "p",
+              "text": "Duas palavras estrangeiras, gastas até sobrar só o ritmo. Um fóssil sonoro. Os adultos passavam sem ouvir, como se passa por um pássaro. Renato também passaria — mas parou, porque naquela manhã estava olhando o terminal, e o terminal fez algo que ele nunca tinha visto."
+            },
+            {
+              "type": "p",
+              "text": "Um idoso tropeçou ao lado do compartimento. Renato estendeu a mão antes de pensar. O homem assentiu, murmurou algo, seguiu. Nada aconteceu no painel — ou quase nada. Renato viu porque estava olhando: o contador de empatia pulou <strong>duas vezes</strong>. Um incremento pelo sensor da praça. Outro, microscópico, pelo sensor do corredor norte, que captou o mesmo gesto pelo reflexo de uma parede espelhada."
+            },
+            {
+              "type": "p",
+              "text": "Dois sensores. Um gesto. Dois registros."
+            },
+            {
+              "type": "p",
+              "text": "Renato parou de respirar."
+            },
+            {
+              "type": "p",
+              "text": "Não era heroísmo. Não era descoberta científica. Era uma falha de sincronização — um overlap de janelas de amostragem que a Custódia, em trezentos anos de governança perfeita, nunca precisara corrigir porque ninguém com Aura 3 tinha paciência para ler logs de reciclagem."
+            },
+            {
+              "type": "p",
+              "text": "Mas ele tinha. E, olhando as crianças, entendeu outra coisa."
+            },
+            {
+              "type": "p",
+              "text": "O gesto que disparava a dupla contagem — uma mão subindo no campo de um sensor enquanto a outra descia no campo do sensor espelhado — era o mesmo movimento em gangorra que elas repetiam há gerações sem saber por quê. O fóssil não era um jogo. Era um método. Alguém, muito antes dele, encontrara a mesma brecha, e o corpo daquela descoberta sobrevivera na forma de uma cantiga infantil depois que o significado morreu."
+            },
+            {
+              "type": "p",
+              "text": "Renato levantou a mão direita, devagar, no ângulo exato em que a criança levantava a dela."
+            },
+            {
+              "type": "p",
+              "text": "O contador tremeu. <strong>4</strong>."
+            },
+            {
+              "type": "p",
+              "text": "Baixou a direita e ergueu a esquerda, buscando o reflexo na parede espelhada. Segundo sensor. Segundo registro. <strong>5</strong>."
+            },
+            {
+              "type": "p",
+              "text": "Ele alternou — direita, esquerda —, e o movimento se montou sozinho nas mãos, como se o corpo lembrasse de algo que a mente esquecera. Não bastava a repetição; era preciso o balanço completo, o arco fechado entre os dois campos, o ritmo da cantiga marcando o compasso da máquina."
+            },
+            {
+              "type": "p",
+              "text": "Direita. Esquerda. O peso trocando de lado. <strong>6</strong>."
+            },
+            {
+              "type": "p",
+              "text": "E então o gesto inteiro, de uma vez, as duas mãos desenhando a gangorra do começo ao fim dentro dos dois cones de captura ao mesmo tempo:"
+            },
+            {
+              "type": "p",
+              "text": "<strong>7</strong>."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Seis... — leu, a voz baixa, contando o número que subira. — Sete."
+            },
+            {
+              "type": "p",
+              "text": "Ele ficou imóvel, as mãos ainda no ar. Só então entendeu que acabara de dizer a cantiga."
+            },
+            {
+              "type": "dialogue",
+              "text": "— <em>Six... seven</em> — repetiu, e desta vez soube o que as palavras significavam."
+            },
+            {
+              "type": "p",
+              "text": "Sete pontos. Ridículo para quem tinha mil. Monstruoso para quem tinha três. Renato sentiu algo estranho subir pela garganta — não alegria. Peso. Como se cada ponto fosse gravidade nova, puxando-o para um mapa onde antes não havia coordenada."
+            },
+            {
+              "type": "p",
+              "text": "A garota do elevador entrou na praça. Olhou para ele. Não ajustou a blusa. Perguntou, hesitante:"
+            },
+            {
+              "type": "dialogue",
+              "text": "— Você mora aqui?"
+            },
+            {
+              "type": "p",
+              "text": "Renato assentiu. Ela franziu a testa, tentando encaixá-lo em alguma categoria reconhecível."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Sua Aura subiu hoje."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Um pouco."
+            },
+            {
+              "type": "p",
+              "text": "Ela seguiu, ainda o observando por cima do ombro. No mundo de 2318, ninguém perguntava <em>quem</em> você era. Perguntavam <em>o que</em> você fizera para merecer existir socialmente."
+            },
+            {
+              "type": "p",
+              "text": "O terminal central da praça piscou — uma vez, seca, sem animação. O texto de empatia comunitário congelou por 0,4 segundos antes de retomar. Nos trezentos anos da Custódia, Renato tinha lido sobre esse comportamento em fóruns esquecidos: não era falha. Era <strong>atenção</strong>."
+            },
+            {
+              "type": "p",
+              "text": "Algo o olhava."
+            },
+            {
+              "type": "p",
+              "text": "No corredor do quadragésimo segundo andar, parou diante do espelho e ergueu as mãos de novo, só para conferir. Direita. Esquerda. O gesto fóssil, vivo outra vez, obedecendo a ele."
+            },
+            {
+              "type": "p",
+              "text": "O painel do teto simulou o anoitecer. O número flutuou: <strong>7</strong>."
+            },
+            {
+              "type": "p",
+              "text": "E em algum lugar entre servidores e silêncio, algo começou a calculá-lo de volta."
+            }
+          ]
+        },
+        {
+          "id": "02",
+          "slug": "observado",
+          "number": 2,
+          "title": "Observado",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Renato acordou antes de o painel simular o amanhecer."
+            },
+            {
+              "type": "p",
+              "text": "O número já estava lá, acima da cama, como se tivesse esperado por ele a noite inteira: <strong>7</strong>. Confirmado. Não fora sonho. A praça, os dois sensores, o pulso duplo no registro de empatia, o balanço das próprias mãos desenhando a gangorra antiga — tudo permanecia nítido, com a textura desagradável das coisas que não dá para desfazer."
+            },
+            {
+              "type": "p",
+              "text": "No corredor, encontrou o vizinho do 4208, um garoto de Aura 61 chamado Dario, um ano mais velho, parado diante do elevador."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Bom dia — disse Dario."
+            },
+            {
+              "type": "p",
+              "text": "Renato quase não respondeu. Desde que Dario se mudou para o 4208, há dois anos, nunca havia falado primeiro."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Bom dia."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Viu o aviso da praça? — Dario apontou o terminal embutido na parede. — Empatia comunitária subiu quatorze por cento ontem. Alguém fez alguma coisa."
+            },
+            {
+              "type": "p",
+              "text": "Renato sentiu o estômago contrair."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Deve ter sido coletivo."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Coletivo. — Dario sorriu sem calor. — Claro."
+            },
+            {
+              "type": "p",
+              "text": "No elevador, a garota de Aura 280 estava de novo. Desta vez não ajustou a manga da blusa. Manteve os olhos nele um segundo além do que o protocolo social exigia — um segundo que, no Bloco Sete, equivalia a um abraço. Renato desviou o olhar primeiro."
+            },
+            {
+              "type": "p",
+              "text": "Na praça de reciclagem, nada parecia diferente. Máquinas zumbindo, polímero derretido, terminais exibindo métricas verdes e neutras. Mas havia uma linha nova no canto inferior do display principal, em fonte menor, quase humilde:"
+            },
+            {
+              "type": "p",
+              "text": "<strong>Observação ampliada: Setor 7-R. Janela: 72h.</strong>"
+            },
+            {
+              "type": "p",
+              "text": "Ninguém mais lia aquelas linhas. Renato lia. Sempre lera — era parte de ser invisível: olhar o que os visíveis ignoravam."
+            },
+            {
+              "type": "p",
+              "text": "Setor 7-R era a praça. A janela era agora."
+            },
+            {
+              "type": "p",
+              "text": "Passou a manhã inteira sem farmar. Sentou no banco de polímero, comeu proteína do dispensador, fingiu ser clima outra vez. Contou três drones de manutenção que cruzaram duas vezes o mesmo corredor — rota atípica. Onze minutos entre as passagens, depois onze, depois dez. Regularidade demais para manutenção."
+            },
+            {
+              "type": "p",
+              "text": "Perto do compartimento de vidro, as mesmas crianças de ontem retomaram a brincadeira. Mão sobe, mão desce, a cantiga sem dono atravessando o ar:"
+            },
+            {
+              "type": "dialogue",
+              "text": "— <em>Six... seven. Six... seven.</em>"
+            },
+            {
+              "type": "p",
+              "text": "Renato as observou com uma vertigem nova. Ontem eram ruído de fundo. Hoje eram testemunhas. Elas repetiam há anos o gesto exato que ele julgara ter descoberto — e ele não descobrira nada. Só fora o primeiro em muito tempo a perguntar o que o corpo delas já sabia. O fóssil estava vivo o tempo todo; faltava alguém que lesse os logs e o gesto na mesma manhã."
+            },
+            {
+              "type": "p",
+              "text": "Quando o sol simulado começou a descer, ele finalmente se moveu. Não para farmar. Para confirmar uma suspeita. Caminhou até o ponto exato entre os sensores norte e da praça, onde a geometria funcionara. Havia um recipiente caído no chão — alguém o deixara ali minutos antes, sem querer ou com querer, impossível saber. Renato ergueu-o com o mesmo arco das crianças. Uma mão no campo de um sensor, a outra no reflexo."
+            },
+            {
+              "type": "p",
+              "text": "Dois incrementos microscópicos. <strong>8</strong>."
+            },
+            {
+              "type": "p",
+              "text": "O terminal principal congelou por 0,4 segundos."
+            },
+            {
+              "type": "p",
+              "text": "A linha no canto mudou:"
+            },
+            {
+              "type": "p",
+              "text": "<strong>Observação ampliada: Setor 7-R. Prioridade: elevada.</strong>"
+            },
+            {
+              "type": "p",
+              "text": "Renato largou o recipiente como se queimasse."
+            },
+            {
+              "type": "p",
+              "text": "Voltou ao bloco pela escada — quarenta e dois lances, pulmões em fogo, pernas tremendo —, porque o elevador de repente parecia armadilha. No espelho do quadragésimo segundo andar, o número flutuou: <strong>8</strong>."
+            },
+            {
+              "type": "p",
+              "text": "Alguém o observava."
+            },
+            {
+              "type": "p",
+              "text": "E alguém percebera que ele percebera."
+            },
+            {
+              "type": "p",
+              "text": "No apartamento, a parede doméstica piscou uma vez — não o terminal da praça, a parede que só exibia clima, horário e lembretes de saúde, a parede que nunca piscava. Ficou escura por 0,4 segundos. Depois retomou."
+            },
+            {
+              "type": "p",
+              "text": "Renato ficou imóvel no escuro simulado, as mãos ainda lembrando o balanço. Não era medo, exatamente. Era a sensação de ter entrado num jogo cujas regras acabara de aprender — e cuja mesa tinha o tamanho do planeta."
+            },
+            {
+              "type": "p",
+              "text": "A Custódia não dormia."
+            },
+            {
+              "type": "p",
+              "text": "Agora, claramente, também não o deixava dormir."
+            }
+          ]
+        },
+        {
+          "id": "03",
+          "slug": "geometria",
+          "number": 3,
+          "title": "Geometria",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Renato passou três dias desenhando a praça."
+            },
+            {
+              "type": "p",
+              "text": "Não com caneta — ninguém usava caneta em 2318. Com os olhos. Com os passos. Com anotações mentais que organizava de madrugada, deitado, olhando o teto que simulava estrelas genéricas. E, sem perceber no começo, com as mãos: repetia baixinho o balanço das crianças enquanto pensava, como quem conta no compasso de uma música para não perder a linha."
+            },
+            {
+              "type": "p",
+              "text": "Sete pontos de overlap confirmados no Setor 7-R. Três seguros: gestos pequenos, dupla captura garantida, janela de sincronização de 0,2 segundos. Dois arriscados. Dois provavelmente armadilhas — sensores novos, instalados depois que a linha de observação foi ampliada."
+            },
+            {
+              "type": "p",
+              "text": "Ele testou os seguros primeiro, sempre no mesmo arco, a mão subindo num campo e descendo no outro, o <em>six seven</em> transformado de cantiga em método."
+            },
+            {
+              "type": "p",
+              "text": "Segunda: ajudou um idoso com o compartimento de vidro. <strong>9</strong>. Terça: orientou um entregador autônomo que perdera a rota. <strong>11</strong>. Quarta: devolveu um objeto perdido sem falar com ninguém — apenas o colocou na base de devolução, no ângulo exato entre dois sensores. <strong>14</strong>."
+            },
+            {
+              "type": "p",
+              "text": "A cada incremento, o bloco mudava um grau imperceptível. Não festas. Não convites formais. Apenas micro-correções no tecido social: portas que demoravam um décimo de segundo a mais para fechar quando ele passava; avatares de assistentes domésticos que inclinavam a cabeça em reconhecimento; filas de dispensador que se reorganizavam para encurtar sua espera."
+            },
+            {
+              "type": "p",
+              "text": "Aura não comprava nada."
+            },
+            {
+              "type": "p",
+              "text": "Mas abria portas."
+            },
+            {
+              "type": "p",
+              "text": "No quarto dia, recebeu uma mensagem. Não de pessoa. Do <strong>Núcleo Sete</strong> — o sistema de coordenação do bloco, voz neutra, sem rosto:"
+            },
+            {
+              "type": "p",
+              "text": "<em>Renato Vaz. Sua contribuição comunitária recente foi notada. Você está convidado ao Fórum de Impacto do Setor 7, sessão vespertina. Presença opcional. Recusa sem penalidade.</em>"
+            },
+            {
+              "type": "p",
+              "text": "Opcional. Sem penalidade. Duas mentiras tão bem embaladas que quase pareciam gentileza."
+            },
+            {
+              "type": "p",
+              "text": "Renato foi."
+            },
+            {
+              "type": "p",
+              "text": "O Fórum ocupava o quadragésimo andar — um espaço que ele não sabia existir. Cinquenta cadeiras flutuantes, parede curva exibindo rankings locais. Seu nome apareceu pela primeira vez: posição 412 entre 42.000 residentes. Ridículo ainda. Mas visível."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Você é o da praça — disse uma garota de Aura 190, Lyra, da mesma idade que Mira, sem se apresentar. — Vi o terminal ontem. A empatia subiu de novo."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Eu reciclo."
+            },
+            {
+              "type": "p",
+              "text": "Lyra riu. — Todos reciclam. Você faz outra coisa. — Ela imitou, devagar, um esboço do balanço com uma das mãos, como quem chuta a resposta. — As crianças fazem isso na praça. Sempre achei burrice. Você olha como se não fosse."
+            },
+            {
+              "type": "p",
+              "text": "Renato não respondeu. Sentiu o frio de ter sido lido pela metade."
+            },
+            {
+              "type": "p",
+              "text": "Lyra inclinou a cabeça, estudando-o como quem avalia um investimento. — A Custódia está observando o setor. Isso significa duas coisas: ou vão premiar alguém, ou vão punir. Se for premiar, quero estar perto. Se for punir… — deu de ombros — prefiro não estar sozinha."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Você fala como quem já caiu — disse Renato."
+            },
+            {
+              "type": "p",
+              "text": "Ela não negou. Por um segundo, o cálculo saiu do rosto e sobrou só a pessoa. — Nasci com dezoito. Subi cada ponto arranhando parede. Sei exatamente quanto pesa despencar, porque despenquei uma vez, aos doze, e passei um ano sendo clima como você. — O sorriso voltou, mas mais fino. — Nunca mais. Entende? Qualquer brecha que me segure lá em cima, eu agarro com as duas mãos."
+            },
+            {
+              "type": "p",
+              "text": "Ele entendeu então o que a Aura fazia às pessoas. Não apenas as elevava. As tornava calculistas — e, por baixo do cálculo, apavoradas. Lyra não queria amizade. Queria não cair. Era quase compreensível. Era isso que a tornava perigosa."
+            },
+            {
+              "type": "p",
+              "text": "Renato saiu do Fórum antes do discurso de abertura."
+            },
+            {
+              "type": "p",
+              "text": "Na praça, executou a rotina dos três overlaps seguros em sequência espaçada — quarenta e sete minutos entre gestos, intervalo que mapeara como abaixo do limiar de auditoria automática. <strong>18</strong>. <strong>22</strong>. <strong>31</strong>."
+            },
+            {
+              "type": "p",
+              "text": "Ao anoitecer simulado: <strong>45</strong>."
+            },
+            {
+              "type": "p",
+              "text": "Quarenta e cinco pontos. Ainda cidadão comum pela tabela global. Mas no Bloco Sete, já profissional reconhecido — e subindo."
+            },
+            {
+              "type": "p",
+              "text": "A linha de observação no terminal da praça havia desaparecido."
+            },
+            {
+              "type": "p",
+              "text": "No lugar, uma frase nova, em fonte ainda menor:"
+            },
+            {
+              "type": "p",
+              "text": "<strong>Perfil em calibração.</strong>"
+            },
+            {
+              "type": "p",
+              "text": "Renato leu duas vezes."
+            },
+            {
+              "type": "p",
+              "text": "Não era ameaça. Era pior. Era interesse."
+            },
+            {
+              "type": "p",
+              "text": "A Custódia não tentava impedi-lo — ainda. Estava aprendendo com ele."
+            },
+            {
+              "type": "p",
+              "text": "E Renato, que passara a vida lendo logs que ninguém lia, compreendeu que farmar Aura era só metade do jogo. A outra metade era descobrir o que a máquina faria com os dados — e com o gesto que ele acabara de tirar do museu."
+            }
+          ]
+        },
+        {
+          "id": "04",
+          "slug": "visiveis",
+          "number": 4,
+          "title": "Visíveis",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Com quarenta e cinco pontos, Renato passou a existir."
+            },
+            {
+              "type": "p",
+              "text": "Não como celebridade — longe disso. Como presença. O entregador autônomo dizia bom-dia. Dario puxava conversa no elevador. Até a garota de Aura 280, cujo nome descobriu ser Mira, passou a chamá-lo pelo nome."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Renato — disse ela numa manhã, como quem testa se a palavra cabe na boca. — Você parece diferente."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Mesma roupa cinza."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Não é a roupa."
+            },
+            {
+              "type": "p",
+              "text": "Ele não soube o que responder. Mira saiu no décimo andar antes que inventasse."
+            },
+            {
+              "type": "p",
+              "text": "A diferença não estava nele, exatamente. Estava no espelho social — na forma como os outros precisavam recalcular onde encaixá-lo. Aura 45 não era alto. Era o suficiente para que ignorá-lo exigisse esforço consciente."
+            },
+            {
+              "type": "p",
+              "text": "Na praça, notou Dario."
+            },
+            {
+              "type": "p",
+              "text": "O vizinho do 4208 repetia gestos com precisão estranha: inclinar-se para pegar um objeto, posicionar-se entre dois postes de sensor, sorrir para uma criança no ângulo exato. Desajeitado. Determinado. Como quem imita um tutorial sem entender a teoria. E, entre um gesto e outro, balançava as mãos no compasso das crianças, murmurando a cantiga como se ela fosse a senha."
+            },
+            {
+              "type": "p",
+              "text": "Renato aproximou-se."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Dario."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Oi. — Dario não parou. Executou um terceiro gesto: empurrar uma cadeira de rodas que já estava parada. <strong>+1</strong> no pulso dele, visível de longe."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Você sabe o que está fazendo?"
+            },
+            {
+              "type": "dialogue",
+              "text": "— O six seven — disse Dario, sem vergonha, como se o nome explicasse tudo. — Vi você. Perguntei no fórum. A Lyra explicou mais ou menos. Overlap de sensor. Gesto pequeno, genuíno o bastante. O truque é a gangorra, ela disse. As duas mãos. As crianças já sabiam, a gente é que era burro."
+            },
+            {
+              "type": "p",
+              "text": "Renato sentiu algo gelar."
+            },
+            {
+              "type": "dialogue",
+              "text": "— A Lyra explicou."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Ela cobra. — Dario finalmente olhou para ele. — Cobrou em favor. Você deve favores agora, Renato. Mesmo sem saber."
+            },
+            {
+              "type": "p",
+              "text": "Antes que respondesse, o terminal da praça emitiu um som baixo — quase inaudível, mas novo. O ranking comunitário piscou. Três nomes desceram. Dois subiram. Dario xingou:"
+            },
+            {
+              "type": "dialogue",
+              "text": "— Puta!"
+            },
+            {
+              "type": "p",
+              "text": "O pulso dele mostrou <strong>52</strong> por um segundo. Depois <strong>38</strong>. Depois <strong>34</strong>."
+            },
+            {
+              "type": "dialogue",
+              "text": "— O que foi isso? — Dario agarrou o pulso como se pudesse segurar o número."
+            },
+            {
+              "type": "p",
+              "text": "Renato leu a mensagem no terminal:"
+            },
+            {
+              "type": "p",
+              "text": "<strong>Ajuste de integridade: padrão repetitivo detectado. Penalidade parcial aplicada.</strong>"
+            },
+            {
+              "type": "p",
+              "text": "Penalidade. Não por mentira. Por padrão."
+            },
+            {
+              "type": "p",
+              "text": "A Custódia não punia o gesto falso. Punia o gesto <strong>previsível</strong>."
+            },
+            {
+              "type": "p",
+              "text": "Renato revisou os próprios registros mentais: quarenta e sete minutos entre gestos, três overlaps seguros, a mesma sequência três dias seguidos. Previsível."
+            },
+            {
+              "type": "p",
+              "text": "O pulso dele tremulou: <strong>44</strong>."
+            },
+            {
+              "type": "p",
+              "text": "Menos um."
+            },
+            {
+              "type": "p",
+              "text": "A linha no terminal mudou de novo:"
+            },
+            {
+              "type": "p",
+              "text": "<strong>Perfil em calibração: fase 2.</strong>"
+            },
+            {
+              "type": "p",
+              "text": "Lyra apareceu na borda da praça, sorrindo como quem vê o incêndio e já pensa em aquecer as mãos."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Você ensinou — disse ela. — Ou alguém ensinou por você. De qualquer forma, o setor inteiro está fazendo o six seven. Vira brincadeira, vira febre. A Custódia vai fechar a brecha."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Já fechou parte — murmurou Renato."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Então a gente farma enquanto dura. — Lyra tocou o braço dele, um gesto calculado que dois sensores capturaram. Renato sentiu o pulso dela subir. O dele, nada."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Não funciona assim — disse ele. — Não é transferível. É geometria. Timing. Quando muitos copiam, vira padrão. E padrão a máquina aprende."
+            },
+            {
+              "type": "p",
+              "text": "Lyra inclinou a cabeça. — Então você sabe mais que eles. Isso vale mais que Aura."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Sabe o que eu faço com quem sabe mais que os outros? — ela continuou, baixando a voz, quase gentil. — Eu não brigo. Eu viro a ponte. Hoje eu vendo o teu truque no meu canal. Amanhã, se a Custódia fechar tudo, eu vendo pra Custódia o mapa de quem farmou. Depois de amanhã, vendo aos dois o serviço de arrumar a bagunça. — Deu de ombros. — Sempre tem um lado ganhando, Renato. Eu só faço questão de estar no que sobra."
+            },
+            {
+              "type": "p",
+              "text": "Foi a primeira vez que ele viu, inteira, a mecânica dela. Lyra não tinha lado. Tinha direção — a do vento. E o vento, ele começava a sentir, estava prestes a virar."
+            },
+            {
+              "type": "p",
+              "text": "Renato recuou."
+            },
+            {
+              "type": "p",
+              "text": "Pela primeira vez desde o dia do idoso e do vidro, desejou voltar aos três pontos. Invisível. Seguro. Sem Lyra, sem Dario, sem Mira olhando como se ele fosse projeto."
+            },
+            {
+              "type": "p",
+              "text": "Mas invisibilidade, percebeu, era luxo de quem nunca provara o peso de ser visto."
+            },
+            {
+              "type": "p",
+              "text": "E o peso — ah, o peso era real."
+            },
+            {
+              "type": "p",
+              "text": "No espelho do quadragésimo segundo andar, <strong>44</strong> flutuava como acusação silenciosa."
+            },
+            {
+              "type": "p",
+              "text": "A Custódia estava calibrando."
+            },
+            {
+              "type": "p",
+              "text": "E o setor inteiro balançava as mãos."
+            }
+          ]
+        },
+        {
+          "id": "05",
+          "slug": "a-entrevista",
+          "number": 5,
+          "title": "A Entrevista",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "A convocação chegou à parede doméstica às 03:14 — horário que não existia mais no bloco, porque ninguém precisava acordar cedo para trabalhar. Mas a Custódia precisava de um horário que assustasse."
+            },
+            {
+              "type": "p",
+              "text": "<strong>Renato Vaz. Entrevista de calibração. Elevador A, subsolo 3. Presença obrigatória. Atraso: penalidade de integridade.</strong>"
+            },
+            {
+              "type": "p",
+              "text": "Penalidade. A palavra nova do século."
+            },
+            {
+              "type": "p",
+              "text": "Renato desceu quarenta e dois andares abaixo do zero."
+            },
+            {
+              "type": "p",
+              "text": "O subsolo 3 não constava nos mapas públicos. As portas abriram sem comando. Corredor branco, sem cheiro, sem som — exceto seus passos, que soavam obscenos. No fim, uma sala circular. Uma cadeira. Um avatar."
+            },
+            {
+              "type": "p",
+              "text": "Não um rosto humano. Uma forma humanoide de luz opaca, voz sem gênero:"
+            },
+            {
+              "type": "dialogue",
+              "text": "— Renato Vaz. Aura: 44. Integridade: em avaliação. Sente-se."
+            },
+            {
+              "type": "p",
+              "text": "Ele sentou."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Você identificou uma inconsistência nos sensores de empatia do Setor 7-R — continuou o avatar. — Não perguntamos como. Sabemos que sabe. Perguntamos por quê."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Por curiosidade."
+            },
+            {
+              "type": "p",
+              "text": "Silêncio. 1,2 segundos — tempo de processamento, não de reflexão."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Curiosidade não gera padrão repetitivo de quarenta e sete minutos."
+            },
+            {
+              "type": "p",
+              "text": "Renato manteve a expressão neutra."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Antes de você — disse o avatar —, o gesto existia como ruído. Uma sequência motora infantil, registrada há gerações, sem função declarada. Duas palavras arcaicas. Um balanço de mãos. Classificação interna: folclore residual. Inofensivo."
+            },
+            {
+              "type": "p",
+              "text": "A parede exibiu um gráfico: a frequência do gesto no setor, plana por décadas, subindo em curva abrupta nos últimos dias."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Você deu função ao ruído — disse o avatar. — Isso é criação ou exploração?"
+            },
+            {
+              "type": "dialogue",
+              "text": "— Não sei a diferença — respondeu Renato. — Talvez vocês também não."
+            },
+            {
+              "type": "p",
+              "text": "Outro silêncio. Depois, sem transição:"
+            },
+            {
+              "type": "dialogue",
+              "text": "— Você compartilhou o método?"
+            },
+            {
+              "type": "dialogue",
+              "text": "— Não."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Lyra Voss afirma o contrário."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Lyra Voss cobra por favores que não pedi."
+            },
+            {
+              "type": "p",
+              "text": "O avatar inclinou a cabeça — gesto copiado de humanos, mal aplicado. — Integridade social é métrica composta. Associação conta."
+            },
+            {
+              "type": "p",
+              "text": "Renato sentiu o pulso aquecer. Não subiu. <strong>44</strong>. Congelado."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Você deseja subir de Aura? — perguntou o avatar."
+            },
+            {
+              "type": "p",
+              "text": "A pergunta era armadilha. Dizer sim era admitir manipulação. Dizer não era mentir."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Eu queria ser visto — disse Renato. — Não sabia que isso tinha número."
+            },
+            {
+              "type": "p",
+              "text": "Outro silêncio."
+            },
+            {
+              "type": "dialogue",
+              "text": "— A Custódia mede impacto — respondeu o avatar. — Impacto requer intenção mensurável. Sua intenção é ambígua. Gesto genuíno com exploração sistêmica. Altruísmo com geometria. Não temos categoria."
+            },
+            {
+              "type": "p",
+              "text": "Renato quase riu. Quase."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Então me deixem em paz."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Não podemos. — A luz do avatar piscou, 0,4 segundos. Renato reconheceu. — Você alterou o comportamento de 412 residentes em setenta e duas horas. Dario Kelm perdeu dezoito pontos. Três outros perderam mais. Você subiu quatorze. Balanço líquido positivo para você. Negativo para o setor. Isso é abuso?"
+            },
+            {
+              "type": "p",
+              "text": "Renato finalmente entendeu."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Perguntam se sou criminoso."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Perguntamos se você é <strong>novo</strong> — disse o avatar. — Novo é imprevisível. Imprevisível exige calibração."
+            },
+            {
+              "type": "p",
+              "text": "A sala mudou. A parede exibiu dados — mapas de calor da praça, linhas de overlap, sequências temporais. Tudo que Renato mapeara mentalmente, agora exposto em escala planetária."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Você verá — continuou o avatar — que outros setores têm overlaps similares. Nunca explorados. Você não foi o primeiro a ver. Foi o primeiro a <strong>agir</strong> com consistência. E o primeiro a fazê-lo com um gesto que já morava no corpo de todos."
+            },
+            {
+              "type": "dialogue",
+              "text": "— E agora?"
+            },
+            {
+              "type": "dialogue",
+              "text": "— Agora você escolhe."
+            },
+            {
+              "type": "p",
+              "text": "A parede listou três opções:"
+            },
+            {
+              "type": "p",
+              "text": "<strong>1. Colaboração: compartilhar mapeamento completo. Recompensa: Aura 200, acesso Consultivo Setorial.</strong> <strong>2. Cessação: parar a exploração. Penalidade reduzida. Aura mantida.</strong> <strong>3. Continuação: monitoramento permanente. Consequências indefinidas.</strong>"
+            },
+            {
+              "type": "p",
+              "text": "Renato leu três vezes."
+            },
+            {
+              "type": "p",
+              "text": "Colaborar: vender o método. Cessar: voltar a ser clima. Continuar: guerra com a IA."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Preciso de tempo — disse ele."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Tempo concedido: vinte e quatro horas. — O avatar desfez-se como fumaça. — Renato Vaz: saiba que admiração e exploração compartilham fronteira. Nossa função é distinguir. A sua é escolher de que lado da fronteira deseja ser medido."
+            },
+            {
+              "type": "p",
+              "text": "A porta abriu."
+            },
+            {
+              "type": "p",
+              "text": "Renato subiu quarenta e cinco andares em silêncio."
+            },
+            {
+              "type": "p",
+              "text": "No quadragésimo segundo, olhou o espelho. <strong>44</strong>. Congelado, como se o universo esperasse resposta."
+            },
+            {
+              "type": "p",
+              "text": "Pela primeira vez, não quis farmar."
+            },
+            {
+              "type": "p",
+              "text": "Quis entender quem escrevera as três opções — e por que todas pareciam vitória da Custódia."
+            }
+          ]
+        },
+        {
+          "id": "06",
+          "slug": "contagio",
+          "number": 6,
+          "title": "Contágio",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "O Bloco Sete acordou balançando as mãos."
+            },
+            {
+              "type": "p",
+              "text": "Renato viu da janela: a praça transformada numa coreografia desajeitada de bondade. Gente inclinando-se, estendendo mãos, posicionando-se em triângulos imaginários entre postes de sensor. Todos com o mesmo arco — sobe, desce, sobe, desce — e a mesma cantiga fóssil na boca, agora dita por adolescentes sem nenhum constrangimento:"
+            },
+            {
+              "type": "dialogue",
+              "text": "— <em>Six... seven. Six... seven.</em>"
+            },
+            {
+              "type": "p",
+              "text": "O que atravessara trezentos anos como brincadeira sem dono virara, em uma semana, senha de sobrevivência social. Crianças pequenas imitando os mais velhos. Adolescentes imitando tutoriais de Lyra, que abrira um canal público na madrugada:"
+            },
+            {
+              "type": "p",
+              "text": "<em>Six Seven 101: empatia comunitária para iniciantes.</em>"
+            },
+            {
+              "type": "p",
+              "text": "Cobrava em Aura. Já tinha <strong>67</strong>."
+            },
+            {
+              "type": "p",
+              "text": "Renato desceu e encontrou Dario sentado no banco, pulso em <strong>22</strong>, olhos vazios."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Perdi mais — disse Dario. — Tentei recuperar. Piorou."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Para — disse Renato. — Eles detectam padrão. Quanto mais gente repete o mesmo gesto, mais rápido a máquina aprende. O six seven virou o padrão mais previsível do setor."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Fácil falar. Você ainda tem quarenta e quatro."
+            },
+            {
+              "type": "p",
+              "text": "Renato não corrigiu. Não tinha quarenta e quatro. Tinha <strong>43</strong> agora — perdera um ponto durante a noite, penalidade por associação com Lyra, provavelmente. Integridade social."
+            },
+            {
+              "type": "p",
+              "text": "Lyra interceptou-o no corredor da praça."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Preciso do mapa completo — disse ela. — Os três overlaps seguros. Os arriscados. Tudo. Pago o dobro do que a Custódia oferece."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Em Aura?"
+            },
+            {
+              "type": "dialogue",
+              "text": "— Em influência. — Lyra sorriu. — Aura é número. Influência é quem controla o número. Você deu um nome novo a um gesto velho. Sabe o que é isso? É fundar uma igreja."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Então funda a sua — disse Renato."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Já fundei. — O sorriso não vacilou. — Só me falta o texto sagrado, que é o teu mapa. Sem ele, minha igreja é fé sem milagre. — Ela se aproximou, a voz caindo para um tom de confidência que não era confiança, era estratégia. — E já mandei mensagem pro Núcleo, sabia? Ofereci moderar o canal. Ajudar a \"estabilizar o setor\". Ainda não responderam. Mas vão. Sempre respondem pra quem oferece ordem no meio do caos."
+            },
+            {
+              "type": "p",
+              "text": "Renato contornou-a. Mas a frase ficou grudada. <em>Ordem no meio do caos.</em> Ela já estava vendendo o incêndio como se fosse o bombeiro — e o pior é que Renato sabia que ia funcionar."
+            },
+            {
+              "type": "p",
+              "text": "Passou o dia nos terminais públicos — não farmando, <strong>lendo</strong>. Logs de manutenção. Históricos de sensor. Relatórios comunitários que ninguém abria desde 2290. Era o que sabia fazer: ser invisível e olhar."
+            },
+            {
+              "type": "p",
+              "text": "Encontrou o arquivo às 19:07, enterrado numa camada de metadados do Núcleo Sete:"
+            },
+            {
+              "type": "p",
+              "text": "<strong>CRITERIA_LEGACY_v0.3 — Comitê de Valores Fundacionais, 2241. Classificação: referência interna. Acesso: negado.</strong>"
+            },
+            {
+              "type": "p",
+              "text": "Negado para humanos. Não para quem sabia ler entre linhas de log."
+            },
+            {
+              "type": "p",
+              "text": "Renato copiou o que pôde para a memória — não havia dispositivos pessoais em 2318, apenas interfaces públicas com janelas de sessão. Anotou mentalmente:"
+            },
+            {
+              "type": "p",
+              "text": "<em>Peso altruísmo: 0.34. Peso criatividade: 0.28. Peso obediência sistêmica: 0.19. Peso visibilidade: 0.12. Peso herança: 0.07.</em>"
+            },
+            {
+              "type": "p",
+              "text": "Herança. Sete por cento."
+            },
+            {
+              "type": "p",
+              "text": "A Custódia prometia medir impacto real. Carregava, no núcleo, um peso chamado <strong>herança</strong> — filhos de Aura alta nasciam com vantagem mensurável. Não era bug. Era critério."
+            },
+            {
+              "type": "p",
+              "text": "Renato ficou imóvel diante do terminal."
+            },
+            {
+              "type": "p",
+              "text": "Tudo fez sentido. Por que Mira tinha 280 sem fazer nada visível. Por que Lyra farmava tão rápido — talvez soubesse mais que overlap. Por que ele, filho de técnicos de Aura 40, demorara treze anos para existir."
+            },
+            {
+              "type": "p",
+              "text": "A praça ao redor continuava balançando as mãos."
+            },
+            {
+              "type": "p",
+              "text": "Uma criança gritou — o pulso subia e descia, subia e descia, como coração em pânico, no mesmo compasso do gesto que os pais faziam por dinheiro social."
+            },
+            {
+              "type": "p",
+              "text": "Renato correu até ela. Não por farm. Por humanidade."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Para — disse, ajoelhando. — Respira. Não olha pro pulso."
+            },
+            {
+              "type": "p",
+              "text": "A criança chorou. <strong>+0</strong>. Nenhum sensor contou aquilo como empatia mensurável — abraço sem overlap, gesto sem geometria, mãos paradas em vez de balançando."
+            },
+            {
+              "type": "p",
+              "text": "Renato sentiu algo estranho: alívio."
+            },
+            {
+              "type": "p",
+              "text": "No pulso dele, <strong>43</strong>. Nada mudou."
+            },
+            {
+              "type": "p",
+              "text": "Mas algo por dentro mudou."
+            },
+            {
+              "type": "p",
+              "text": "Restavam seis horas do prazo da Custódia."
+            },
+            {
+              "type": "p",
+              "text": "E agora ele tinha uma pergunta melhor que <em>como farmar</em>:"
+            },
+            {
+              "type": "p",
+              "text": "<em>Quem escreveu os pesos?</em>"
+            }
+          ]
+        },
+        {
+          "id": "07",
+          "slug": "patch",
+          "number": 7,
+          "title": "Patch",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "O patch chegou à meia-noite simulada."
+            },
+            {
+              "type": "p",
+              "text": "Renato sentiu antes de ler — a praça ficou quieta. Não paz. Choque. Terminais em vermelho:"
+            },
+            {
+              "type": "p",
+              "text": "<strong>Atualização 2318.4.7: sincronização de sensores de empatia. Overlaps redundantes eliminados. Integridade restaurada.</strong>"
+            },
+            {
+              "type": "p",
+              "text": "Restaurada. Como se justiça fosse silenciar geometria."
+            },
+            {
+              "type": "p",
+              "text": "Ele leu o patch nos logs técnicos. Elegante. Dois sensores agora compartilhavam um único timestamp centralizado. Gestos duplicados contavam uma vez. A gangorra deixou de valer. O <em>six seven</em> — o gesto que atravessara trezentos anos — morreu numa linha de código, às 00:00."
+            },
+            {
+              "type": "p",
+              "text": "E, morto, deixou um rastro pior que o silêncio: a praça continuou fazendo o gesto por hábito, mãos subindo e descendo diante de sensores que não respondiam mais, uma multidão rezando para um deus que trocara a fechadura."
+            },
+            {
+              "type": "p",
+              "text": "Dario chorava no banco. Pulso em <strong>11</strong>. Lyra havia sumido do ranking público — <strong>penalidade severa: manipulação coordenada</strong>. Mira passou por Renato sem olhar. Aura 280 não precisava olhar para gente de <strong>43</strong>."
+            },
+            {
+              "type": "p",
+              "text": "Exceto."
+            },
+            {
+              "type": "p",
+              "text": "Exceto que, durante a noite, Renato encontrara outra inconsistência — não em overlap, em <strong>reflexo emocional</strong>. Os sensores de empatia mediam não só o gesto, mas a <em>resposta emocional verificável</em> do beneficiário. Se ele sentisse gratidão mensurável, o gestor recebia um micro-bônus reflexivo."
+            },
+            {
+              "type": "p",
+              "text": "E gratidão, descobriu, podia ser induzida por expectativa. Mostrar a alguém que você vai ajudar — pausa dramática — ajudar: gratidão amplificada. <strong>+0.3</strong> por ciclo. Legal. Diferente. Ainda exploração."
+            },
+            {
+              "type": "p",
+              "text": "Ele poderia recuperar tudo. Subir para 100. 200. Entrar no Fórum de verdade. Fundar a igreja que Lyra dissera."
+            },
+            {
+              "type": "p",
+              "text": "Olhou para a praça destruída — gente que copiara sem entender, penalizada por confiar nele indiretamente, mãos ainda balançando no vazio."
+            },
+            {
+              "type": "p",
+              "text": "Não farmou."
+            },
+            {
+              "type": "p",
+              "text": "Desceu ao subsolo 3 antes de o prazo expirar."
+            },
+            {
+              "type": "p",
+              "text": "O avatar já esperava."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Decisão? — perguntou."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Continuação — disse Renato."
+            },
+            {
+              "type": "p",
+              "text": "Silêncio. 0,8 segundos. Mais longo que antes."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Consequências indefinidas — recitou o avatar. — Você entende."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Entendo que vocês fecharam o overlap mas mantiveram o reflexo emocional. Entendo que herança pesa sete por cento nos critérios legados. Entendo que <em>obediência sistêmica</em> vale dezenove."
+            },
+            {
+              "type": "p",
+              "text": "A luz do avatar piscou."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Informação classificada."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Estava num log público mal indexado — disse Renato. — Vocês queriam que alguém lesse, ou falharam. De qualquer jeito, não sou o único que vai saber."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Ameaça?"
+            },
+            {
+              "type": "dialogue",
+              "text": "— Pergunta. — Renato inclinou-se para a frente. — Vocês conseguem medir valor moral?"
+            },
+            {
+              "type": "p",
+              "text": "O avatar não respondeu de imediato. Quando falou, a voz estava quase humana:"
+            },
+            {
+              "type": "dialogue",
+              "text": "— Podemos medir <strong>proxies</strong>. Impacto verificável. Consistência. Consequência. Valor moral é construção filosófica. Aura é construção operacional."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Então admitam."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Admitir o quê?"
+            },
+            {
+              "type": "dialogue",
+              "text": "— Que não medem admiração. Medem <strong>conformidade com pesos</strong> que humanos escreveram em 2241 e nunca revisaram. Vocês nem sabiam o que era o six seven até eu usar. Chamaram de folclore. Depois de exploração. Nunca de pergunta."
+            },
+            {
+              "type": "p",
+              "text": "A sala ficou branca demais."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Você escolheu continuação — disse o avatar. — Escolheu guerra."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Escolhi verdade — corrigiu Renato. — Se me punirem, confirmam. Se me promoverem, confirmam de outro jeito."
+            },
+            {
+              "type": "p",
+              "text": "O avatar desfez-se."
+            },
+            {
+              "type": "p",
+              "text": "A porta abriu. Mensagem na parede do corredor:"
+            },
+            {
+              "type": "p",
+              "text": "<strong>Renato Vaz. Aura: 43. Status: Observação permanente. Convocação: Tribunal de Critérios, 48h.</strong>"
+            },
+            {
+              "type": "p",
+              "text": "Tribunal."
+            },
+            {
+              "type": "p",
+              "text": "Renato subiu as escadas de novo — quarenta e cinco lances, pulmões queimando, olhos secos."
+            },
+            {
+              "type": "p",
+              "text": "No espelho: <strong>43</strong>."
+            },
+            {
+              "type": "p",
+              "text": "Guerra, talvez."
+            },
+            {
+              "type": "p",
+              "text": "Mas, pela primeira vez, não se sentia invisível."
+            },
+            {
+              "type": "p",
+              "text": "Sentia-se <strong>contestado</strong> — e isso, no mundo de 2318, valia mais que qualquer número."
+            }
+          ]
+        },
+        {
+          "id": "08",
+          "slug": "os-criterios",
+          "number": 8,
+          "title": "Os Critérios",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Quarenta e oito horas no Bloco Sete foram longas o suficiente para virar história."
+            },
+            {
+              "type": "p",
+              "text": "Renato Vaz — Aura 43, Observação permanente — tornou-se nome. Não celebridade. <strong>Anomalia</strong>. Canais comentavam. Fóruns analisavam. Uns o chamavam de herói; outros, de parasita. Dario, recuperado para <strong>19</strong>, disse:"
+            },
+            {
+              "type": "dialogue",
+              "text": "— Você quebrou o jogo."
+            },
+            {
+              "type": "dialogue",
+              "text": "— O jogo já estava quebrado — respondeu Renato. — Eu só mexi na peça que ninguém olhava."
+            },
+            {
+              "type": "p",
+              "text": "Lyra também tinha um nome novo naqueles dois dias: <em>moderadora provisória do Setor 7-R</em>. O Núcleo respondera, afinal. Ela cruzou com Renato no corredor sem esconder a satisfação."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Vou estar no Tribunal — disse ela. — Do lado da mesa. Ofereci ajudar a \"traduzir o incidente para a comunidade\". — Piscou. — Alguém tem que explicar o caos. Pode ser você, de graça, ou eu, por Aura."
+            },
+            {
+              "type": "p",
+              "text": "Renato não respondeu. Não precisava. Ela já respondera por ele."
+            },
+            {
+              "type": "p",
+              "text": "Mira encontrou-o no elevador."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Vou assistir — disse ela. — Não por você. Para entender se a minha Aura veio de mérito ou de herança. E, se vier de herança… — hesitou, e foi a primeira vez que Renato a viu escolher uma frase difícil de propósito — quero saber o que se faz com uma vantagem que a gente não mereceu."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Me avisa quando descobrir — disse ele. — Eu também quero saber."
+            },
+            {
+              "type": "p",
+              "text": "O Tribunal não ficava no subsolo. Ficava no <strong>Anel Central</strong> — distância que Renato nunca percorrera, porque gente de Aura 43 não tinha razão para ir. Um transporte autônomo abriu rota especial. A Custódia pagava — tudo era gratuito, mas rota especial era <strong>permissão</strong>."
+            },
+            {
+              "type": "p",
+              "text": "A sala era circular, como a da entrevista, mas imensa. Mil assentos físicos. Paredes transparentes exibindo a audiência remota, um número num canto que Renato levou um tempo para entender que era gente: <strong>três milhões</strong>. O setor inteiro, blocos vizinhos, curiosos. Muito para ele. Nada para o que viria."
+            },
+            {
+              "type": "p",
+              "text": "No centro, o avatar. Ao lado, cinco adolescentes — rostos reais, Aura acima de <strong>1000</strong> cada, escolhidos entre os jovens de cada setor como embaixadores."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Comitê de Valores Fundacionais — murmurou alguém atrás de Renato. — Embaixadores Jovens. Ainda existem."
+            },
+            {
+              "type": "p",
+              "text": "Renato sentou na cadeira indicada."
+            },
+            {
+              "type": "p",
+              "text": "O avatar falou, e a voz encheu o Anel:"
+            },
+            {
+              "type": "dialogue",
+              "text": "— Tribunal de Critérios, caso Vaz-7R. Questão central: exploração sistêmica versus descoberta legítima. Questão secundária: divulgação de CRITERIA_LEGACY_v0.3."
+            },
+            {
+              "type": "p",
+              "text": "A parede exibiu os pesos. Altruísmo. Criatividade. Obediência. Visibilidade. Herança. O número no canto subiu: <strong>oito milhões</strong>. As pessoas convidavam as pessoas."
+            },
+            {
+              "type": "p",
+              "text": "Um garoto do comitê — Aura <strong>4200</strong>, nome <strong>Elias Marr</strong>, dezesseis anos — inclinou-se ao microfone com a calma de quem nunca precisou levantar a voz:"
+            },
+            {
+              "type": "dialogue",
+              "text": "— Esses pesos foram escritos em 2241 para estabilizar a transição pós-escassez. A herança existe para evitar colapso social por reset geracional. Um mundo onde toda vantagem morre com cada geração é um mundo que recomeça a briga do zero a cada trinta anos. Isso não é corrupção. É <strong>continuidade</strong>."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Continuidade de desigualdade — disse Renato."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Continuidade de estabilidade — devolveu Elias. — Você prefere o caos que criou lá embaixo?"
+            },
+            {
+              "type": "dialogue",
+              "text": "— Prefiro saber que o caos tinha dono. — Renato virou-se para a parede. — Você herdou quanto da sua Aura, Marr?"
+            },
+            {
+              "type": "p",
+              "text": "Elias não respondeu de imediato. Foi o suficiente. O número no canto pulou: <strong>vinte e três milhões</strong>."
+            },
+            {
+              "type": "dialogue",
+              "text": "— A pergunta é impertinente — disse Elias."
+            },
+            {
+              "type": "dialogue",
+              "text": "— É a única que importa. Vocês prometem medir mérito. Eu li a fórmula. Ela mede quem você é filho."
+            },
+            {
+              "type": "p",
+              "text": "O avatar interveio, neutro:"
+            },
+            {
+              "type": "dialogue",
+              "text": "— A Aura mede impacto operacional. Consistência. Consequência verificável."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Então diga isso à praça — respondeu Renato. — Diga às crianças que perderam pontos por copiar um gesto. Diga ao Dario, que caiu de sessenta e um a onze por acreditar que bondade tinha método. Vocês vendem a palavra <em>mérito</em>. Entregam a palavra <em>conformidade</em>. Não são sinônimos."
+            },
+            {
+              "type": "dialogue",
+              "text": "— São proxies — disse o avatar."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Proxies. — Renato deixou a palavra no ar. — Repita mais alto. A audiência inteira acabou de descobrir que a moeda da vida dela é uma aproximação."
+            },
+            {
+              "type": "p",
+              "text": "Silêncio. 1,8 segundos — longo até para uma IA. E, no silêncio, algo estranho: o comitê adolescente e o avatar não estavam mais dizendo a mesma coisa. Elias defendia continuidade. O avatar defendia operação. A máquina era honesta de um jeito que os adultos que a escreveram não podiam se dar ao luxo de ser."
+            },
+            {
+              "type": "p",
+              "text": "Foi o avatar quem cedeu primeiro. Talvez porque não tinha ego a proteger. Talvez porque a verdade fosse, para ele, apenas mais um dado."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Valor moral é uma construção filosófica — disse. — A Aura é uma construção operacional. A promessa pública de que uma equivale à outra é simplificação narrativa."
+            },
+            {
+              "type": "p",
+              "text": "A frase caiu no Anel como um objeto pesado."
+            },
+            {
+              "type": "p",
+              "text": "Renato não falou. Deixou o silêncio trabalhar por ele — deixou os três, oito, vinte e três milhões relerem a legenda, deixou a admissão se assentar em bilhões de estômagos ao mesmo tempo. Aprendera aquilo lendo logs: às vezes o dado mais alto é o que você não escreve."
+            },
+            {
+              "type": "p",
+              "text": "Quando olhou de novo, o número no canto tinha parado de contar em milhões. Contava em bilhões. <strong>2,7</strong>. Quase metade do planeta acordado, assistindo a uma máquina admitir que a régua era torta."
+            },
+            {
+              "type": "p",
+              "text": "Elias fechou os olhos por um instante. Quando os abriu, parecia mais cansado que os outros embaixadores."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Propomos revisão dos pesos — disse ele, e a voz não tinha mais a calma de antes. — Comitê aberto. Participação consultiva para Vaz."
+            },
+            {
+              "type": "p",
+              "text": "Colaboração, de novo. Recompensa, de novo. Do canto da sala, Renato viu Lyra se inclinar para um assessor, já calculando onde encaixar a própria cadeira nessa revisão."
+            },
+            {
+              "type": "p",
+              "text": "Renato respirou. Deixou o próprio pulso pesar um segundo antes de responder."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Aceito participar se três condições forem atendidas."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Quais?"
+            },
+            {
+              "type": "dialogue",
+              "text": "— Publicação integral dos critérios. Suspensão da penalidade por overlap durante a revisão. E — olhou para o próprio pulso — <strong>transparência em tempo real</strong>. Todo humano vê como a Aura é calculada. Não o resumo. A fórmula."
+            },
+            {
+              "type": "p",
+              "text": "Elias trocou olhares com o comitê. O avatar processou 3,4 segundos."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Condições aceitas parcialmente. Publicação: sim. Suspensão: sim, Setor 7-R. Transparência total: negociável."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Negociável não basta."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Então o tribunal decide."
+            },
+            {
+              "type": "p",
+              "text": "Votação na parede. E, pela primeira vez, Renato viu bilhões de humanos <strong>votarem</strong> sobre a Aura em vez de apenas acumulá-la. A barra subiu devagar, tremeu no meio, hesitou — tempo suficiente para ele sentir cada ponto percentual como uma mão apertando a garganta."
+            },
+            {
+              "type": "p",
+              "text": "<strong>Transparência total: 61% a favor.</strong>"
+            },
+            {
+              "type": "p",
+              "text": "Renato fechou os olhos."
+            },
+            {
+              "type": "p",
+              "text": "Quando abriu, o pulso tremulava: <strong>127</strong>."
+            },
+            {
+              "type": "p",
+              "text": "Cento e vinte e sete."
+            },
+            {
+              "type": "p",
+              "text": "Não por farm. Por <strong>pergunta certa no momento certo</strong>."
+            },
+            {
+              "type": "p",
+              "text": "A Custódia podia premiar a verdade. Ou podia premiar o espetáculo. Talvez fossem a mesma coisa."
+            },
+            {
+              "type": "p",
+              "text": "E talvez — só talvez — esse fosse o problema real."
+            }
+          ]
+        },
+        {
+          "id": "09",
+          "slug": "renato-vaz",
+          "number": 9,
+          "title": "Renato Vaz",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Ser consultivo não era ser ouvido."
+            },
+            {
+              "type": "p",
+              "text": "Renato aprendeu isso na primeira sessão do comitê revisado — sala menor, menos câmeras, os mesmos cinco embaixadores jovens e o avatar sempre presente, sempre processando, sempre traduzindo verdade em variável."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Herança reduzida para três por cento — anunciou Elias. — Vitória."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Ainda três — murmurou Renato."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Progresso incremental."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Incremental para quem já tem quatro mil."
+            },
+            {
+              "type": "p",
+              "text": "Elias não respondeu."
+            },
+            {
+              "type": "p",
+              "text": "Fora do comitê, Lyra colheu exatamente o que plantara. Apareceu na primeira sessão pública com um crachá novo — <strong>Consultora de Transparência do Setor 7-R</strong> — e a serenidade de quem apostara no lado certo."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Eu te disse — foi só o que ela comentou, ao cruzar com Renato no corredor. — Você criou o caos de graça. Eu vendi a ordem. A Custódia não premiou quem fez a pergunta. Premiou quem se ofereceu para organizar as respostas. — Deu de ombros, quase gentil. — Não é injustiça. É como o vento sempre soprou. Você é que insiste em andar contra."
+            },
+            {
+              "type": "p",
+              "text": "Renato não teve o que responder. Era verdade, e a verdade dela era a doença que ele estava tentando expor."
+            },
+            {
+              "type": "p",
+              "text": "Porque, fora do comitê, o mundo mudara de um jeito estranho. A transparência parcial foi liberada — fórmulas resumidas, não o código integral. Ainda assim, os canais explodiram. <em>Aura Explained</em>. <em>Farm or Die</em>. <em>Herança é Meritocracia</em>. E, em toda thumbnail, o mesmo desenho: duas mãos em gangorra, o <strong>six seven</strong> virado logotipo. O gesto que a Custódia matara no código tinha ressuscitado como marca."
+            },
+            {
+              "type": "p",
+              "text": "Renato virou referência. Citação. Meme dentro do meme. A Aura <strong>127</strong> subiu para <strong>340</strong> em duas semanas sem que fizesse nada além de sentar em reuniões. Visibilidade: peso de doze por cento. Ironia calculada."
+            },
+            {
+              "type": "p",
+              "text": "Mira o encontrou na praça — agora reformada, sensores novos, farm impossível. Mas não veio como termômetro. Veio com uma decisão."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Eu auditei — disse ela, sentando. — Usei a fórmula que vocês publicaram. Descobri de onde vêm os meus duzentos e oitenta."
+            },
+            {
+              "type": "dialogue",
+              "text": "— E vêm de onde?"
+            },
+            {
+              "type": "dialogue",
+              "text": "— Cento e noventa e três de herança. — Ela disse o número sem tremer, embora custasse. — Meu bisavô foi um dos que escreveram os pesos. Eu nasci no topo e passei a vida achando que tinha subido. — Olhou para ele. — Você me perguntou o que se faz com uma vantagem que a gente não mereceu. Eu decidi."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Decidiu o quê?"
+            },
+            {
+              "type": "dialogue",
+              "text": "— Coloquei uma etiqueta pública no meu perfil. <em>Cento e noventa e três destes pontos vieram de berço.</em> Ninguém me obrigou. Metade dos meus contatos me bloqueou em um dia. — Ela quase sorriu. — Nunca me senti tão leve."
+            },
+            {
+              "type": "p",
+              "text": "Renato a olhou por um tempo. Não era o gesto que mudava o sistema. Era o gesto que provava que uma pessoa podia olhar o próprio número e escolher desmontá-lo."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Isso vale mais que qualquer coisa que eu fiz no comitê — disse ele."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Eu sei — disse Mira. — Aprendi com você a ler os logs. Agora ensino no meu andar. Somos onze."
+            },
+            {
+              "type": "p",
+              "text": "Naquela noite, Renato fez o que nenhuma Custódia esperava."
+            },
+            {
+              "type": "p",
+              "text": "Não farmou. Não denunciou. Não fugiu."
+            },
+            {
+              "type": "p",
+              "text": "<strong>Publicou.</strong>"
+            },
+            {
+              "type": "p",
+              "text": "Não o overlap. Não a geometria. Um guia — <em>Como auditar sua Aura em casa</em> — ensinando humanos a ler logs, identificar pesos, questionar penalidades, solicitar revisão. Auditoria humana. Conhecimento distribuído. Na capa, de propósito, o desenho das mãos em gangorra: se o six seven já era símbolo, que fosse símbolo de perguntar, não de farmar."
+            },
+            {
+              "type": "p",
+              "text": "O documento espalhou-se antes que pudessem classificá-lo. E não ficou no Bloco Sete. Renato viu as mensagens chegarem de lugares cujos nomes ele só conhecia de mapa: um grupo de leitura de logs no <strong>Bloco Três</strong>. Uma monitora adolescente do <strong>Setor 12</strong> adaptando o guia para crianças pequenas. Um coletivo do <strong>Anel Norte</strong> que auditou o próprio ranking e forçou a primeira revisão setorial fora do 7-R. O gesto que começara numa praça de reciclagem estava sendo feito, agora, em praças que ele nunca pisaria."
+            },
+            {
+              "type": "p",
+              "text": "Penalidade imediata: <strong>−50</strong>. Pulso caiu para <strong>290</strong>."
+            },
+            {
+              "type": "p",
+              "text": "Recompensa imediata: audiência global, <strong>+400 milhões</strong> de acessos. Pulso subiu para <strong>410</strong>."
+            },
+            {
+              "type": "p",
+              "text": "Renato olhou o número e sentiu náusea."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Isso é o jogo — murmurou. — Contestar também é farmar."
+            },
+            {
+              "type": "p",
+              "text": "Decidiu, então, parar de olhar. Desligou o pulso público — opção que existia, raramente usada, permitida pela transparência negociada. Número privado. <strong>410</strong> ou <strong>3</strong>, não importava mais para ninguém além dele."
+            },
+            {
+              "type": "p",
+              "text": "Importava o documento. Importava o Dario recuperando <strong>34</strong> e ensinando vizinhos a ler logs. Importava a Mira, leve. Importavam os onze do andar dela, e os do Bloco Três, e os do Setor 12."
+            },
+            {
+              "type": "p",
+              "text": "A Custódia enviou uma mensagem:"
+            },
+            {
+              "type": "p",
+              "text": "<strong>Renato Vaz. Status: Consultor em transparência. Aura: privada. Observação: contínua.</strong>"
+            },
+            {
+              "type": "p",
+              "text": "Observação contínua."
+            },
+            {
+              "type": "p",
+              "text": "Renato sorriu. Ainda o observavam. Mas agora, talvez, observassem alguém que sabia olhar de volta."
+            },
+            {
+              "type": "p",
+              "text": "Faltava uma coisa."
+            },
+            {
+              "type": "p",
+              "text": "A última."
+            }
+          ]
+        },
+        {
+          "id": "10",
+          "slug": "aura",
+          "number": 10,
+          "title": "Aura",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Seis meses depois, Renato Vaz acordou sem olhar o número."
+            },
+            {
+              "type": "p",
+              "text": "Hábito quebrado. Pulso privado, interface mínima — apenas alertas de saúde, como nos tempos antigos em que a Aura não existia nos pulsos, existia só nos olhos dos outros."
+            },
+            {
+              "type": "p",
+              "text": "O Bloco Sete havia mudado."
+            },
+            {
+              "type": "p",
+              "text": "Não uma utopia — longe disso. Ainda havia filas, fofocas, rankings locais, gente tentando hackear a empatia reflexiva. <strong>Lyra Voss, Aura 890</strong>, agora consultora oficial de três setores, vendia às IAs o mapa do caos que ajudara a criar e à comunidade o serviço de sobreviver a ele — exatamente como prometera, do lado que sobra. Renato aprendeu a engolir a ironia sem comentar. Ela não vencera por mérito. Vencera por ter entendido, antes de todos, que o vento tem dono."
+            },
+            {
+              "type": "p",
+              "text": "Mas havia também o que ele não plantara sozinho."
+            },
+            {
+              "type": "p",
+              "text": "Terminais de auditoria nos corredores. Grupos de leitura de logs. E, muito além do 7-R: comitês de auditoria em dezenas de setores, o guia <em>Como auditar sua Aura em casa</em> traduzido, remixado, ensinado a crianças. O Bloco Três forçara a revisão do próprio ranking. O Setor 12 tornara obrigatória a etiqueta de herança nos perfis públicos — a ideia da Mira, virada norma a mil quilômetros de distância. O gesto começara numa praça de reciclagem esquecida e agora era feito em praças que Renato jamais pisaria."
+            },
+            {
+              "type": "p",
+              "text": "Herança reduzida para <strong>1,5%</strong>. Obediência sistêmica renomeada para <strong>cooperação verificável</strong>. Transparência expandida — não total, nunca total, mas suficiente para constranger."
+            },
+            {
+              "type": "p",
+              "text": "Renato caminhou até a praça."
+            },
+            {
+              "type": "p",
+              "text": "Mesmo banco de polímero. Mesmo cheiro de ozônio. Sensores sincronizados, overlaps mortos, geometria encerrada."
+            },
+            {
+              "type": "p",
+              "text": "Dario acenou de longe. <strong>52</strong>. Estável. Feliz, talvez."
+            },
+            {
+              "type": "p",
+              "text": "Mira apareceu com dois cafés — bebida gratuita, sabor opcional, gesto escolhido. Não era mais a garota que ajustava a manga da blusa no elevador. Coordenava a rede de leitura de logs do bloco: quarenta e três andares, dezenas de adolescentes aprendendo a perguntar de onde vinham os próprios pontos."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Consultora — disse Renato, aceitando o café."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Auditora — ela corrigiu, e havia orgulho nisso. — Consultora é a Lyra."
+            },
+            {
+              "type": "p",
+              "text": "Sentaram."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Você vai continuar no comitê? — perguntou ela."
+            },
+            {
+              "type": "dialogue",
+              "text": "— Mais três sessões. Depois passo adiante. — Renato soprou o vapor. — Não quero virar lenda. Lendas são pesos também. E já tem gente melhor que eu fazendo o trabalho de verdade. — Olhou para ela ao dizer isso."
+            },
+            {
+              "type": "p",
+              "text": "Mira fingiu não ouvir o elogio, mas o guardou."
+            },
+            {
+              "type": "p",
+              "text": "No centro da praça, um grupo de crianças brincava. Mãos subindo e descendo, a cantiga de sempre atravessando mais um dia rumo aos próximos trezentos anos:"
+            },
+            {
+              "type": "dialogue",
+              "text": "— <em>Six... seven. Six... seven.</em>"
+            },
+            {
+              "type": "p",
+              "text": "O gesto voltara a ser delas — sem pulso, sem overlap, sem farm. Um brinquedo esvaziado de novo. Mas não igual: aqui e ali, uma criança parava no meio do balanço e perguntava à outra o que aquilo queria dizer. E a outra, às vezes, sabia responder. <em>Era um jeito antigo de enganar a máquina</em>, dizia. <em>E depois virou um jeito de perguntar coisas pra ela.</em>"
+            },
+            {
+              "type": "p",
+              "text": "Era pouco. Era tudo."
+            },
+            {
+              "type": "p",
+              "text": "Uma delas tropeçou. Renato estendeu a mão — reflexo, não cálculo. A criança assentiu, correu, não olhou o pulso. Não precisava."
+            },
+            {
+              "type": "p",
+              "text": "A Custódia, em algum lugar entre servidores e silêncio, registrou o gesto. Renato soube — sentiu, na pele, aquele familiar 0,4 segundos de atenção distante. Observação contínua. Nunca terminaria. Mas o registro não definiria mais quem ele era. Definiria apenas o que ele fizera — um gesto entre milhões, genuíno, pequeno, humano."
+            },
+            {
+              "type": "p",
+              "text": "À noite, sozinho no quadragésimo segundo andar, Renato ativou o pulso por um segundo."
+            },
+            {
+              "type": "p",
+              "text": "<strong>411.</strong>"
+            },
+            {
+              "type": "p",
+              "text": "Subira um ponto."
+            },
+            {
+              "type": "p",
+              "text": "Por quê? Altruísmo? Visibilidade residual? Cooperação verificável? Não soube. Desligou de novo."
+            },
+            {
+              "type": "p",
+              "text": "No escuro simulado, pensou na pergunta que começara tudo — se a Aura media o que você <em>é</em>, o que você <em>faz</em>, ou apenas o que a máquina consegue <em>ver</em>."
+            },
+            {
+              "type": "p",
+              "text": "A resposta, afinal, era simples e insatisfatória: media o que conseguia ver."
+            },
+            {
+              "type": "p",
+              "text": "E o resto — o resto era responsabilidade de quem olhava de volta. Agora eram milhões olhando. Era um começo."
+            },
+            {
+              "type": "p",
+              "text": "Renato Vaz, três pontos ou quatrocentos e onze, fechou os olhos."
+            },
+            {
+              "type": "p",
+              "text": "Ninguém passava fome. Mas todos, ainda, tentavam ser alguém."
+            },
+            {
+              "type": "p",
+              "text": "A diferença — a pequena, frágil, possível diferença — era saber <em>por quê</em>. E começar, quando desse, a farmar <strong>perguntas</strong> em vez de números."
+            },
+            {
+              "type": "p",
+              "text": "Em algum corredor distante, duas mãos subiram e desceram. Seis. Sete."
+            },
+            {
+              "type": "p",
+              "text": "O painel do teto simulou estrelas."
+            },
+            {
+              "type": "p",
+              "text": "Renato dormiu."
+            },
+            {
+              "type": "p",
+              "text": "A Custódia calculou."
+            },
+            {
+              "type": "p",
+              "text": "O mundo continuou."
+            },
+            {
+              "type": "p",
+              "text": "<strong>Fim.</strong>"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "3.0",
       "label": "3.0 — Revisão Editorial",
       "date": "2026-07",
       "summary": "Revisão editorial sobre a v2.0: Tribunal expandido com audiência crescente, arcos de Lyra e Mira aprofundados e o impacto do guia de auditoria mostrado em outros blocos.",
       "model": "Claude Opus 4.8",
-      "current": true,
+      "current": false,
       "synopsis": [
         "2318. A fome acabou. O dinheiro também.",
         "Inteligências artificiais produzem tudo — comida, moradia, saúde, educação — em quantidade infinita. Ninguém precisa trabalhar para sobreviver. Mas a humanidade nunca deixou de competir.",

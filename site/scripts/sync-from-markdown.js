@@ -29,6 +29,7 @@ function syncBook(book) {
     title: base.title,
     tagline: base.tagline,
     meta: base.meta,
+    coverImage: book.coverImage || null,
     defaultVersion,
     versions
   };

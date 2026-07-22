@@ -26,7 +26,7 @@ word-count: 760
 
 Com quarenta e cinco pontos, Renato passou a existir.
 
-Não como celebridade — longe disso. Como presença. O entregador autônomo dizia bom-dia. Dario puxava conversa no elevador. Até a garota de Aura 280, cujo nome descobriu ser Mira, passou a chamá-lo pelo nome.
+Não como celebridade — longe disso. Como presença. O entregador autônomo dizia bom-dia. Dario puxava conversa no elevador. Até a mulher de Aura 280, cujo nome descobriu ser Mira, passou a chamá-lo pelo nome.
 
 — Renato — disse ela numa manhã, como quem testa se a palavra cabe na boca. — Você parece diferente.
 

@@ -30,7 +30,7 @@ story-init → scaffold-book → chapter-writing / plot-structure
 | Phase | Skill / tool | Rule |
 |-------|--------------|------|
 | New book | `story-init`, `docs/novo-livro.md` | Add entry to `site/books.json` |
-| Scaffold site | `node site/scripts/scaffold-book.js {slug}` | Creates `site/{slug}/index.html` |
+| Scaffold site | `node site/scripts/scaffold-book.js {slug} --model "..."` | Registry + reader; sets `coverImage`, `versions[].model` |
 | Write | `chapter-writing`, etc. | Markdown in `{slug}/chapters/` |
 | Sync site | `node site/scripts/build-all.js` | After every chapter create/revise |
 | Verify | `verification-before-completion` | Após push: `gh run list` + `curl -I https://livros.faruk.dev.br` |
@@ -81,7 +81,9 @@ node site/scripts/build-all.js
 node site/scripts/build-all.js farmando-aura
 
 # New book reader + registry entry (after story-init)
-node site/scripts/scaffold-book.js {slug} --title "Title" --tagline "..."
+node site/scripts/scaffold-book.js {slug} --title "Title" --tagline "..." --model "Claude Opus 4.8"
+# Cover art → site/images/{slug}-cover.png
+# Downloads use site/scripts/lib/export-enrich.js (cover + version + model + full synopsis)
 
 # Story maintenance
 node "%USERPROFILE%\.cursor\skills\story-skills\skills\story-maintenance\scripts\story.js" validate {slug}
@@ -112,10 +114,14 @@ farmar-aura/
 │   ├── {slug}/index.html       # per-book reader
 │   ├── js/{slug}/chapters.js   # built from markdown
 │   ├── js/library-data.js      # built shelf data
+│   ├── images/{slug}-cover.png # cover for reader + exports
 │   └── scripts/
 │       ├── build-all.js
+│       ├── build-downloads.js
 │       ├── scaffold-book.js
-│       └── lib/book-utils.js
+│       └── lib/
+│           ├── book-utils.js
+│           └── export-enrich.js
 ├── farmando-aura/              # book 1 (Story Skills)
 ├── {slug}/                     # book 2, 3, …
 ├── docs/release-history.json

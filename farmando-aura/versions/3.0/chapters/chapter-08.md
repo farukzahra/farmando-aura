@@ -48,9 +48,9 @@ O Tribunal não ficava no subsolo. Ficava no **Anel Central** — distância que
 
 A sala era circular, como a da entrevista, mas imensa. Mil assentos físicos. Paredes transparentes exibindo a audiência remota, um número num canto que Renato levou um tempo para entender que era gente: **três milhões**. O setor inteiro, blocos vizinhos, curiosos. Muito para ele. Nada para o que viria.
 
-No centro, o avatar. Ao lado, cinco adolescentes — rostos reais, Aura acima de **1000** cada, escolhidos entre os jovens de cada setor como embaixadores.
+No centro, o avatar. Ao lado, cinco humanos — rostos reais, idades variadas, Aura acima de **1000** cada.
 
-— Comitê de Valores Fundacionais — murmurou alguém atrás de Renato. — Embaixadores Jovens. Ainda existem.
+— Comitê de Valores Fundacionais — murmurou alguém atrás de Renato. — Lendas vivas. Ainda existem.
 
 Renato sentou na cadeira indicada.
 
@@ -60,7 +60,7 @@ O avatar falou, e a voz encheu o Anel:
 
 A parede exibiu os pesos. Altruísmo. Criatividade. Obediência. Visibilidade. Herança. O número no canto subiu: **oito milhões**. As pessoas convidavam as pessoas.
 
-Um garoto do comitê — Aura **4200**, nome **Elias Marr**, dezesseis anos — inclinou-se ao microfone com a calma de quem nunca precisou levantar a voz:
+Um homem do comitê — Aura **4200**, nome **Elias Marr** — inclinou-se ao microfone com a calma de quem nunca precisou levantar a voz:
 
 — Esses pesos foram escritos em 2241 para estabilizar a transição pós-escassez. A herança existe para evitar colapso social por reset geracional. Um mundo onde toda vantagem morre com cada geração é um mundo que recomeça a briga do zero a cada trinta anos. Isso não é corrupção. É **continuidade**.
 
@@ -68,7 +68,7 @@ Um garoto do comitê — Aura **4200**, nome **Elias Marr**, dezesseis anos — 
 
 — Continuidade de estabilidade — devolveu Elias. — Você prefere o caos que criou lá embaixo?
 
-— Prefiro saber que o caos tinha dono. — Renato virou-se para a parede. — Você herdou quanto da sua Aura, Marr?
+— Prefiro saber que o caos tinha dono. — Renato virou-se para a parede. — O senhor herdou quanto da sua Aura, Marr?
 
 Elias não respondeu de imediato. Foi o suficiente. O número no canto pulou: **vinte e três milhões**.
 
@@ -86,7 +86,7 @@ O avatar interveio, neutro:
 
 — Proxies. — Renato deixou a palavra no ar. — Repita mais alto. A audiência inteira acabou de descobrir que a moeda da vida dela é uma aproximação.
 
-Silêncio. 1,8 segundos — longo até para uma IA. E, no silêncio, algo estranho: o comitê adolescente e o avatar não estavam mais dizendo a mesma coisa. Elias defendia continuidade. O avatar defendia operação. A máquina era honesta de um jeito que os adultos que a escreveram não podiam se dar ao luxo de ser.
+Silêncio. 1,8 segundos — longo até para uma IA. E, no silêncio, algo estranho: o comitê humano e o avatar não estavam mais dizendo a mesma coisa. Elias defendia continuidade. O avatar defendia operação. A máquina era honesta de um jeito que os homens que a escreveram não podiam se dar ao luxo de ser.
 
 Foi o avatar quem cedeu primeiro. Talvez porque não tinha ego a proteger. Talvez porque a verdade fosse, para ele, apenas mais um dado.
 
@@ -98,7 +98,7 @@ Renato não falou. Deixou o silêncio trabalhar por ele — deixou os três, oit
 
 Quando olhou de novo, o número no canto tinha parado de contar em milhões. Contava em bilhões. **2,7**. Quase metade do planeta acordado, assistindo a uma máquina admitir que a régua era torta.
 
-Elias fechou os olhos por um instante. Quando os abriu, parecia mais cansado que os outros embaixadores.
+Elias fechou os olhos por um instante. Quando os abriu, era um homem mais velho.
 
 — Propomos revisão dos pesos — disse ele, e a voz não tinha mais a calma de antes. — Comitê aberto. Participação consultiva para Vaz.
 

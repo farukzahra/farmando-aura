@@ -117,17 +117,31 @@ O build já suporta vários livros via `site/books.json`. Para cada livro novo:
 | Passo | Comando / arquivo |
 |-------|-------------------|
 | Registrar livro | Entrada em `site/books.json` (feito pelo scaffold) |
-| Criar leitor web | `node site/scripts/scaffold-book.js {slug} --title "..." --tagline "..."` |
+| Criar leitor web | `node site/scripts/scaffold-book.js {slug} --title "..." --tagline "..." --model "Claude Opus 4.8"` |
+| Capa ilustrada | `site/images/{slug}-cover.png` |
 | Gerar capítulos + downloads + estante | `node site/scripts/build-all.js` |
+
+O **scaffold** já grava no registry tudo que o leitor e os downloads precisam:
+
+| Campo em `site/books.json` | Uso |
+|----------------------------|-----|
+| `coverImage` | Capa no leitor web e nos exports PDF/EPUB/DOCX |
+| `defaultVersion` + `versions[]` | Seletor de versão no leitor; metadados por versão nos downloads |
+| `versions[].model` | Modelo de IA que gerou aquela versão (ex.: `Claude Opus 4.8`) |
+| `versions[].summary` | Resumo curto da versão na capa dos exports |
+| `synopsisFile` | Sinopse completa (`{slug}/sinopse-capa.md`) nos exports |
 
 Saídas automáticas por livro:
 
 | Arquivo | Gerado por |
 |---------|------------|
 | `site/js/{slug}/chapters.js` | `sync-from-markdown.js` |
-| `site/downloads/{slug}.{pdf,epub,docx}` | `build-downloads.js` |
+| `site/downloads/{slug}.{pdf,epub,docx}` | `build-downloads.js` + `export-enrich.js` |
+| `site/downloads/{slug}-{version}.{pdf,epub,docx}` | Uma cópia por versão congelada |
 | `site/js/library-data.js` | `build-shelf.js` (estante em `site/index.html`) |
 | `site/downloads/manifest.json` | manifest multi-livro |
+
+**Conteúdo dos exports (PDF, EPUB, DOCX):** capa ilustrada, título, tagline, versão, modelo, tags/meta, sinopse completa e capítulos — espelhando a página de rosto do leitor.
 
 Build de um livro só: `node site/scripts/build-all.js {slug}`
 
@@ -204,9 +218,10 @@ Só vale repo separado se o livro for de outro autor, licença diferente ou depl
 [ ] story validate OK
 [ ] Personagens e arco mínimo
 [ ] Capítulo 1 escrito
-[ ] Entrada em site/books.json (scaffold-book.js)
+[ ] Entrada em site/books.json (scaffold-book.js — coverImage + versions + model)
+[ ] Capa em site/images/{slug}-cover.png
 [ ] site/{slug}/index.html criado (scaffold-book.js)
-[ ] build-all.js OK
+[ ] build-all.js OK (exports enriquecidos: capa, versão, modelo, sinopse)
 [ ] Leitor local testado
 [ ] AGENTS.md atualizado
 [ ] /commit-push (quando quiser publicar)

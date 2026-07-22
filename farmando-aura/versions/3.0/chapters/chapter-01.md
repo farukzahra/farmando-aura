@@ -29,11 +29,11 @@ word-count: 940
 
 ## Capítulo Texto
 
-Renato Vaz, treze anos, acordou com o painel do teto simulando um amanhecer que nunca existira. O número flutuava acima da cama, translúcido, paciente, indiferente: **3**.
+Renato Vaz acordou com o painel do teto simulando um amanhecer que nunca existira. O número flutuava acima da cama, translúcido, paciente, indiferente: **3**.
 
 Três pontos de Aura. Menos que um erro de calibração. Menos que o necessário para alguém interromper uma frase quando ele entrava numa sala.
 
-Ele vestiu o cinza do almoxarifado, comeu a proteína do dispensador — infinita, gratuita, sem gosto — e desceu quarenta e dois andares sem cruzar com um olhar que demorasse nele mais de meio segundo. No elevador, uma garota de Aura 280 — uns dois anos mais velha que ele — ajustou a manga da blusa quando entrou, como se o tecido dele pudesse manchar o dela.
+Ele vestiu o cinza do almoxarifado, comeu a proteína do dispensador — infinita, gratuita, sem gosto — e desceu quarenta e dois andares sem cruzar com um olhar que demorasse nele mais de meio segundo. No elevador, uma mulher de Aura 280 ajustou a manga da blusa quando ele entrou, como se o tecido dele pudesse manchar o dela.
 
 Isso não doía mais. Doía aos doze anos. Agora era clima. Renato era clima: presente, ignorável, sem previsão.
 
@@ -79,7 +79,7 @@ Ele ficou imóvel, as mãos ainda no ar. Só então entendeu que acabara de dize
 
 Sete pontos. Ridículo para quem tinha mil. Monstruoso para quem tinha três. Renato sentiu algo estranho subir pela garganta — não alegria. Peso. Como se cada ponto fosse gravidade nova, puxando-o para um mapa onde antes não havia coordenada.
 
-A garota do elevador entrou na praça. Olhou para ele. Não ajustou a blusa. Perguntou, hesitante:
+A mulher do elevador entrou na praça. Olhou para ele. Não ajustou a blusa. Perguntou, hesitante:
 
 — Você mora aqui?
 

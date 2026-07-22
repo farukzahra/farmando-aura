@@ -8,12 +8,13 @@ current-chapter: 10
 
 ## Character State
 
-| Character | Location | Aura | Emotional State | Notes |
-|-----------|----------|------|-----------------|-------|
-| renato-vaz | bloco-residencial-sete | 411 (private) | at peace, questioning | Consultor em transparência; pulso privado |
-| dario-kelm | bloco-residencial-sete | 52 | stable | Recovered from farming penalties |
-| mira | bloco-residencial-sete | 280 | reflective | Relationship with Renato friendly |
-| lyra-voss | bloco-residencial-sete | 890 | opportunistic | Official consultant |
+| Character | Age | Location | Aura | Emotional State | Notes |
+|-----------|-----|----------|------|-----------------|-------|
+| renato-vaz | 13 | bloco-residencial-sete | 411 (private) | at peace, questioning | Consultor em transparência; pulso privado |
+| dario-kelm | 14 | bloco-residencial-sete | 52 | stable | Recovered from farming penalties |
+| mira | 15 | bloco-residencial-sete | 280 | reflective | Auditora de logs no bloco |
+| lyra-voss | 15 | bloco-residencial-sete | 890 | opportunistic | Consultora oficial |
+| elias-marr | 16 | anel-central | 4200 | defensive | Embaixador Jovem do Comitê |
 
 ## Object State
 

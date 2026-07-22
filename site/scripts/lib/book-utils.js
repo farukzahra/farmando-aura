@@ -262,6 +262,65 @@ function escapeHtml(s) {
     .replace(/"/g, "&quot;");
 }
 
+/** Default site/books.json entry for a newly scaffolded book. */
+function defaultRegistryEntry(opts) {
+  const now = new Date();
+  const dateStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`;
+  const genre = opts.genre || "Ficção científica";
+  const subGenre = opts.subGenre || "";
+  const era = opts.era || "";
+
+  return {
+    slug: opts.slug,
+    title: opts.title,
+    brandLine1: opts.brandLine1 || opts.title,
+    brandLine2: opts.brandLine2 || "",
+    tagline: opts.tagline || "",
+    storyDir: opts.slug,
+    synopsisFile: `${opts.slug}/sinopse-capa.md`,
+    genre,
+    subGenre,
+    era,
+    meta: [genre, subGenre, era].filter(Boolean),
+    coverImage: `../images/${opts.slug}-cover.png`,
+    defaultVersion: "1.0",
+    versions: [
+      {
+        id: "1.0",
+        label: "1.0 — Original",
+        date: dateStr,
+        chaptersDir: `${opts.slug}/chapters`,
+        current: true,
+        model: opts.model || "",
+        summary: opts.versionSummary || "Versão original."
+      }
+    ]
+  };
+}
+
+/** Fill missing export/reader fields on an existing registry entry. */
+function patchRegistryEntry(book, opts) {
+  const patched = { ...book };
+  if (!patched.coverImage) patched.coverImage = `../images/${book.slug}-cover.png`;
+  if (!patched.defaultVersion) patched.defaultVersion = "1.0";
+  if (!Array.isArray(patched.versions) || patched.versions.length === 0) {
+    const now = new Date();
+    patched.versions = [
+      {
+        id: "1.0",
+        label: "1.0 — Original",
+        date: `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`,
+        chaptersDir: `${book.storyDir || book.slug}/chapters`,
+        current: true,
+        model: opts.model || "",
+        summary: opts.versionSummary || "Versão original."
+      }
+    ];
+  }
+  if (!patched.synopsisFile) patched.synopsisFile = `${book.slug}/sinopse-capa.md`;
+  return patched;
+}
+
 module.exports = {
   ROOT,
   loadRegistry,
@@ -280,6 +339,8 @@ module.exports = {
   defaultVersionId,
   buildReaderVersions,
   escapeHtml,
+  defaultRegistryEntry,
+  patchRegistryEntry,
   inlineMarkdown: (text) =>
     escapeHtml(text)
       .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")

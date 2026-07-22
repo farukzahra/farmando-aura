@@ -2,21 +2,29 @@
 /**
  * Scaffold a new book: registry entry + reader page
  * Usage: node site/scripts/scaffold-book.js <slug> [--title "Title"] [--tagline "..."]
+ *        [--genre "..."] [--sub-genre "..."] [--era "2318"] [--model "Claude Opus 4.8"]
  *
  * Prerequisite: {slug}/ Story Skills folder must exist (run story-init first).
+ *
+ * Registry entry includes coverImage, defaultVersion and versions[].model so
+ * build-downloads.js produces enriched PDF/EPUB/DOCX (cover + synopsis + version metadata).
  */
 "use strict";
 
 const fs = require("fs");
 const path = require("path");
+const { defaultRegistryEntry, patchRegistryEntry } = require("./lib/book-utils");
 
 const ROOT = path.resolve(__dirname, "../..");
 const REGISTRY = path.join(ROOT, "site/books.json");
+const IMAGES_DIR = path.join(ROOT, "site/images");
 
 function parseArgs(argv) {
   const slug = argv[2];
   if (!slug || slug.startsWith("-")) {
-    console.error("Usage: node site/scripts/scaffold-book.js <slug> [--title \"Title\"] [--tagline \"...\"] [--genre \"...\"] [--era \"2318\"]");
+    console.error(
+      "Usage: node site/scripts/scaffold-book.js <slug> [--title \"Title\"] [--tagline \"...\"] [--genre \"...\"] [--sub-genre \"...\"] [--era \"2318\"] [--model \"Claude Opus 4.8\"] [--version-summary \"...\"]"
+    );
     process.exit(1);
   }
 
@@ -27,6 +35,8 @@ function parseArgs(argv) {
     else if (argv[i] === "--genre") opts.genre = argv[++i];
     else if (argv[i] === "--era") opts.era = argv[++i];
     else if (argv[i] === "--sub-genre") opts.subGenre = argv[++i];
+    else if (argv[i] === "--model") opts.model = argv[++i];
+    else if (argv[i] === "--version-summary") opts.versionSummary = argv[++i];
   }
   return opts;
 }
@@ -146,6 +156,14 @@ function renderReaderHtml(book) {
 `;
 }
 
+function ensureCoverPlaceholder(slug) {
+  fs.mkdirSync(IMAGES_DIR, { recursive: true });
+  const coverPath = path.join(IMAGES_DIR, `${slug}-cover.png`);
+  if (fs.existsSync(coverPath)) return coverPath;
+  console.log(`Cover placeholder: add illustration → site/images/${slug}-cover.png`);
+  return null;
+}
+
 function main() {
   const opts = parseArgs(process.argv);
   const storyDir = path.join(ROOT, opts.slug);
@@ -159,27 +177,31 @@ function main() {
   const title = opts.title || loadStoryTitle(storyDir) || opts.slug;
   const brand = splitTitle(title);
   const registry = JSON.parse(fs.readFileSync(REGISTRY, "utf8"));
+  const existingIdx = registry.books.findIndex((b) => b.slug === opts.slug);
 
-  if (registry.books.some((b) => b.slug === opts.slug)) {
-    console.log(`Registry: ${opts.slug} already in site/books.json`);
+  if (existingIdx >= 0) {
+    registry.books[existingIdx] = patchRegistryEntry(registry.books[existingIdx], opts);
+    fs.writeFileSync(REGISTRY, JSON.stringify(registry, null, 2) + "\n", "utf8");
+    console.log(`Registry: patched ${opts.slug} in site/books.json (coverImage, versions, model)`);
   } else {
-    const entry = {
+    const entry = defaultRegistryEntry({
       slug: opts.slug,
       title,
       brandLine1: brand.brandLine1,
       brandLine2: brand.brandLine2,
       tagline: opts.tagline || "",
-      storyDir: opts.slug,
-      synopsisFile: `${opts.slug}/sinopse-capa.md`,
-      genre: opts.genre || "Ficção científica",
-      subGenre: opts.subGenre || "",
-      era: opts.era || "",
-      meta: [opts.genre || "Ficção científica", opts.subGenre || "", opts.era || ""].filter(Boolean)
-    };
+      genre: opts.genre,
+      subGenre: opts.subGenre,
+      era: opts.era,
+      model: opts.model,
+      versionSummary: opts.versionSummary
+    });
     registry.books.push(entry);
     fs.writeFileSync(REGISTRY, JSON.stringify(registry, null, 2) + "\n", "utf8");
-    console.log(`Added ${opts.slug} to site/books.json`);
+    console.log(`Added ${opts.slug} to site/books.json (coverImage + versions + model)`);
   }
+
+  ensureCoverPlaceholder(opts.slug);
 
   const book = registry.books.find((b) => b.slug === opts.slug);
   const readerDir = path.join(ROOT, "site", opts.slug);
@@ -190,9 +212,11 @@ function main() {
   console.log(`Reader page → ${path.relative(ROOT, readerFile)}`);
 
   console.log("\nNext steps:");
-  console.log(`  1. Create ${opts.slug}/sinopse-capa.md`);
-  console.log(`  2. Write chapters in ${opts.slug}/chapters/`);
-  console.log(`  3. node site/scripts/build-all.js`);
+  console.log(`  1. Create ${opts.slug}/sinopse-capa.md (full synopsis for reader + exports)`);
+  console.log(`  2. Add cover art → site/images/${opts.slug}-cover.png`);
+  console.log(`  3. Write chapters in ${opts.slug}/chapters/`);
+  console.log(`  4. node site/scripts/build-all.js ${opts.slug}`);
+  console.log("\nExports (PDF/EPUB/DOCX) will include: cover, tagline, version, model, meta tags, full synopsis.");
 }
 
 main();

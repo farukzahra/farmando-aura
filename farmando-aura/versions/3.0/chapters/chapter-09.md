@@ -26,7 +26,7 @@ word-count: 780
 
 Ser consultivo não era ser ouvido.
 
-Renato aprendeu isso na primeira sessão do comitê revisado — sala menor, menos câmeras, os mesmos cinco embaixadores jovens e o avatar sempre presente, sempre processando, sempre traduzindo verdade em variável.
+Renato aprendeu isso na primeira sessão do comitê revisado — sala menor, menos câmeras, os mesmos cinco lendas e o avatar sempre presente, sempre processando, sempre traduzindo verdade em variável.
 
 — Herança reduzida para três por cento — anunciou Elias. — Vitória.
 
@@ -74,7 +74,7 @@ Não farmou. Não denunciou. Não fugiu.
 
 Não o overlap. Não a geometria. Um guia — *Como auditar sua Aura em casa* — ensinando humanos a ler logs, identificar pesos, questionar penalidades, solicitar revisão. Auditoria humana. Conhecimento distribuído. Na capa, de propósito, o desenho das mãos em gangorra: se o six seven já era símbolo, que fosse símbolo de perguntar, não de farmar.
 
-O documento espalhou-se antes que pudessem classificá-lo. E não ficou no Bloco Sete. Renato viu as mensagens chegarem de lugares cujos nomes ele só conhecia de mapa: um grupo de leitura de logs no **Bloco Três**. Uma monitora adolescente do **Setor 12** adaptando o guia para crianças pequenas. Um coletivo do **Anel Norte** que auditou o próprio ranking e forçou a primeira revisão setorial fora do 7-R. O gesto que começara numa praça de reciclagem estava sendo feito, agora, em praças que ele nunca pisaria.
+O documento espalhou-se antes que pudessem classificá-lo. E não ficou no Bloco Sete. Renato viu as mensagens chegarem de lugares cujos nomes ele só conhecia de mapa: um grupo de leitura de logs no **Bloco Três**. Uma professora do **Setor 12** adaptando o guia para crianças. Um coletivo do **Anel Norte** que auditou o próprio síndico e forçou a primeira revisão setorial fora do 7-R. O gesto que começara numa praça de reciclagem estava sendo feito, agora, em praças que ele nunca pisaria.
 
 Penalidade imediata: **−50**. Pulso caiu para **290**.
 

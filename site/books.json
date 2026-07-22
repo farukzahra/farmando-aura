@@ -12,14 +12,23 @@
       "subGenre": "distopia filosófica",
       "era": "2318",
       "meta": ["Ficção científica", "Distopia filosófica", "2318"],
-      "defaultVersion": "3.0",
+      "coverImage": "../images/farmando-aura-cover.png",
+      "defaultVersion": "4.0",
       "versions": [
+        {
+          "id": "4.0",
+          "label": "4.0 — YA Adolescentes",
+          "date": "2026-07",
+          "chaptersDir": "farmando-aura/chapters",
+          "current": true,
+          "model": "Claude Opus 4.8",
+          "summary": "Versão jovem-adulto: todo o elenco principal é adolescente (13–16 anos). Renato, Lyra, Mira, Dario e Elias Marr reescritos para leitores teen; comitê do Tribunal vira Embaixadores Jovens."
+        },
         {
           "id": "3.0",
           "label": "3.0 — Revisão Editorial",
           "date": "2026-07",
-          "chaptersDir": "farmando-aura/chapters",
-          "current": true,
+          "chaptersDir": "farmando-aura/versions/3.0/chapters",
           "model": "Claude Opus 4.8",
           "summary": "Revisão editorial sobre a v2.0: Tribunal expandido com audiência crescente, arcos de Lyra e Mira aprofundados e o impacto do guia de auditoria mostrado em outros blocos."
         },

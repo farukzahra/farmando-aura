@@ -15,9 +15,15 @@ Quando um capítulo for **criado, finalizado ou revisado** em `{slug}/chapters/`
 
 Registry central: `site/books.json`
 
+Campos obrigatórios no registry (scaffold preenche automaticamente):
+- `coverImage` → `site/images/{slug}-cover.png`
+- `defaultVersion` + `versions[]` com `model`, `summary`, `chaptersDir`
+- `synopsisFile` → `{slug}/sinopse-capa.md` (sinopse completa nos exports)
+
 Saídas por livro:
 - `site/js/{slug}/chapters.js`
-- `site/downloads/{slug}.pdf`, `.epub`, `.docx`
+- `site/downloads/{slug}.pdf`, `.epub`, `.docx` (versão atual; enriquecidos via `export-enrich.js`)
+- `site/downloads/{slug}-{version}.{pdf,epub,docx}` (versões congeladas)
 - `site/js/library-data.js` (estante)
 
-Novo livro: ver `docs/novo-livro.md` e `node site/scripts/scaffold-book.js {slug}`.
+Novo livro: ver `docs/novo-livro.md` e `node site/scripts/scaffold-book.js {slug} --model "..."`.

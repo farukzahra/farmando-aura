@@ -1,7 +1,7 @@
 ---
 name: Renato Vaz
 role: protagonist
-age: 27
+age: 13
 status: alive
 aliases:
   - "Rena"
@@ -19,7 +19,7 @@ arc: de-invisivel-a-observado
 
 ## Appearance
 
-Magro, ombros curvados como quem aprendeu cedo a ocupar menos espaço. Cabelo preto desalinhado, olheiras permanentes. Roupa neutra gerada pelo almoxarifado comunitário — cinza, sem marca, sem personalidade.
+Magro, baixo para a idade, ombros curvados como quem aprendeu cedo a ocupar menos espaço. Adolescente de treze anos — rosto ainda infantil em partes, mas olhar velho demais. Cabelo preto desalinhado, olheiras de quem passa noites lendo terminais. Macacão cinza do almoxarifado comunitário, um número acima do tamanho, sem marca, sem personalidade.
 
 ## Personality & Traits
 
@@ -27,7 +27,7 @@ Observador, analítico, tímido em público. Passa horas catalogando padrões qu
 
 ## Backstory
 
-Cresceu no Bloco Residencial Sete, filho de técnicos de manutenção que nunca tiveram Aura acima de 40. Aprendeu que ser útil não é o mesmo que ser visto. Estudou engenharia de sistemas distribuídos por tédio, não por ambição.
+Cresceu no Bloco Residencial Sete, filho de técnicos de manutenção que nunca tiveram Aura acima de 40. Aprendeu que ser útil não é o mesmo que ser visto. Passa horas nos terminais públicos lendo logs de reciclagem — por tédio, por curiosidade, porque ninguém espera que um adolescente de Aura 3 preste atenção.
 
 ## Motivations & Goals
 
@@ -53,5 +53,5 @@ Frases curtas. Evita superlativos. Fala baixo, como se pedisse desculpas pelo ar
 
 | When | Event | Relevance |
 |------|-------|-----------|
-| 2291 | Nascimento no Bloco Sete | Origem |
+| 2305 | Nascimento no Bloco Sete | Origem |
 | 2318 | Descobre falha no sistema Aura | Início do conto |

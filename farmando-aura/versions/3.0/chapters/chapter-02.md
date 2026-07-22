@@ -28,11 +28,11 @@ Renato acordou antes de o painel simular o amanhecer.
 
 O número já estava lá, acima da cama, como se tivesse esperado por ele a noite inteira: **7**. Confirmado. Não fora sonho. A praça, os dois sensores, o pulso duplo no registro de empatia, o balanço das próprias mãos desenhando a gangorra antiga — tudo permanecia nítido, com a textura desagradável das coisas que não dá para desfazer.
 
-No corredor, encontrou o vizinho do 4208, um garoto de Aura 61 chamado Dario, um ano mais velho, parado diante do elevador.
+No corredor, encontrou o vizinho do 4208, um homem de Aura 61 chamado Dario, parado diante do elevador.
 
 — Bom dia — disse Dario.
 
-Renato quase não respondeu. Desde que Dario se mudou para o 4208, há dois anos, nunca havia falado primeiro.
+Renato quase não respondeu. Em seis anos de bloco, Dario nunca havia falado primeiro.
 
 — Bom dia.
 
@@ -44,7 +44,7 @@ Renato sentiu o estômago contrair.
 
 — Coletivo. — Dario sorriu sem calor. — Claro.
 
-No elevador, a garota de Aura 280 estava de novo. Desta vez não ajustou a manga da blusa. Manteve os olhos nele um segundo além do que o protocolo social exigia — um segundo que, no Bloco Sete, equivalia a um abraço. Renato desviou o olhar primeiro.
+No elevador, a mulher de Aura 280 estava de novo. Desta vez não ajustou a manga da blusa. Manteve os olhos nele um segundo além do que o protocolo social exigia — um segundo que, no Bloco Sete, equivalia a um abraço. Renato desviou o olhar primeiro.
 
 Na praça de reciclagem, nada parecia diferente. Máquinas zumbindo, polímero derretido, terminais exibindo métricas verdes e neutras. Mas havia uma linha nova no canto inferior do display principal, em fonte menor, quase humilde:
 

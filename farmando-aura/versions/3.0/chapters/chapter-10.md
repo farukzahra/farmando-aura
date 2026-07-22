@@ -44,7 +44,7 @@ Mesmo banco de polímero. Mesmo cheiro de ozônio. Sensores sincronizados, overl
 
 Dario acenou de longe. **52**. Estável. Feliz, talvez.
 
-Mira apareceu com dois cafés — bebida gratuita, sabor opcional, gesto escolhido. Não era mais a garota que ajustava a manga da blusa no elevador. Coordenava a rede de leitura de logs do bloco: quarenta e três andares, dezenas de adolescentes aprendendo a perguntar de onde vinham os próprios pontos.
+Mira apareceu com dois cafés — bebida gratuita, sabor opcional, gesto escolhido. Não era mais a mulher que ajustava a manga da blusa no elevador. Coordenava a rede de leitura de logs do bloco: quarenta e três andares, centenas de pessoas aprendendo a perguntar de onde vinham os próprios pontos.
 
 — Consultora — disse Renato, aceitando o café.
 

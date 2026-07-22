@@ -101,8 +101,17 @@
       versionTag = '<div class="cover-version">' + label + "</div>";
     }
 
+    var coverArt = "";
+    if (book.coverImage) {
+      coverArt =
+        '<figure class="cover-art">' +
+          '<img src="' + book.coverImage + '" alt="Ilustração de capa: Renato Vaz na praça de reciclagem" width="960" height="540" loading="eager" decoding="async">' +
+        "</figure>";
+    }
+
     contentEl.innerHTML =
       '<div class="cover">' +
+        coverArt +
         '<div class="cover-eyebrow">Um conto · ' + book.meta[2] + "</div>" +
         '<h1 class="cover-title">' + book.title + "</h1>" +
         '<p class="cover-tagline">' + book.tagline + "</p>" +
