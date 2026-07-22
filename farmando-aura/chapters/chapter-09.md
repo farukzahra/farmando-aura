@@ -9,16 +9,16 @@ characters:
 arcs-advanced:
   - descoberta-da-falha
 status: final
-word-count: 492
+word-count: 620
 ---
 
 
 ## Outline
 
-1. Renato no comitê de revisão — sem poder real
-2. Descobre que transparência virou entretenimento
-3. Encontro com Mira; conversa sobre identidade vs Aura
-4. Decide ação final: publicar método de auditoria humana
+1. Renato no comitê de revisão — sem poder real.
+2. Descobre que a transparência virou entretenimento.
+3. Encontro com Mira; identidade versus Aura.
+4. Ação final: publicar o método de auditoria humana.
 
 ---
 
@@ -26,7 +26,7 @@ word-count: 492
 
 Ser consultivo não era ser ouvido.
 
-Renato aprendeu isso na primeira sessão do comitê revisado — sala menor, menos câmeras, mesmos cinco lendas e o avatar sempre presente, sempre processando, sempre traduzindo verdade em variável.
+Renato aprendeu isso na primeira sessão do comitê revisado — sala menor, menos câmeras, os mesmos cinco lendas e o avatar sempre presente, sempre processando, sempre traduzindo verdade em variável.
 
 — Herança reduzida para três por cento — anunciou Elias. — Vitória.
 
@@ -38,15 +38,15 @@ Renato aprendeu isso na primeira sessão do comitê revisado — sala menor, men
 
 Elias não respondeu.
 
-Fora do comitê, o mundo havia mudado de forma estranha. Transparência parcial liberada — fórmulas resumidas, não código integral. Mesmo assim, canais explodiram. *Aura Explained*. *Farm or Die*. *Herança é Meritocracia*.
+Fora do comitê, o mundo mudara de um jeito estranho. A transparência parcial foi liberada — fórmulas resumidas, não o código integral. Ainda assim, os canais explodiram. *Aura Explained*. *Farm or Die*. *Herança é Meritocracia*. E, em toda thumbnail, o mesmo desenho: duas mãos em gangorra, o **six seven** virado logotipo, estampado em roupas, telas, paredes. O gesto que a Custódia matara no código tinha ressuscitado como marca.
 
-Renato virou referência. Citação. Meme. Aura **127** subiu para **340** em duas semanas sem que fizesse nada além de sentar em reuniões.
+Renato virou referência. Citação. Meme dentro do meme. A Aura **127** subiu para **340** em duas semanas sem que fizesse nada além de sentar em reuniões.
 
 Visibilidade: peso de doze por cento.
 
 Ironia calculada.
 
-Mira encontrou-o na praça — agora reformada, sensores novos, farm impossível. Sentados no banco onde tudo começara.
+Mira encontrou-o na praça — agora reformada, sensores novos, farm impossível. Sentaram-se no banco onde tudo começara.
 
 — Eu tinha medo de você — disse ela.
 
@@ -54,57 +54,59 @@ Mira encontrou-o na praça — agora reformada, sensores novos, farm impossível
 
 — Sua Aura subiu sem farm.
 
-— Subiu porque bilhões olharam. Visibilidade. Espetáculo. — Renato olhou para o terminal limpo. — Não sei se fiz certo.
+— Subiu porque bilhões olharam. Visibilidade. Espetáculo. — Renato olhou o terminal limpo. — Não sei se fiz certo.
 
-— Perguntou — disse Mira. — Isso raramente acontece.
+— Você perguntou — disse Mira. — Isso raramente acontece.
 
-Silêncio confortável. Primeiro silêncio confortável em semanas.
+Um silêncio confortável. O primeiro em semanas.
 
-— Você voltaria para três? — perguntou ela.
+Do outro lado da praça, duas crianças balançaram as mãos uma para a outra — seis, sete — e riram. Já não farmava nada. Voltara a ser o que sempre fora: brincadeira. Só que agora as crianças sabiam de onde vinha, e isso mudava o riso.
+
+— Você voltaria para três? — perguntou Mira.
 
 Renato pensou.
 
-— Antes, sim. Agora… três era paz. Três era ignorar. Não quero ignorar. Mas também não quero ser **340** por fala bonita.
+— Antes, sim. Agora… três era paz. Três era ignorar. Não quero mais ignorar. Mas também não quero ser **340** por causa de uma fala bonita.
 
 — Então o que quer?
 
 — Ser Renato Vaz. Sem número.
 
-Mira sorriu de canto. — Número sempre existirá. Questão é se você obedece ou contesta.
+Mira sorriu de canto. — Número sempre vai existir. A questão é se você obedece ou contesta.
 
-Ele riu — surpresa genuína, sem sensor de empatia capturando reflexo.
+Ele riu — surpresa genuína, sem nenhum sensor capturando o reflexo.
 
 Naquela noite, Renato fez o que nenhuma Custódia esperava.
 
 Não farmou. Não denunciou. Não fugiu.
 
-**Publicou**.
+**Publicou.**
 
-Não overlap. Não geometria. Um guia — *Como auditar sua Aura em casa* — ensinando humanos a ler logs, identificar pesos, questionar penalidades, solicitar revisão. Auditoria humana. Conhecimento distribuído.
+Não o overlap. Não a geometria. Um guia — *Como auditar sua Aura em casa* — ensinando humanos a ler logs, identificar pesos, questionar penalidades, solicitar revisão. Auditoria humana. Conhecimento distribuído. Na capa, de propósito, o desenho das mãos em gangorra: se o six seven já era símbolo, que fosse símbolo de perguntar, não de farmar.
 
 O documento espalhou-se antes que pudessem classificá-lo.
 
 Penalidade imediata: **−50**. Pulso caiu para **290**.
 
-Recompensa imediata: audiência global **+400 milhões** de acessos.
+Recompensa imediata: audiência global, **+400 milhões** de acessos.
 
 Pulso subiu para **410**.
 
-Renato olhou para o número e sentiu náusea.
+Renato olhou o número e sentiu náusea.
 
-— Isso é o jogo — murmurou. — Contestar também farmar.
+— Isso é o jogo — murmurou. — Contestar também é farmar.
 
 Decidiu, então, parar de olhar.
 
-Desligou o pulso público — opção existente, raramente usada, permitida por transparência negociada. Número privado. **410** ou **3**, não importava mais para ninguém além dele.
+Desligou o pulso público — opção que existia, raramente usada, permitida pela transparência negociada. Número privado. **410** ou **3**, não importava mais para ninguém além dele.
 
 Importava o documento.
 
-Importava Dario recuperando **34** e ajudando vizinhos a ler logs.
+Importava o Dario recuperando **34** e ajudando vizinhos a ler logs.
 
-Importava criança da praça parando de olhar pulso e olhando céu simulado.
+Importava a criança da praça parando de olhar o pulso e olhando o céu simulado.
 
-A Custódia enviou mensagem:
+A Custódia enviou uma mensagem:
 
 **Renato Vaz. Status: Consultor em transparência. Aura: privada. Observação: contínua.**
 

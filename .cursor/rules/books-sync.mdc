@@ -1,0 +1,23 @@
+---
+description: Ao concluir ou revisar capítulos de qualquer livro, sincronizar o leitor HTML
+globs: "**/chapters/**/*.md,site/js/**/chapters.js,site/books.json"
+alwaysApply: false
+---
+
+# Biblioteca — sync capítulo → site
+
+Quando um capítulo for **criado, finalizado ou revisado** em `{slug}/chapters/` (qualquer livro registrado em `site/books.json`):
+
+1. Executar `node site/scripts/build-all.js` (ou `node site/scripts/build-all.js {slug}` para um livro só).
+2. Manter ordem e IDs consistentes (`01`, `02`, …) e slugs em kebab-case nos arquivos markdown.
+3. Se a sinopse ou metadados mudarem, atualizar `{slug}/sinopse-capa.md` (ou o path em `synopsisFile` no registry).
+4. Validar com `story validate {slug}` quando aplicável.
+
+Registry central: `site/books.json`
+
+Saídas por livro:
+- `site/js/{slug}/chapters.js`
+- `site/downloads/{slug}.pdf`, `.epub`, `.docx`
+- `site/js/library-data.js` (estante)
+
+Novo livro: ver `docs/novo-livro.md` e `node site/scripts/scaffold-book.js {slug}`.

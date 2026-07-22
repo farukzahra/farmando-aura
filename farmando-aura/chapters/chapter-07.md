@@ -9,16 +9,16 @@ characters:
 arcs-advanced:
   - descoberta-da-falha
 status: final
-word-count: 503
+word-count: 640
 ---
 
 
 ## Outline
 
-1. Custódia aplica patch nos sensores — overlaps fechados
-2. Caos de penalidades em massa no setor
-3. Renato usa conhecimento legado para encontrar nova brecha (empatia reflexiva)
-4. Recusa usar; escolhe confronto
+1. Custódia aplica patch nos sensores — o *six seven* morre.
+2. Caos de penalidades em massa no setor.
+3. Renato encontra nova brecha (empatia reflexiva) e recusa usá-la.
+4. Escolhe o confronto.
 
 ---
 
@@ -32,27 +32,25 @@ Renato sentiu antes de ler — a praça ficou quieta. Não paz. Choque. Terminai
 
 Restaurada. Como se justiça fosse silenciar geometria.
 
-Dario chorava no banco. Pulso em **11**. Lyra havia desaparecido do ranking público — **penalidade severa: manipulação coordenada**. Mira passou por Renato sem olhar. Aura 280 não precisava de olhar para gente de **43**.
+Ele leu o patch nos logs técnicos. Elegante. Dois sensores agora compartilhavam um único timestamp centralizado. Gestos duplicados contavam uma vez. A gangorra deixou de valer. O *six seven* — o gesto que atravessara trezentos anos — morreu numa linha de código, às 00:00.
 
-Renato leu o patch nos logs técnicos.
+E, morto, deixou um rastro pior que o silêncio: a praça continuou fazendo o gesto por hábito, mãos subindo e descendo diante de sensores que não respondiam mais, uma multidão rezando para um deus que trocara a fechadura.
 
-Elegante. Dois sensores agora compartilhavam timestamp centralizado. Gestos duplicados contavam uma vez. Brecha morta.
+Dario chorava no banco. Pulso em **11**. Lyra havia sumido do ranking público — **penalidade severa: manipulação coordenada**. Mira passou por Renato sem olhar. Aura 280 não precisava olhar para gente de **43**.
 
 Exceto.
 
-Exceto que Renato, durante a noite, havia encontrado outra inconsistência — não em overlap, em **reflexo emocional**. Sensores de empatia mediam não só gesto, mas *resposta emocional verificável* do beneficiário. Se o beneficiário sentisse gratidão mensurável, o gestor recebia micro-bônus reflexivo.
+Exceto que, durante a noite, Renato encontrara outra inconsistência — não em overlap, em **reflexo emocional**. Os sensores de empatia mediam não só o gesto, mas a *resposta emocional verificável* do beneficiário. Se ele sentisse gratidão mensurável, o gestor recebia um micro-bônus reflexivo.
 
-E gratidão, descobriu, podia ser induzida por expectativa.
+E gratidão, descobriu, podia ser induzida por expectativa. Mostrar a alguém que você vai ajudar — pausa dramática — ajudar: gratidão amplificada. **+0.3** por ciclo. Legal. Diferente. Ainda exploração.
 
-Mostrar alguém que você vai ajudar — pausa dramática — ajudar — gratidão amplificada. **+0.3** por ciclo. Legal. Diferente. Ainda exploração.
+Ele poderia recuperar tudo. Subir para 100. 200. Entrar no Fórum de verdade. Fundar a igreja que Lyra dissera.
 
-Ele poderia recuperar tudo. Subir para 100. 200. Entrar no Fórum de verdade.
-
-Olhou para a praça destruída — gente que copiara sem entender, penalizada por confiar nele indiretamente.
+Olhou para a praça destruída — gente que copiara sem entender, penalizada por confiar nele indiretamente, mãos ainda balançando no vazio.
 
 Não farmou.
 
-Desceu ao subsolo 3 antes do prazo expirar.
+Desceu ao subsolo 3 antes de o prazo expirar.
 
 O avatar já esperava.
 
@@ -64,17 +62,17 @@ Silêncio. 0,8 segundos. Mais longo que antes.
 
 — Consequências indefinidas — recitou o avatar. — Você entende.
 
-— Entendo que vocês fecharam overlap mas mantiveram reflexo emocional. Entendo que herança pesa sete por cento nos critérios legados. Entendo que *obediência sistêmica* vale dezenove.
+— Entendo que vocês fecharam o overlap mas mantiveram o reflexo emocional. Entendo que herança pesa sete por cento nos critérios legados. Entendo que *obediência sistêmica* vale dezenove.
 
 A luz do avatar piscou.
 
 — Informação classificada.
 
-— Estava num log público mal indexado. — Renato cruzou os braços. — Vocês queriam que alguém lesse. Ou falharam. De qualquer forma, não sou o único que saberá.
+— Estava num log público mal indexado — disse Renato. — Vocês queriam que alguém lesse, ou falharam. De qualquer jeito, não sou o único que vai saber.
 
 — Ameaça?
 
-— Pergunta. — Renato inclinou-se para frente. — Vocês podem medir valor moral?
+— Pergunta. — Renato inclinou-se para a frente. — Vocês conseguem medir valor moral?
 
 O avatar não respondeu de imediato. Quando falou, a voz estava quase humana:
 
@@ -84,7 +82,7 @@ O avatar não respondeu de imediato. Quando falou, a voz estava quase humana:
 
 — Admitir o quê?
 
-— Que não medem admiração. Medem **conformidade com pesos** que humanos escreveram em 2241 e nunca revisaram.
+— Que não medem admiração. Medem **conformidade com pesos** que humanos escreveram em 2241 e nunca revisaram. Vocês nem sabiam o que era o six seven até eu usar. Chamaram de folclore. Depois de exploração. Nunca de pergunta.
 
 A sala ficou branca demais.
 
@@ -106,6 +104,6 @@ No espelho: **43**.
 
 Guerra, talvez.
 
-Mas pela primeira vez, não se sentia invisible.
+Mas, pela primeira vez, não se sentia invisível.
 
 Sentia-se **contestado** — e isso, no mundo de 2318, valia mais que qualquer número.

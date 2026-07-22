@@ -1,0 +1,37 @@
+{
+  "books": [
+    {
+      "slug": "farmando-aura",
+      "title": "Farmando Aura",
+      "brandLine1": "Farmando",
+      "brandLine2": "Aura",
+      "tagline": "Aura não compra nada. Aura abre portas.",
+      "storyDir": "farmando-aura",
+      "synopsisFile": "sinopse-capa.md",
+      "genre": "Ficção científica",
+      "subGenre": "distopia filosófica",
+      "era": "2318",
+      "meta": ["Ficção científica", "Distopia filosófica", "2318"],
+      "defaultVersion": "2.0",
+      "versions": [
+        {
+          "id": "2.0",
+          "label": "2.0 — Six Seven",
+          "date": "2026-07",
+          "chaptersDir": "farmando-aura/chapters",
+          "current": true,
+          "model": "Claude Opus 4.8",
+          "summary": "Reescrita completa. A descoberta do hack vira um gesto ritual: o \"six seven\"."
+        },
+        {
+          "id": "1.0",
+          "label": "1.0 — Original",
+          "date": "2025-10",
+          "chaptersDir": "farmando-aura/versions/1.0/chapters",
+          "model": "Composer 2.5",
+          "summary": "Versão original publicada."
+        }
+      ]
+    }
+  ]
+}

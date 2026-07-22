@@ -9,16 +9,16 @@ characters:
 arcs-advanced:
   - descoberta-da-falha
 status: final
-word-count: 592
+word-count: 660
 ---
 
 
 ## Outline
 
-1. Vida social muda com Aura 45
-2. Dario copia o método de Renato
-3. Renato percebe que o farm se espalha
-4. Primeiro sinal de queda de Aura por "manipulação sistêmica"
+1. Vida social muda com Aura 45.
+2. Dario copia o método — já o chama de *six seven*.
+3. Renato percebe que o gesto se espalha.
+4. Primeiro sinal de queda por "padrão repetitivo".
 
 ---
 
@@ -28,41 +28,41 @@ Com quarenta e cinco pontos, Renato passou a existir.
 
 Não como celebridade — longe disso. Como presença. O entregador autônomo dizia bom-dia. Dario puxava conversa no elevador. Até a mulher de Aura 280, cujo nome descobriu ser Mira, passou a chamá-lo pelo nome.
 
-— Renato — ela disse uma manhã, como quem testa se a palavra cabia na boca. — Você parece diferente.
+— Renato — disse ela numa manhã, como quem testa se a palavra cabe na boca. — Você parece diferente.
 
 — Mesma roupa cinza.
 
 — Não é a roupa.
 
-Ele não soube o que responder. Mira saiu no décimo andar antes que ele inventasse.
+Ele não soube o que responder. Mira saiu no décimo andar antes que inventasse.
 
-A diferença não estava nele, exatamente. Estava no espelho social — na forma como os outros precisavam recalcular onde colocá-lo. Aura 45 não era alto. Era suficiente para que ignorá-lo exigisse esforço consciente.
+A diferença não estava nele, exatamente. Estava no espelho social — na forma como os outros precisavam recalcular onde encaixá-lo. Aura 45 não era alto. Era o suficiente para que ignorá-lo exigisse esforço consciente.
 
 Na praça, notou Dario.
 
-O vizinho do 4208 repetia gestos com precensão estranha — inclinar-se para pegar objeto, posicionar-se entre dois postes de sensor, sorrir para criança no ângulo exato. Desajeitado. Determinado. Como quem imita tutorial sem entender a teoria.
+O vizinho do 4208 repetia gestos com precisão estranha: inclinar-se para pegar um objeto, posicionar-se entre dois postes de sensor, sorrir para uma criança no ângulo exato. Desajeitado. Determinado. Como quem imita um tutorial sem entender a teoria. E, entre um gesto e outro, balançava as mãos no compasso das crianças, murmurando a cantiga como se ela fosse a senha.
 
 Renato aproximou-se.
 
 — Dario.
 
-— Oi. — Dario não parou. Executou um terceiro gesto: empurrar cadeira de rodas que já estava parada. **+1** no pulso dele. Visível de longe.
+— Oi. — Dario não parou. Executou um terceiro gesto: empurrar uma cadeira de rodas que já estava parada. **+1** no pulso dele, visível de longe.
 
 — Você sabe o que está fazendo?
 
-— Farmando — disse Dario, sem vergonha. — Vi você. Perguntei no fórum. Lyra explicou mais ou menos. Overlap de sensor. Gestos pequenos. Genuínos o bastante.
+— O six seven — disse Dario, sem vergonha, como se o nome explicasse tudo. — Vi você. Perguntei no fórum. A Lyra explicou mais ou menos. Overlap de sensor. Gesto pequeno, genuíno o bastante. O truque é a gangorra, ela disse. As duas mãos. As crianças já sabiam, a gente é que era burro.
 
 Renato sentiu algo gelar.
 
-— Lyra explicou.
+— A Lyra explicou.
 
 — Ela cobra. — Dario finalmente olhou para ele. — Cobrou em favor. Você deve favores agora, Renato. Mesmo sem saber.
 
-Antes que respondesse, o terminal da praça emitiu um som baixo — quase inaudível, mas novo. O ranking comunitário piscou. Três nomes desceram. Dois subiram. Dario gritou:
+Antes que respondesse, o terminal da praça emitiu um som baixo — quase inaudível, mas novo. O ranking comunitário piscou. Três nomes desceram. Dois subiram. Dario xingou:
 
 — Puta!
 
-Seu pulso mostrava **52** por um segundo. Depois **38**. Depois **34**.
+O pulso dele mostrou **52** por um segundo. Depois **38**. Depois **34**.
 
 — O que foi isso? — Dario agarrou o pulso como se pudesse segurar o número.
 
@@ -72,13 +72,11 @@ Renato leu a mensagem no terminal:
 
 Penalidade. Não por mentira. Por padrão.
 
-A Custódia não punia o gesto falso — punia o gesto **previsível**.
+A Custódia não punia o gesto falso. Punia o gesto **previsível**.
 
-Renato olhou para seus próprios registros mentais: quarenta e sete minutos entre gestos, três overlaps seguros, sequência idêntica três dias seguidos.
+Renato revisou os próprios registros mentais: quarenta e sete minutos entre gestos, três overlaps seguros, a mesma sequência três dias seguidos. Previsível.
 
-Previsível.
-
-Seu pulso tremulou: **44**.
+O pulso dele tremulou: **44**.
 
 Menos um.
 
@@ -86,23 +84,23 @@ A linha no terminal mudou de novo:
 
 **Perfil em calibração: fase 2.**
 
-Lyra apareceu na borda da praça, sorrindo como quem vê o incêndio e pensa em aquecer as mãos.
+Lyra apareceu na borda da praça, sorrindo como quem vê o incêndio e já pensa em aquecer as mãos.
 
-— Você ensinou — disse ela. — Ou alguém ensinou por você. De qualquer forma, o setor inteiro está farmando. A Custódia vai fechar a brecha.
+— Você ensinou — disse ela. — Ou alguém ensinou por você. De qualquer forma, o setor inteiro está fazendo o six seven. Vira brincadeira, vira febre. A Custódia vai fechar a brecha.
 
-— Já fechou parte — Renato murmurou.
+— Já fechou parte — murmurou Renato.
 
-— Então farmamos enquanto dura. — Lyra tocou seu braço, gesto calculado que dois sensores capturaram. Renato sentiu o pulso dela subir. O dele, nada.
+— Então a gente farma enquanto dura. — Lyra tocou o braço dele, um gesto calculado que dois sensores capturaram. Renato sentiu o pulso dela subir. O dele, nada.
 
-— Não funciona assim — disse ele. — Não é transferível. É geometria. Timing. Se copiam, viram padrão.
+— Não funciona assim — disse ele. — Não é transferível. É geometria. Timing. Quando muitos copiam, vira padrão. E padrão a máquina aprende.
 
 Lyra inclinou a cabeça. — Então você sabe mais que eles. Isso vale mais que Aura.
 
 Renato recuou.
 
-Pela primeira vez desde o dia do idoso e do vidro, desejou voltar a três pontos. Invisível. Seguro. Sem Lyra, sem Dario, sem Mira olhando como se ele fosse projeto.
+Pela primeira vez desde o dia do idoso e do vidro, desejou voltar aos três pontos. Invisível. Seguro. Sem Lyra, sem Dario, sem Mira olhando como se ele fosse projeto.
 
-Mas invisibilidade, percebeu, era luxo de quem nunca tinha provado o peso de ser visto.
+Mas invisibilidade, percebeu, era luxo de quem nunca provara o peso de ser visto.
 
 E o peso — ah, o peso era real.
 
@@ -110,4 +108,4 @@ No espelho do quadragésimo segundo andar, **44** flutuava como acusação silen
 
 A Custódia estava calibrando.
 
-E o setor inteiro começava a farmar.
+E o setor inteiro balançava as mãos.

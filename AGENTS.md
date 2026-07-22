@@ -1,25 +1,27 @@
 # AGENTS.md
 
-Operational guide for AI agents working in **Farmando Aura**.
+Operational guide for AI agents working in this **multi-book fiction library**.
+
+Production: **https://livros.faruk.dev.br**
 
 ## What this repo is
 
-Fiction project + static reader site:
+Monorepo: Story Skills projects + static reader site (shelf + per-book readers).
 
 | Path | Purpose |
 |------|---------|
-| `farmando-aura/` | Story Skills project (chapters, bible, continuity) |
-| `site/` | HTML/CSS/JS reader (dark mode, chapter index) |
-| `site/downloads/` | PDF, EPUB, DOCX (pre-built) |
-| `ideia-inicial.md` | Premissa formatada |
-| `sinopse-capa.md` | Sinopse de contracapa |
+| `site/books.json` | **Registry** — all published/in-progress books |
+| `{slug}/` | Story Skills project per book (chapters, bible, continuity) |
+| `site/` | HTML/CSS/JS reader (library shelf + `{slug}/` readers) |
+| `site/downloads/` | PDF, EPUB, DOCX per book (`{slug}.pdf`, etc.) |
+| `docs/novo-livro.md` | Checklist to add a new book |
 
-External writing skills: `story-*` in `~/.cursor/skills/` (from [danjdewhurst/story-skills](https://github.com/danjdewhurst/story-skills)).
+External writing skills: `story-*` in `~/.cursor/skills/` ([story-skills](https://github.com/danjdewhurst/story-skills)).
 
 ## Agent workflow
 
 ```
-story-init / chapter-writing / plot-structure
+story-init → scaffold-book → chapter-writing / plot-structure
   → node site/scripts/build-all.js
   → verification-before-completion
   → /commit-push (caveman-commit + semantic-version + push)
@@ -27,9 +29,11 @@ story-init / chapter-writing / plot-structure
 
 | Phase | Skill / tool | Rule |
 |-------|--------------|------|
-| Write | `chapter-writing`, `story-init`, etc. | Markdown in `farmando-aura/chapters/` |
+| New book | `story-init`, `docs/novo-livro.md` | Add entry to `site/books.json` |
+| Scaffold site | `node site/scripts/scaffold-book.js {slug}` | Creates `site/{slug}/index.html` |
+| Write | `chapter-writing`, etc. | Markdown in `{slug}/chapters/` |
 | Sync site | `node site/scripts/build-all.js` | After every chapter create/revise |
-| Verify | `verification-before-completion` | Após push/deploy: `gh run list` + `curl -I https://livros.faruk.dev.br` |
+| Verify | `verification-before-completion` | Após push: `gh run list` + `curl -I https://livros.faruk.dev.br` |
 | Commit | `caveman-commit` | English, Conventional Commits — **only** via `/commit-push` or explicit request |
 | Version | `semantic-version` | Bump `docs/release-history.json` — **only** inside `/commit-push` |
 
@@ -51,7 +55,7 @@ story-init / chapter-writing / plot-structure
 
 | Rule | Trigger |
 |------|---------|
-| `farmando-aura-sync.mdc` | Chapter edits → `build-all.js` |
+| `books-sync.mdc` | Chapter edits → `build-all.js` |
 
 ## Language
 
@@ -67,18 +71,20 @@ story-init / chapter-writing / plot-structure
 - Never skip hooks unless explicitly requested
 - Do not commit secrets
 
-## Versioning
-
-**Only on `/commit-push`.** See `semantic-version` skill and [`docs/release-history.json`](docs/release-history.json).
-
 ## Build commands
 
 ```bash
-# Sync reader + regenerate PDF/EPUB/DOCX
+# Sync all books: chapters.js + downloads + shelf
 node site/scripts/build-all.js
 
-# Story maintenance only
-node "%USERPROFILE%\.cursor\skills\story-skills\skills\story-maintenance\scripts\story.js" validate farmando-aura
+# Single book only
+node site/scripts/build-all.js farmando-aura
+
+# New book reader + registry entry (after story-init)
+node site/scripts/scaffold-book.js {slug} --title "Title" --tagline "..."
+
+# Story maintenance
+node "%USERPROFILE%\.cursor\skills\story-skills\skills\story-maintenance\scripts\story.js" validate {slug}
 
 # Local reader
 cd site && python -m http.server 8080
@@ -87,29 +93,33 @@ cd site && python -m http.server 8080
 
 ## Deploy VPS
 
-Production: **https://livros.faruk.dev.br**
-
 | Doc | Conteúdo |
 |-----|----------|
 | [`docs/deploy-vps.md`](docs/deploy-vps.md) | VPS, DNS, Caddy, deploy manual |
 | [`docs/github-actions-deploy.md`](docs/github-actions-deploy.md) | PAT, `gh secret set`, workflow Actions |
+| [`docs/novo-livro.md`](docs/novo-livro.md) | Add another book to the library |
 
-Push em `main` → `.github/workflows/deploy.yml` (após secrets configurados).
+Push em `main` → `.github/workflows/deploy.yml`.
 
 ## Project layout
 
 ```
 farmar-aura/
 ├── AGENTS.md
-├── docs/release-history.json
-├── farmando-aura/          # Story Skills bible + chapters
-├── site/                   # Static reader
-│   ├── downloads/          # PDF, EPUB, DOCX
+├── site/
+│   ├── books.json              # registry
+│   ├── index.html              # library shelf
+│   ├── {slug}/index.html       # per-book reader
+│   ├── js/{slug}/chapters.js   # built from markdown
+│   ├── js/library-data.js      # built shelf data
 │   └── scripts/
 │       ├── build-all.js
-│       ├── sync-from-markdown.js
-│       └── build-downloads.js
-├── .cursor/commands/       # /commit-push
+│       ├── scaffold-book.js
+│       └── lib/book-utils.js
+├── farmando-aura/              # book 1 (Story Skills)
+├── {slug}/                     # book 2, 3, …
+├── docs/release-history.json
+├── .cursor/commands/
 ├── .cursor/rules/
 └── .agents/skills/
 ```

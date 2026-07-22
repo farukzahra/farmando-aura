@@ -26,4 +26,4 @@ Ficção científica literária com linguagem contemporânea e seca. Prosa senso
 
 ## Notes
 
-Romance completo: 10 capítulos (~5.800 palavras). Leitor web em `site/`. Sincronizar com `node site/scripts/sync-from-markdown.js` após editar capítulos.
+Romance completo: 10 capítulos (~6.900 palavras). A descoberta do hack é ancorada no gesto fóssil *six seven* (mãos em gangorra entre dois sensores), que ressurge como febre social, é morto por um patch e vira símbolo de contestação. Livro versionado: v1.0 (Composer 2.5) em `farmando-aura/versions/1.0/`; v2.0 atual (Claude Opus 4.8) em `farmando-aura/chapters/`. Leitor web em `site/` com seletor de versão. Sincronizar com `node site/scripts/build-all.js farmando-aura` após editar capítulos.

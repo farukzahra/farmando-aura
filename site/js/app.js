@@ -15,16 +15,46 @@
   var sidebarClose = document.getElementById("sidebarClose");
   var fontUp = document.getElementById("fontUp");
   var fontDown = document.getElementById("fontDown");
+  var versionSelect = document.getElementById("versionSelect");
+  var versionWrap = document.getElementById("versionControl");
 
   var FONT_MIN = 0.9;
   var FONT_MAX = 1.5;
   var FONT_STEP = 0.0625;
-  var STORAGE_KEY = "farmando-aura-last-chapter";
-  var FONT_KEY = "farmando-aura-font-size";
+  var BOOK_SLUG = document.body.dataset.bookSlug || "book";
+  var STORAGE_KEY = BOOK_SLUG + "-last-chapter";
+  var FONT_KEY = BOOK_SLUG + "-font-size";
+  var VERSION_KEY = BOOK_SLUG + "-version";
   var DOWNLOADS_BASE = document.body.dataset.downloadsBase || "downloads/";
+
+  // Backward compat: older chapters.js had book.chapters/book.synopsis at top level.
+  var versions = book.versions || [
+    { id: "1.0", label: "1.0", synopsis: book.synopsis || [], chapters: book.chapters || [] }
+  ];
+  var activeVersion = null;
+  var activeVersionId = null;
+  var manifestData = null;
 
   function pad(num) {
     return String(num).padStart(2, "0");
+  }
+
+  function resolveVersion(id) {
+    for (var i = 0; i < versions.length; i++) {
+      if (versions[i].id === id) return versions[i];
+    }
+    return null;
+  }
+
+  function initVersion() {
+    var saved = localStorage.getItem(VERSION_KEY);
+    activeVersion =
+      resolveVersion(saved) || resolveVersion(book.defaultVersion) || versions[0];
+    activeVersionId = activeVersion ? activeVersion.id : null;
+  }
+
+  function chapters() {
+    return activeVersion.chapters || [];
   }
 
   function getRoute() {
@@ -54,7 +84,7 @@
     toolbarTitleEl.textContent = book.title;
     chapterNavEl.hidden = true;
 
-    var synopsisHtml = book.synopsis.map(function (p) {
+    var synopsisHtml = (activeVersion.synopsis || []).map(function (p) {
       return "<p>" + p + "</p>";
     }).join("");
 
@@ -62,11 +92,21 @@
       return '<span class="meta-tag">' + tag + "</span>";
     }).join("");
 
+    var versionTag = "";
+    if (activeVersion) {
+      var label = "Versão " + (activeVersion.label || activeVersion.id);
+      if (activeVersion.model) {
+        label += " · gerado por " + activeVersion.model;
+      }
+      versionTag = '<div class="cover-version">' + label + "</div>";
+    }
+
     contentEl.innerHTML =
       '<div class="cover">' +
         '<div class="cover-eyebrow">Um conto · ' + book.meta[2] + "</div>" +
         '<h1 class="cover-title">' + book.title + "</h1>" +
         '<p class="cover-tagline">' + book.tagline + "</p>" +
+        versionTag +
         '<div class="cover-synopsis">' + synopsisHtml + "</div>" +
         '<div class="cover-meta">' + metaHtml + "</div>" +
         '<button class="btn-start" id="startReading" type="button">Começar leitura →</button>' +
@@ -81,7 +121,8 @@
   }
 
   function renderChapter(index) {
-    var chapter = book.chapters[index];
+    var list = chapters();
+    var chapter = list[index];
     if (!chapter) {
       navigateTo("cover");
       return;
@@ -101,14 +142,14 @@
       '<div class="chapter-body">' + bodyHtml + "</div>";
 
     prevBtn.disabled = index <= 0;
-    nextBtn.disabled = index >= book.chapters.length - 1;
+    nextBtn.disabled = index >= list.length - 1;
 
     prevBtn.onclick = function () {
       if (index > 0) navigateTo("chapter", index - 1);
     };
 
     nextBtn.onclick = function () {
-      if (index < book.chapters.length - 1) navigateTo("chapter", index + 1);
+      if (index < list.length - 1) navigateTo("chapter", index + 1);
     };
 
     updateActiveLink(index);
@@ -124,7 +165,7 @@
         '<span class="num">—</span><span>Sinopse</span>' +
       "</button>";
 
-    book.chapters.forEach(function (ch, i) {
+    chapters().forEach(function (ch, i) {
       html +=
         '<button class="chapter-link" data-chapter="' + i + '" type="button">' +
           '<span class="num">' + pad(ch.number) + "</span>" +
@@ -173,6 +214,43 @@
     }
   }
 
+  function buildVersionSelect() {
+    if (!versionSelect) return;
+    if (versions.length <= 1) {
+      if (versionWrap) versionWrap.hidden = true;
+      return;
+    }
+
+    versionSelect.innerHTML = versions.map(function (v) {
+      return '<option value="' + v.id + '">' + (v.label || ("Versão " + v.id)) + "</option>";
+    }).join("");
+    versionSelect.value = activeVersionId;
+
+    versionSelect.addEventListener("change", function () {
+      changeVersion(versionSelect.value);
+    });
+  }
+
+  function changeVersion(id) {
+    var v = resolveVersion(id);
+    if (!v) return;
+
+    activeVersion = v;
+    activeVersionId = id;
+    localStorage.setItem(VERSION_KEY, id);
+
+    buildIndex();
+    updateDownloadLinks();
+
+    // Stay on the same chapter index if it exists in the new version, else go to cover.
+    var route = getRoute();
+    if (route.view === "chapter" && !chapters()[route.index]) {
+      navigateTo("cover");
+    } else {
+      render();
+    }
+  }
+
   function updateProgress() {
     var scrollTop = window.scrollY;
     var docHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -201,18 +279,47 @@
     if (!isNaN(saved)) setFontSize(saved);
   }
 
-  function initDownloads() {
+  function fileHref(file) {
+    return DOWNLOADS_BASE + String(file.path).replace(/^downloads\//, "");
+  }
+
+  function currentFiles() {
+    if (!manifestData) return null;
+    var bm = manifestData.books && manifestData.books[BOOK_SLUG];
+    if (bm) {
+      if (bm.versions && bm.versions[activeVersionId]) {
+        return bm.versions[activeVersionId].files;
+      }
+      return bm.files;
+    }
+    return manifestData.files;
+  }
+
+  function updateDownloadLinks() {
     var map = { pdf: "dlPdf", epub: "dlEpub", docx: "dlDocx" };
-    fetch(DOWNLOADS_BASE + "manifest.json")
+    var files = currentFiles();
+    if (!files) return;
+
+    Object.keys(map).forEach(function (key) {
+      var el = document.getElementById(map[key]);
+      var file = files[key];
+      if (!el || !file) return;
+      el.href = fileHref(file);
+      if (file.available === false) {
+        el.classList.add("unavailable");
+      } else {
+        el.classList.remove("unavailable");
+      }
+    });
+  }
+
+  function initDownloads() {
+    fetch(DOWNLOADS_BASE + "manifest.json", { cache: "no-store" })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (manifest) {
-        if (!manifest || !manifest.files) return;
-        Object.keys(map).forEach(function (key) {
-          var el = document.getElementById(map[key]);
-          var file = manifest.files[key];
-          if (!el || !file) return;
-          if (!file.available) el.classList.add("unavailable");
-        });
+        if (!manifest) return;
+        manifestData = manifest;
+        updateDownloadLinks();
       })
       .catch(function () { /* offline ou file:// — links permanecem ativos */ });
   }
@@ -240,24 +347,15 @@
 
     if (e.key === "ArrowLeft" && route.index > 0) {
       navigateTo("chapter", route.index - 1);
-    } else if (e.key === "ArrowRight" && route.index < book.chapters.length - 1) {
+    } else if (e.key === "ArrowRight" && route.index < chapters().length - 1) {
       navigateTo("chapter", route.index + 1);
     }
   });
 
+  initVersion();
+  buildVersionSelect();
   buildIndex();
   initFontSize();
   initDownloads();
-
-  if (location.hash === "" || location.hash === "#/") {
-    var last = localStorage.getItem(STORAGE_KEY);
-    if (last !== null && book.chapters[parseInt(last, 10)]) {
-      /* mantém capa como entrada padrão; descomente para retomar leitura:
-      navigateTo("chapter", parseInt(last, 10));
-      return;
-      */
-    }
-  }
-
   render();
 })();

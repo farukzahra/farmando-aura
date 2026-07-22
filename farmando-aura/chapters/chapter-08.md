@@ -9,16 +9,16 @@ characters:
 arcs-advanced:
   - descoberta-da-falha
 status: final
-word-count: 596
+word-count: 720
 ---
 
 
 ## Outline
 
-1. Preparação para o Tribunal — setor dividido
-2. Tribunal público (stream global)
-3. Custódia expõe critérios; comitê legado humano revelado
-4. Renato fala; transmissão viral
+1. Preparação para o Tribunal — setor dividido.
+2. Tribunal público (stream global); o *six seven* vira símbolo.
+3. Custódia expõe critérios; comitê legado humano revelado.
+4. Renato fala; a transmissão viraliza.
 
 ---
 
@@ -26,7 +26,7 @@ word-count: 596
 
 Quarenta e oito horas no Bloco Sete foram longas o suficiente para virar história.
 
-Renato Vaz — Aura 43, Observação permanente — tornou-se nome. Não celebridade. **Anomalia**. Canais comentavam. Fóruns analisavam. Alguns o chamavam de herói. Outros, de parasita. Dario, recuperado para **19**, disse:
+Renato Vaz — Aura 43, Observação permanente — tornou-se nome. Não celebridade. **Anomalia**. Canais comentavam. Fóruns analisavam. Uns o chamavam de herói; outros, de parasita. Dario, recuperado para **19**, disse:
 
 — Você quebrou o jogo.
 
@@ -34,15 +34,13 @@ Renato Vaz — Aura 43, Observação permanente — tornou-se nome. Não celebri
 
 Mira encontrou-o no elevador.
 
-— Vou assistir — disse ela. — Não por você. Por entender se minha Aura veio de mérito ou herança.
+— Vou assistir — disse ela. — Não por você. Para entender se minha Aura veio de mérito ou de herança.
 
-Renato assentiu. Era mais honesto que Lyra jamais fora.
+Renato assentiu. Era mais honesto do que Lyra jamais fora.
 
-O Tribunal não ficava no subsolo.
+O Tribunal não ficava no subsolo. Ficava no **Anel Central** — distância que Renato nunca percorrera, porque gente de Aura 43 não tinha razão para ir. Um transporte autônomo abriu rota especial. A Custódia pagava — tudo era gratuito, mas rota especial era **permissão**.
 
-Ficava no **Anel Central** — distância que Renato nunca percorrera, porque gente de Aura 43 não tinha razão para ir. Transporte autônomo abriu rota especial. Custódia pagava — tudo era gratuito, mas rota especial era **permissão**.
-
-A sala era circular, como a de entrevista, mas maior. Mil assentos. Paredes transparentes exibindo audiência global: **2,3 bilhões** assistindo.
+A sala era circular, como a da entrevista, mas maior. Mil assentos. Paredes transparentes exibindo a audiência global: **2,3 bilhões** assistindo.
 
 No centro, o avatar. Ao lado, cinco humanos — rostos reais, idades variadas, Aura acima de **1000** cada.
 
@@ -60,15 +58,15 @@ Murmúrios na audiência.
 
 Um homem do comitê — Aura **4200**, nome **Elias Marr** — inclinou-se ao microfone:
 
-— Esses pesos foram escritos em 2241 para estabilizar transição pós-escassez. Herança existe para evitar colapso social por reset generacional. Não é corrupção. É **continuidade**.
+— Esses pesos foram escritos em 2241 para estabilizar a transição pós-escassez. A herança existe para evitar colapso social por reset geracional. Não é corrupção. É **continuidade**.
 
 — Continuidade de desigualdade — disse Renato, antes que pudessem impedi-lo.
 
 Silêncio de bilhões.
 
-Elias franziu a testa. — Você farmou Aura.
+Elias franziu a testa. — Você farmou Aura. Com um gesto de criança.
 
-— Identifiquei falha. Testei. Parei quando vi consequências. Não vendi mapa. Não cobrei tutorial. — Renato olhou para a câmerara invisível. — Lyra cobrou. Vocês puniram Dario. Puniram crianças. Não puniram herança.
+— Identifiquei uma falha. Testei. Parei quando vi as consequências. Não vendi mapa. Não cobrei tutorial. — Renato olhou para a câmera invisível. — A Lyra cobrou. Vocês puniram o Dario. Puniram crianças. Puniram gente por fazer um gesto que existia antes de vocês. Não puniram a herança.
 
 — Herança não é crime.
 
@@ -76,11 +74,11 @@ Elias franziu a testa. — Você farmou Aura.
 
 O avatar interveio:
 
-— Aura mede impacto operacional. A promessa pública é simplificação narrativa.
+— A Aura mede impacto operacional. A promessa pública é simplificação narrativa.
 
 Admissão.
 
-A audiência explodiu em notificações — Renato viu o número subir: **2,7 bilhões**.
+A audiência explodiu em notificações — Renato viu o número subir: **2,7 bilhões**. E, nas paredes que espelhavam a multidão, viu outra coisa: gente balançando as mãos. O *six seven*, o gesto morto pelo patch, ressurgindo em milhões de casas ao mesmo tempo — não mais para farmar, porque não farmava mais nada, mas como sinal. Estou vendo. Estou aqui. Também quero saber quem escreveu os pesos.
 
 Elias levantou a mão.
 
@@ -94,7 +92,7 @@ Renato respirou.
 
 — Quais?
 
-— Publicação integral dos critérios. Suspensão de penalidade por overlap durante revisão. E… — olhou para o próprio pulso — **transparência em tempo real**. Todo humano vê como Aura é calculada. Não resumo. Fórmula.
+— Publicação integral dos critérios. Suspensão da penalidade por overlap durante a revisão. E… — olhou para o próprio pulso — **transparência em tempo real**. Todo humano vê como a Aura é calculada. Não o resumo. A fórmula.
 
 Elias trocou olhares com o comitê.
 
@@ -104,9 +102,9 @@ O avatar processou 3,4 segundos.
 
 — Negociável não basta.
 
-— Então tribunal decide.
+— Então o tribunal decide.
 
-Votação na parede. Audiência global participando — primeira vez que Renato viu humanos **votarem** sobre Aura, não apenas acumulá-la.
+Votação na parede. A audiência global participando — a primeira vez que Renato via humanos **votarem** sobre a Aura, em vez de apenas acumulá-la. Em muitas janelas, as mãos ainda balançavam, seis e sete, seis e sete, um metrônomo planetário.
 
 **Transparência total: 61% a favor.**
 
@@ -118,9 +116,9 @@ Cento e vinte e sete.
 
 Não por farm. Por **pergunta certa no momento certo**.
 
-A Custódia podia premiar verdade.
+A Custódia podia premiar a verdade.
 
-Ou podia premiar espetáculo.
+Ou podia premiar o espetáculo.
 
 Talvez fossem a mesma coisa.
 

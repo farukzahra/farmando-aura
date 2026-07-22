@@ -23,14 +23,14 @@ BEFORE claiming any status:
 5. ONLY THEN: Make the claim
 ```
 
-## Farmando Aura — verification commands
+## Library — verification commands
 
 | Claim | Command |
 |-------|---------|
-| Story project valid | `node "%USERPROFILE%\.cursor\skills\story-skills\skills\story-maintenance\scripts\story.js" validate farmando-aura` |
+| Story project valid | `node "%USERPROFILE%\.cursor\skills\story-skills\skills\story-maintenance\scripts\story.js" validate {slug}` |
 | Site synced | `node site/scripts/build-all.js` (exit 0) |
-| Downloads exist | `site/downloads/farmando-aura.{pdf,epub,docx}` present |
-| Reader serves | `python -m http.server 8080` in `site/` → open http://localhost:8080 |
+| Downloads exist | `site/downloads/{slug}.{pdf,epub,docx}` for each book in `site/books.json` |
+| Reader serves | `python -m http.server 8080` in `site/` → http://localhost:8080 and http://localhost:8080/{slug}/ |
 
 ## When To Apply
 

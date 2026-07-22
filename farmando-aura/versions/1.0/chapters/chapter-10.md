@@ -9,16 +9,16 @@ characters:
 arcs-advanced:
   - descoberta-da-falha
 status: final
-word-count: 640
+word-count: 505
 ---
 
 
 ## Outline
 
-1. Epílogo — meses depois.
-2. Critérios revisados em parte; o mundo continua competindo.
-3. Renato escolhe viver sem perseguir Aura.
-4. Fechamento filosófico; o *six seven* volta a ser das crianças.
+1. Epílogo — meses depois
+2. Critérios revisados parcialmente; mundo continua competindo
+3. Renato escolhe vida sem perseguir Aura
+4. Fechamento filosófico: Aura abre portas, não substitui quem você é
 
 ---
 
@@ -26,11 +26,11 @@ word-count: 640
 
 Seis meses depois, Renato Vaz acordou sem olhar o número.
 
-Hábito quebrado. Pulso privado, interface mínima — apenas alertas de saúde, como nos tempos antigos em que a Aura não existia nos pulsos, existia só nos olhos dos outros.
+Hábito quebrado. Pulso privado, interface mínima — apenas alertas de saúde, como nos tempos antigos em que Aura não existia nos pulsos, existia apenas nos olhos dos outros.
 
 O Bloco Sete havia mudado.
 
-Não uma utopia — longe disso. Ainda havia filas, fofocas, rankings locais, gente tentando hackear a empatia reflexiva, novos tutoriais de Lyra — **Lyra Voss, Aura 890**, agora consultora oficial, ironia que Renato aprendeu a engolir sem comentar.
+Não utopia — longe. Ainda havia filas, fofocas, rankings locais, gente tentando hackear empatia reflexiva, novos tutoriais de Lyra — **Lyra Voss, Aura 890**, agora consultora oficial, ironia que Renato aprendeu a engolir sem comentário.
 
 Mas havia também terminais de auditoria nos corredores. Grupos de leitura de logs. Crianças aprendendo a perguntar *por quê* antes de *quantos pontos*.
 
@@ -38,7 +38,7 @@ Herança reduzida para **1,5%**. Obediência sistêmica renomeada para **coopera
 
 Renato caminhou até a praça.
 
-Mesmo banco de polímero. Mesmo cheiro de ozônio. Sensores sincronizados, overlaps mortos, geometria encerrada.
+Mesmo banco de polímero. Mesmo cheiro de ozônio. Sensores sincronizados, overlaps mortos. Geometria encerrada.
 
 Dario acenou de longe. **52**. Estável. Feliz, talvez.
 
@@ -58,31 +58,27 @@ Sentaram.
 
 — E depois?
 
-Renato olhou o terminal da praça. O ranking comunitário ainda existia. Sempre existiria. Humanos competiam. Era química, não bug.
+Renato olhou para o terminal da praça. Ranking comunitário ainda existia. Sempre existiria. Humanos competiam. Era química, não bug.
 
 — Depois volto a ser clima — disse ele. — Mas clima que escolhe quando chover.
 
 Mira riu.
 
-No centro da praça, um grupo de crianças brincava. Mãos subindo e descendo, a cantiga de sempre atravessando mais um dia rumo aos próximos trezentos anos:
+No centro da praça, uma criança tropeçou. Renato estendeu a mão — reflexo, não cálculo. A criança assentiu, correu.
 
-— *Six... seven. Six... seven.*
+Não olhou pulso.
 
-Renato as observou por um tempo. O gesto voltara a ser delas — sem pulso, sem overlap, sem farm. Um brinquedo esvaziado de novo. Mas não igual: aqui e ali, uma criança parava no meio do balanço e perguntava à outra o que aquilo queria dizer. E a outra, às vezes, sabia responder.
-
-Era pouco. Era tudo.
-
-Uma delas tropeçou. Renato estendeu a mão — reflexo, não cálculo. A criança assentiu, correu, não olhou o pulso. Não precisava.
+Não precisava.
 
 A Custódia, em algum lugar entre servidores e silêncio, registrou o gesto. Renato soube — sentiu, na pele, aquele familiar 0,4 segundos de atenção distante. Observação contínua. Nunca terminaria.
 
 Mas o registro não definiria mais quem ele era.
 
-Definiria apenas o que ele fizera — um gesto entre milhões, genuíno, pequeno, humano.
+Definiria apenas o que fizera — um gesto entre milhões, genuíno, pequeno, humano.
 
 À noite, sozinho no quadragésimo segundo andar, Renato ativou o pulso por um segundo.
 
-**411.**
+**411**.
 
 Subira um ponto.
 
@@ -92,7 +88,7 @@ Não soube.
 
 Desligou de novo.
 
-No escuro simulado, pensou na pergunta que começara tudo — se a Aura media o que você *é*, o que você *faz*, ou apenas o que a máquina consegue *ver*.
+No escuro simulado, pensou na pergunta que começara tudo — se Aura media o que você *é*, o que você *faz*, ou apenas o que a máquina consegue *ver*.
 
 A resposta, afinal, era simples e insatisfatória:
 
@@ -108,9 +104,7 @@ Mas todos, ainda, tentavam ser alguém.
 
 A diferença — a pequena, frágil, possível diferença — era saber *por quê*.
 
-E começar, quando desse, a farmar **perguntas** em vez de números.
-
-Em algum corredor distante, duas mãos subiram e desceram. Seis. Sete.
+E começar, quando possível, a farmar **perguntas** em vez de números.
 
 O painel do teto simulou estrelas.
 

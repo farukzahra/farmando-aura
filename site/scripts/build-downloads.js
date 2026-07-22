@@ -1,103 +1,50 @@
 #!/usr/bin/env node
 /**
- * Build PDF, EPUB and DOCX into site/downloads/
- * Usage: node site/scripts/build-downloads.js
+ * Build PDF, EPUB and DOCX into site/downloads/ for all books in site/books.json
+ * Usage: node site/scripts/build-downloads.js [slug]
  */
 "use strict";
 
 const fs = require("fs");
 const path = require("path");
 const { execSync, spawnSync } = require("child_process");
+const {
+  ROOT,
+  loadRegistry,
+  resolveStoryDir,
+  resolveSynopsisFile,
+  loadChapterRecords,
+  loadSynopsis,
+  normalizeVersions,
+  defaultVersionId,
+  escapeHtml,
+  inlineMarkdown
+} = require("./lib/book-utils");
 
-const ROOT = path.resolve(__dirname, "../..");
-const STORY_ROOT = path.join(ROOT, "farmando-aura");
-const CHAPTERS_DIR = path.join(STORY_ROOT, "chapters");
 const DOWNLOADS_DIR = path.join(ROOT, "site/downloads");
 const STORY_CLI = path.join(
   process.env.USERPROFILE || "",
   ".cursor/skills/story-skills/skills/story-maintenance/scripts/story.js"
 );
 
-const SLUG = "farmando-aura";
-const TITLE = "Farmando Aura";
-
-function runNodeStory(args) {
+function runNodeStory(storyRoot, args) {
   if (!fs.existsSync(STORY_CLI)) {
     throw new Error(`Story CLI não encontrado: ${STORY_CLI}`);
   }
-  execSync(`node "${STORY_CLI}" ${args}`, { cwd: STORY_ROOT, stdio: "inherit" });
+  execSync(`node "${STORY_CLI}" ${args}`, { cwd: storyRoot, stdio: "inherit" });
 }
 
-function parseFrontmatter(text) {
-  const match = text.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-  if (!match) return { data: {}, body: text };
-  const data = {};
-  for (const line of match[1].split("\n")) {
-    const m = line.match(/^(\w[\w-]*):\s*"?(.+?)"?\s*$/);
-    if (m) data[m[1]] = m[2].replace(/^"|"$/g, "");
-  }
-  return { data, body: text.slice(match[0].length) };
-}
-
-function extractProse(body) {
-  const parts = body.split(/## Capítulo Texto\r?\n/i);
-  return (parts[1] || parts[0]).trim();
-}
-
-function escapeHtml(s) {
-  return s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-}
-
-function inlineHtml(text) {
-  return escapeHtml(text)
-    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-    .replace(/\*(.+?)\*/g, "<em>$1</em>");
-}
-
-function loadChapters() {
-  return fs
-    .readdirSync(CHAPTERS_DIR)
-    .filter((f) => /^chapter-\d+\.md$/i.test(f))
-    .sort()
-    .map((file) => {
-      const raw = fs.readFileSync(path.join(CHAPTERS_DIR, file), "utf8");
-      const { data, body } = parseFrontmatter(raw);
-      const prose = extractProse(body);
-      const number = parseInt(data.number || file.match(/\d+/)[0], 10);
-      return {
-        number,
-        title: data.title || `Capítulo ${number}`,
-        paragraphs: prose.split(/\n\n+/).map((p) => p.trim()).filter(Boolean)
-      };
-    });
-}
-
-function loadSynopsis() {
-  const file = path.join(ROOT, "sinopse-capa.md");
-  if (!fs.existsSync(file)) return [];
-  const raw = fs.readFileSync(file, "utf8");
-  return raw
-    .split(/\n\n+/)
-    .map((p) => p.replace(/\*\*/g, "").replace(/^>.*\n/m, "").trim())
-    .filter((p) => p && !p.startsWith("#") && !p.startsWith("---") && !p.startsWith("**Gênero"))
-    .slice(0, 5);
-}
-
-function buildPrintHtml(chapters, synopsis) {
-  const synHtml = synopsis.map((p) => `<p>${inlineHtml(p)}</p>`).join("\n");
+function buildPrintHtml(title, tagline, chapters, synopsis) {
+  const synHtml = synopsis.map((p) => `<p>${inlineMarkdown(p)}</p>`).join("\n");
   const chaptersHtml = chapters
     .map((ch) => {
       const paras = ch.paragraphs
         .map((para) => {
           const lines = para.split("\n");
           if (lines.length === 1 && (lines[0].startsWith("—") || lines[0].startsWith("- "))) {
-            return `<p class="dialogue">${inlineHtml(lines[0].replace(/^-\s/, "— "))}</p>`;
+            return `<p class="dialogue">${inlineMarkdown(lines[0].replace(/^-\s/, "— "))}</p>`;
           }
-          return `<p>${inlineHtml(lines.join(" "))}</p>`;
+          return `<p>${inlineMarkdown(lines.join(" "))}</p>`;
         })
         .join("\n");
       return `<section class="chapter">
@@ -112,7 +59,7 @@ function buildPrintHtml(chapters, synopsis) {
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>${escapeHtml(TITLE)}</title>
+  <title>${escapeHtml(title)}</title>
   <style>
     @page { margin: 2.2cm 2cm; size: A4; }
     * { box-sizing: border-box; }
@@ -183,8 +130,8 @@ function buildPrintHtml(chapters, synopsis) {
 </head>
 <body>
   <div class="title-page">
-    <h1>${escapeHtml(TITLE)}</h1>
-    <p class="tagline">Aura não compra nada. Aura abre portas.</p>
+    <h1>${escapeHtml(title)}</h1>
+    <p class="tagline">${escapeHtml(tagline)}</p>
     <div class="synopsis">${synHtml}</div>
   </div>
   ${chaptersHtml}
@@ -238,51 +185,159 @@ function buildPdf(printHtmlPath, outPdf) {
   return true;
 }
 
+function mirrorChapters(srcDir, destDir) {
+  fs.mkdirSync(destDir, { recursive: true });
+  for (const f of fs.readdirSync(destDir)) {
+    if (/\.md$/i.test(f)) fs.unlinkSync(path.join(destDir, f));
+  }
+  for (const f of fs.readdirSync(srcDir)) {
+    if (/\.md$/i.test(f)) fs.copyFileSync(path.join(srcDir, f), path.join(destDir, f));
+  }
+}
+
+function removeDir(dir) {
+  if (fs.existsSync(dir)) {
+    fs.rmSync(dir, { recursive: true, force: true, maxRetries: 5, retryDelay: 100 });
+  }
+}
+
+/** Build EPUB/DOCX/PDF for whatever is currently in storyRoot/chapters, suffixed by version. */
+function buildVersionArtifacts(book, versionId, storyRoot) {
+  const slug = book.slug;
+  const title = book.title;
+  const tagline = book.tagline || "";
+  const chaptersDir = path.join(storyRoot, "chapters");
+  const chapters = loadChapterRecords(chaptersDir);
+  const synopsis = loadSynopsis(resolveSynopsisFile(ROOT, book)).slice(0, 5);
+
+  const epubOut = path.join(DOWNLOADS_DIR, `${slug}-${versionId}.epub`);
+  const docxOut = path.join(DOWNLOADS_DIR, `${slug}-${versionId}.docx`);
+  const pdfOut = path.join(DOWNLOADS_DIR, `${slug}-${versionId}.pdf`);
+  const printHtmlPath = path.join(DOWNLOADS_DIR, `_${slug}-${versionId}-print.html`);
+
+  console.log(`\n[${slug} v${versionId}] Building EPUB…`);
+  runNodeStory(storyRoot, `build . --format epub --out "${epubOut}"`);
+
+  console.log(`[${slug} v${versionId}] Building DOCX…`);
+  runNodeStory(storyRoot, `build . --format docx --out "${docxOut}"`);
+
+  console.log(`[${slug} v${versionId}] Building PDF…`);
+  fs.writeFileSync(printHtmlPath, buildPrintHtml(title, tagline, chapters, synopsis), "utf8");
+  const pdfOk = buildPdf(printHtmlPath, pdfOut);
+  if (fs.existsSync(printHtmlPath)) fs.unlinkSync(printHtmlPath);
+
+  return {
+    chapters: chapters.length,
+    files: {
+      pdf: { path: `downloads/${slug}-${versionId}.pdf`, available: pdfOk },
+      epub: { path: `downloads/${slug}-${versionId}.epub`, available: fs.existsSync(epubOut) },
+      docx: { path: `downloads/${slug}-${versionId}.docx`, available: fs.existsSync(docxOut) }
+    }
+  };
+}
+
+/** Copy the current version's files to unsuffixed aliases (backward compat: {slug}.ext). */
+function aliasCurrent(slug, currentId) {
+  const out = {};
+  for (const ext of ["pdf", "epub", "docx"]) {
+    const src = path.join(DOWNLOADS_DIR, `${slug}-${currentId}.${ext}`);
+    const dest = path.join(DOWNLOADS_DIR, `${slug}.${ext}`);
+    if (fs.existsSync(src)) {
+      fs.copyFileSync(src, dest);
+      out[ext] = { path: `downloads/${slug}.${ext}`, available: true };
+    } else {
+      out[ext] = { path: `downloads/${slug}.${ext}`, available: false };
+    }
+  }
+  return out;
+}
+
+function buildBookDownloads(book) {
+  const slug = book.slug;
+  const title = book.title;
+  const versions = normalizeVersions(book);
+  const currentId = defaultVersionId(book);
+  const storyRoot = resolveStoryDir(ROOT, book);
+  const storyChapters = path.join(storyRoot, "chapters");
+  const backupDir = path.join(DOWNLOADS_DIR, `_${slug}-chapters-backup`);
+
+  const perVersion = {};
+  let currentChapters = 0;
+  let didSwap = false;
+
+  try {
+    for (const v of versions) {
+      const versionDir = path.join(ROOT, v.chaptersDir);
+      const isCurrentDir = path.resolve(versionDir) === path.resolve(storyChapters);
+
+      if (!isCurrentDir) {
+        if (!didSwap) {
+          mirrorChapters(storyChapters, backupDir);
+          didSwap = true;
+        }
+        mirrorChapters(versionDir, storyChapters);
+      }
+
+      const artifacts = buildVersionArtifacts(book, v.id, storyRoot);
+      perVersion[v.id] = { label: v.label, files: artifacts.files };
+      if (v.id === currentId) currentChapters = artifacts.chapters;
+    }
+  } finally {
+    if (didSwap) {
+      mirrorChapters(backupDir, storyChapters);
+      removeDir(backupDir);
+    }
+  }
+
+  const aliasFiles = aliasCurrent(slug, currentId);
+
+  return {
+    slug,
+    title,
+    chapters: currentChapters,
+    currentVersion: currentId,
+    versions: perVersion,
+    files: aliasFiles
+  };
+}
+
 function main() {
   fs.mkdirSync(DOWNLOADS_DIR, { recursive: true });
 
-  const chapters = loadChapters();
-  const synopsis = loadSynopsis();
+  const onlySlug = process.argv[2];
+  const books = loadRegistry(ROOT).filter((b) => !onlySlug || b.slug === onlySlug);
 
-  const epubOut = path.join(DOWNLOADS_DIR, `${SLUG}.epub`);
-  const docxOut = path.join(DOWNLOADS_DIR, `${SLUG}.docx`);
-  const pdfOut = path.join(DOWNLOADS_DIR, `${SLUG}.pdf`);
-  const printHtmlPath = path.join(DOWNLOADS_DIR, "_print.html");
-
-  console.log("Building EPUB…");
-  runNodeStory(`build . --format epub --out "${epubOut}"`);
-
-  console.log("Building DOCX…");
-  runNodeStory(`build . --format docx --out "${docxOut}"`);
-
-  console.log("Building PDF…");
-  fs.writeFileSync(printHtmlPath, buildPrintHtml(chapters, synopsis), "utf8");
-  const pdfOk = buildPdf(printHtmlPath, pdfOut);
-  if (pdfOk && fs.existsSync(printHtmlPath)) {
-    fs.unlinkSync(printHtmlPath);
+  if (onlySlug && books.length === 0) {
+    throw new Error(`Book not found in site/books.json: ${onlySlug}`);
   }
 
   const manifest = {
     generatedAt: new Date().toISOString(),
-    title: TITLE,
-    chapters: chapters.length,
-    files: {
-      pdf: { path: `downloads/${SLUG}.pdf`, available: pdfOk },
-      epub: { path: `downloads/${SLUG}.epub`, available: fs.existsSync(epubOut) },
-      docx: { path: `downloads/${SLUG}.docx`, available: fs.existsSync(docxOut) }
-    }
+    books: {}
   };
+
+  for (const book of books) {
+    const result = buildBookDownloads(book);
+    manifest.books[result.slug] = {
+      title: result.title,
+      chapters: result.chapters,
+      currentVersion: result.currentVersion,
+      versions: result.versions,
+      files: result.files
+    };
+
+    console.log(`\n[${result.slug}] Downloads prontos:`);
+    for (const [vid, v] of Object.entries(result.versions)) {
+      const ok = ["epub", "docx", "pdf"].filter((ext) => v.files[ext].available);
+      console.log(`  v${vid}: ${ok.length ? ok.join(", ") : "nenhum formato gerado"}`);
+    }
+  }
 
   fs.writeFileSync(
     path.join(DOWNLOADS_DIR, "manifest.json"),
     JSON.stringify(manifest, null, 2),
     "utf8"
   );
-
-  console.log("\nDownloads prontos em site/downloads/:");
-  if (manifest.files.epub.available) console.log(`  ✓ ${SLUG}.epub`);
-  if (manifest.files.docx.available) console.log(`  ✓ ${SLUG}.docx`);
-  if (manifest.files.pdf.available) console.log(`  ✓ ${SLUG}.pdf`);
 }
 
 main();

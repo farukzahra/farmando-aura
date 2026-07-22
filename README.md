@@ -1,8 +1,8 @@
-# Farmando Aura
+# Livros · faruk.dev.br
 
-Romance de ficção científica (2318): reputação universal medida por IAs, e um homem com Aura 3 que descobre como farmar o sistema.
+Biblioteca de ficção científica com leitor web estático. Cada livro é um projeto Story Skills + leitor em `site/{slug}/`.
 
-**Para agentes:** leia [`AGENTS.md`](AGENTS.md).
+**Para agentes:** leia [`AGENTS.md`](AGENTS.md). **Novo livro:** [`docs/novo-livro.md`](docs/novo-livro.md).
 
 ## Leitor web
 
@@ -11,22 +11,28 @@ cd site
 python -m http.server 8080
 ```
 
-Abra http://localhost:8080 — índice por capítulo, dark mode, download PDF/EPUB/DOCX no menu lateral.
+Abra http://localhost:8080 — estante com todos os livros registrados em `site/books.json`.
 
 ## Build
 
 ```bash
+# Todos os livros
 node site/scripts/build-all.js
+
+# Um livro só
+node site/scripts/build-all.js farmando-aura
 ```
 
-Sincroniza `site/js/chapters.js` e regenera os três formatos em `site/downloads/`.
+Sincroniza `site/js/{slug}/chapters.js`, regenera PDF/EPUB/DOCX e atualiza a estante.
 
 ## Estrutura
 
 | Pasta | Conteúdo |
 |-------|----------|
-| `farmando-aura/` | Capítulos markdown (Story Skills) |
-| `site/` | Leitor estático HTML/CSS/JS |
+| `site/books.json` | Registry de livros |
+| `{slug}/` | Capítulos markdown (Story Skills) |
+| `site/{slug}/` | Leitor HTML do livro |
+| `site/downloads/` | PDF, EPUB, DOCX por slug |
 | `docs/release-history.json` | Versionamento semântico |
 
 ## Workflow git

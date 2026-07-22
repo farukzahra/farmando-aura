@@ -19,29 +19,15 @@
     </header>
 
     <main class="shelf" aria-label="Catálogo de livros">
-      <ul class="shelf-list">
-        <li>
-          <a class="book" href="farmando-aura/" aria-label="Abrir Farmando Aura">
-            <span class="book-spine" aria-hidden="true"></span>
-            <span class="book-pages" aria-hidden="true"></span>
-            <span class="book-cover">
-              <span class="book-year">2318</span>
-              <span class="book-title">Farmando<br>Aura</span>
-              <span class="book-genre">Ficção científica</span>
-            </span>
-          </a>
-          <div class="book-info">
-            <h2 class="book-info-title"><a href="farmando-aura/">Farmando Aura</a></h2>
-            <p class="book-info-tagline">Aura não compra nada. Aura abre portas.</p>
-            <p class="book-info-meta">10 capítulos · distopia filosófica</p>
-          </div>
-        </li>
-      </ul>
+      <ul class="shelf-list" id="shelfList"></ul>
     </main>
 
     <footer class="library-footer">
       <span>Mais títulos em breve.</span>
     </footer>
   </div>
+
+  <script src="js/library-data.js"></script>
+  <script src="js/library.js"></script>
 </body>
 </html>

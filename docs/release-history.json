@@ -1,7 +1,15 @@
 {
-  "currentVersion": "1.1.0",
-  "updatedAt": "2026-07-21T19:05:00.000Z",
+  "currentVersion": "1.2.0",
+  "updatedAt": "2026-07-22T13:45:00.000Z",
   "entries": [
+    {
+      "version": "1.2.0",
+      "date": "2026-07-22",
+      "title": "Livros versionados e reescrita \u201cSix Seven\u201d",
+      "summary": "Cada livro passa a guardar m\u00faltiplas vers\u00f5es, com seletor no leitor e atribui\u00e7\u00e3o do modelo que gerou cada uma. Farmando Aura ganhou a v2.0, reescrita completa em que a descoberta do hack vira o gesto ritual \u201csix seven\u201d; a v1.0 (Composer 2.5) fica preservada para compara\u00e7\u00e3o. Downloads PDF/EPUB/DOCX por vers\u00e3o.",
+      "type": "feat",
+      "commit": null
+    },
     {
       "version": "1.1.0",
       "date": "2026-07-21",

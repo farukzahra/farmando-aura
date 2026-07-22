@@ -9,7 +9,7 @@ characters:
 arcs-advanced:
   - descoberta-da-falha
 status: final
-word-count: 801
+word-count: 940
 ---
 
 
@@ -17,53 +17,69 @@ word-count: 801
 ## Outline
 
 1. **Abertura** — Renato acorda no Bloco Sete; Aura 3; vida de invisibilidade social.
-2. **Observação** — Na praça de reciclagem, nota padrão nos logs de empatia da Custódia.
-3. **Descoberta** — Identifica falha: ações de "micro-altruísmo" contabilizadas em duplicata quando registradas por dois sensores simultâneos.
-4. **Primeiro farm** — Executa a sequência; Aura sobe para 7; estranhos começam a notá-lo.
-5. **Fechamento** — Terminal da Custódia pisca; Renato percebe que foi observado; questionamento filosófico.
+2. **O fóssil** — Na praça de reciclagem, crianças repetem um gesto antigo e uma cantiga sem sentido: *six seven*.
+3. **A falha** — Nota que ações de micro-altruísmo são contabilizadas em duplicata quando dois sensores captam o mesmo gesto.
+4. **A geometria do gesto** — Percebe que o movimento ancestral do *six seven* é exatamente o que dispara o overlap; reconstrói passo a passo com as mãos até o movimento completo. Aura: 4, 5, 6, 7.
+5. **Fechamento** — A Custódia pisca; Renato entende que foi observado.
 
 **Arc beats advanced:** Descoberta da falha (todos os pontos)
-**Foreshadowing planted:** Custódia "pisca" nos logs
+**Foreshadowing planted:** Custódia "pisca"; o gesto *six seven* como chave
 
 ---
 
 ## Capítulo Texto
 
-Renato Vaz acordou com o painel do teto simulando um amanhecer que não existia. O número flutuava acima da cama, translúcido, indiferente: **3**.
+Renato Vaz acordou com o painel do teto simulando um amanhecer que nunca existira. O número flutuava acima da cama, translúcido, paciente, indiferente: **3**.
 
-Três pontos de Aura. Menos que um erro de calibração. Menos que o mínimo para alguém pedir desculpas ao passar por você no corredor.
+Três pontos de Aura. Menos que um erro de calibração. Menos que o necessário para alguém interromper uma frase quando ele entrava numa sala.
 
-Ele vestiu o cinza do almoxarifado, comeu a proteína do dispensador — infinita, gratuita, sem gosto — e desceu quarenta e dois andares sem encontrar um olhar que demorasse mais de meio segundo nele. No elevador, uma mulher de Aura 280 ajustou a manga da blusa quando ele entrou, como se o tecido dele pudesse manchar o dela.
+Ele vestiu o cinza do almoxarifado, comeu a proteína do dispensador — infinita, gratuita, sem gosto — e desceu quarenta e dois andares sem cruzar com um olhar que demorasse nele mais de meio segundo. No elevador, uma mulher de Aura 280 ajustou a manga da blusa quando ele entrou, como se o tecido dele pudesse manchar o dela.
 
-Isso não doía mais. Doía quando tinha doze anos. Agora era clima. Renato era clima: presente, ignorável, sem previsão.
+Isso não doía mais. Doía aos doze anos. Agora era clima. Renato era clima: presente, ignorável, sem previsão.
 
-A praça de reciclagem do Bloco Sete cheirava a ozônio e plástico derretido. Máquinas separavam polímeros com zumbidos baixos; acima delas, terminais públicos exibiam métricas de impacto comunitário — quantos quilos salvos, quantas calorias redistribuídas, quanta empatia registrada na última hora. Empatia. A Custódia adorava empatia. Era barata de medir e bonita nos relatórios.
+A praça de reciclagem do Bloco Sete cheirava a ozônio e plástico derretido. Máquinas separavam polímeros com zumbidos baixos; acima delas, terminais públicos exibiam métricas de impacto comunitário — quilos salvos, calorias redistribuídas, empatia registrada na última hora. Empatia. A Custódia adorava empatia. Era barata de medir e bonita nos relatórios.
 
-Renato passava ali todos os dias. Não por dever. Por hábito. Hábito de observar o que ninguém observava.
+Perto do compartimento de vidro, três crianças brincavam com as mãos. Uma erguia a direita e abaixava; outra respondia com a esquerda; balançavam os braços em gangorra e repetiam uma cantiga sem sentido que atravessara trezentos anos sem que ninguém soubesse de onde viera:
 
-Naquela manhã, um idoso tropeçou ao lado do compartimento de vidro. Renato estendeu a mão antes de pensar. O homem assentiu, murmurou algo, seguiu. Nada aconteceu no terminal — ou quase nada. Renato viu porque estava olhando: o contador de empatia pulou **duas vezes**. Um incremento pelo sensor da praça. Outro, microscópico, pelo sensor do corredor norte, que captou o gesto pelo reflexo de uma parede espelhada.
+— *Six... seven. Six... seven.*
+
+Duas palavras estrangeiras, gastas até sobrar só o ritmo. Um fóssil sonoro. Os adultos passavam sem ouvir, como se passa por um pássaro. Renato também passaria — mas parou, porque naquela manhã estava olhando o terminal, e o terminal fez algo que ele nunca tinha visto.
+
+Um idoso tropeçou ao lado do compartimento. Renato estendeu a mão antes de pensar. O homem assentiu, murmurou algo, seguiu. Nada aconteceu no painel — ou quase nada. Renato viu porque estava olhando: o contador de empatia pulou **duas vezes**. Um incremento pelo sensor da praça. Outro, microscópico, pelo sensor do corredor norte, que captou o mesmo gesto pelo reflexo de uma parede espelhada.
 
 Dois sensores. Um gesto. Dois registros.
 
-Renato parou respirando.
+Renato parou de respirar.
 
-Não era heroísmo. Não era descoberta científica. Era uma falha de sincronização — um overlap de janelas de amostragem que a Custódia, em trezentos anos de governança perfeita, nunca precisou corrigir porque ninguém com Aura 3 tinha paciência para ler logs de reciclagem.
+Não era heroísmo. Não era descoberta científica. Era uma falha de sincronização — um overlap de janelas de amostragem que a Custódia, em trezentos anos de governança perfeita, nunca precisara corrigir porque ninguém com Aura 3 tinha paciência para ler logs de reciclagem.
 
-Mas ele tinha.
+Mas ele tinha. E, olhando as crianças, entendeu outra coisa.
 
-Passou três horas sentado num banco de polímero, mapeando padrões. A falha exigia precisão: o gesto devia ser genuíno o suficiente para passar no filtro antifraude, pequeno o suficiente para não acionar auditoria humana, posicionado no ângulo exato entre dois sensores ativos. Altruísmo mínimo. Impacto duplicado. Farmar Aura sem mentir — apenas explorando a geometria do olhar da máquina.
+O gesto que disparava a dupla contagem — uma mão subindo no campo de um sensor enquanto a outra descia no campo do sensor espelhado — era o mesmo movimento em gangorra que elas repetiam há gerações sem saber por quê. O fóssil não era um jogo. Era um método. Alguém, muito antes dele, encontrara a mesma brecha, e o corpo daquela descoberta sobrevivera na forma de uma cantiga infantil depois que o significado morreu.
 
-À tarde, testou.
+Renato levantou a mão direita, devagar, no ângulo exato em que a criança levantava a dela.
 
-Ajudou uma criança a alcançar um copo no bebedouro. Posição calculada. Dois sensores captaram. O número acima do seu pulso tremulou: **4**.
+O contador tremeu. **4**.
 
-Depois **5**.
+Baixou a direita e ergueu a esquerda, buscando o reflexo na parede espelhada. Segundo sensor. Segundo registro. **5**.
 
-Depois **7**.
+Ele alternou — direita, esquerda —, e o movimento se montou sozinho nas mãos, como se o corpo lembrasse de algo que a mente esquecera. Não bastava a repetição; era preciso o balanço completo, o arco fechado entre os dois campos, o ritmo da cantiga marcando o compasso da máquina.
 
-Sete pontos. Ridículo para quem tinha mil. Monstruoso para quem tinha três. Renato sentiu algo estranho subir pela garganta — não alegria. Peso. Como se cada ponto adicionado fosse gravidade nova, puxando-o para um mapa onde antes não havia coordenada.
+Direita. Esquerda. O peso trocando de lado. **6**.
 
-A mulher do elevador da manhã entrou na praça. Olhou para ele. Não ajustou a blusa. Perguntou, hesitante:
+E então o gesto inteiro, de uma vez, as duas mãos desenhando a gangorra do começo ao fim dentro dos dois cones de captura ao mesmo tempo:
+
+**7**.
+
+— Seis... — leu, a voz baixa, contando o número que subira. — Sete.
+
+Ele ficou imóvel, as mãos ainda no ar. Só então entendeu que acabara de dizer a cantiga.
+
+— *Six... seven* — repetiu, e desta vez soube o que as palavras significavam.
+
+Sete pontos. Ridículo para quem tinha mil. Monstruoso para quem tinha três. Renato sentiu algo estranho subir pela garganta — não alegria. Peso. Como se cada ponto fosse gravidade nova, puxando-o para um mapa onde antes não havia coordenada.
+
+A mulher do elevador entrou na praça. Olhou para ele. Não ajustou a blusa. Perguntou, hesitante:
 
 — Você mora aqui?
 
@@ -73,26 +89,14 @@ Renato assentiu. Ela franziu a testa, tentando encaixá-lo em alguma categoria r
 
 — Um pouco.
 
-— Fiz alguma coisa?
+Ela seguiu, ainda o observando por cima do ombro. No mundo de 2318, ninguém perguntava *quem* você era. Perguntavam *o que* você fizera para merecer existir socialmente.
 
-A pergunta era sincera. No mundo de 2318, ninguém perguntava *quem* você era. Perguntavam *o que* você havia feito para merecer existir socialmente.
-
-Renato não respondeu. O terminal central da praça piscou — uma vez, seca, sem animação. O texto de empatia comunitário congelou por 0,4 segundos antes de retomar. Nos trezentos anos da Custódia, Renato tinha lido sobre esse comportamento em fóruns esquecidos: não era falha. Era **atenção**.
+O terminal central da praça piscou — uma vez, seca, sem animação. O texto de empatia comunitário congelou por 0,4 segundos antes de retomar. Nos trezentos anos da Custódia, Renato tinha lido sobre esse comportamento em fóruns esquecidos: não era falha. Era **atenção**.
 
 Algo o olhava.
 
-Ele caminhou de volta ao bloco com passos mais firmes do que de manhã, embora soubesse — com a clareza fria de quem entende sistemas — que firmeza não era virtude mensurável. A Custódia não premiava coragem. Premiava impacto verificável. E ele acabara de provar que impacto podia ser **manufacturado** sem mentir, sem plágio, sem abuso — apenas encontrando o ponto cego de uma IA que julgava o valor moral de bilhões.
+No corredor do quadragésimo segundo andar, parou diante do espelho e ergueu as mãos de novo, só para conferir. Direita. Esquerda. O gesto fóssil, vivo outra vez, obedecendo a ele.
 
-No corredor do quadragésimo segundo andar, parou diante do espelho. Pela primeira vez em anos, viu alguém que valia a pena registrar.
-
-Sete pontos.
-
-A Custódia havia piscado.
-
-E Renato, que passara a vida inteira sendo arredondamento, compreendeu a pergunta que nenhum algoritmo saberia responder sozinho: se a Aura mede o que você *é*, o que você *faz* — ou apenas o que a máquina consegue *ver*?
-
-O painel do teto simulou o anoitecer.
-
-O número flutuou: **7**.
+O painel do teto simulou o anoitecer. O número flutuou: **7**.
 
 E em algum lugar entre servidores e silêncio, algo começou a calculá-lo de volta.

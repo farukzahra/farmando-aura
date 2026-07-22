@@ -24,13 +24,13 @@ Read the diff. Decide if this is a user-visible deliverable that needs a version
 
 ## Step 2 — Pre-commit build (when content changed)
 
-If any file under `farmando-aura/chapters/` or `sinopse-capa.md` changed:
+If any file under `{slug}/chapters/` or `{slug}/sinopse-capa.md` (any book in `site/books.json`) changed:
 
 ```bash
 node site/scripts/build-all.js
 ```
 
-Include updated `site/js/chapters.js` and `site/downloads/*` in the commit.
+Include updated `site/js/{slug}/chapters.js`, `site/js/library-data.js`, and `site/downloads/*` in the commit.
 
 ## Step 3 — Version bump (`semantic-version` skill)
 
