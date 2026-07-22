@@ -8,7 +8,7 @@
       "title": "Farmando Aura v3.0 — Revisão Editorial",
       "summary": "Nova versão do livro (v3.0) sobre a v2.0, seguindo recomendações editoriais: Tribunal dos Critérios expandido com audiência que cresce em ondas e embate filosófico mais longo; arcos de Lyra (virada para consultora agora semeada) e Mira (audita a própria Aura e age) aprofundados; impacto do guia de auditoria mostrado em outros blocos. A v2.0 fica preservada para comparação. Downloads PDF/EPUB/DOCX por versão.",
       "type": "feat",
-      "commit": null
+      "commit": "6553c87"
     },
     {
       "version": "1.2.0",
