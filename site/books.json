@@ -12,14 +12,22 @@
       "subGenre": "distopia filosófica",
       "era": "2318",
       "meta": ["Ficção científica", "Distopia filosófica", "2318"],
-      "defaultVersion": "2.0",
+      "defaultVersion": "3.0",
       "versions": [
+        {
+          "id": "3.0",
+          "label": "3.0 — Revisão Editorial",
+          "date": "2026-07",
+          "chaptersDir": "farmando-aura/chapters",
+          "current": true,
+          "model": "Claude Opus 4.8",
+          "summary": "Revisão editorial sobre a v2.0: Tribunal expandido com audiência crescente, arcos de Lyra e Mira aprofundados e o impacto do guia de auditoria mostrado em outros blocos."
+        },
         {
           "id": "2.0",
           "label": "2.0 — Six Seven",
           "date": "2026-07",
-          "chaptersDir": "farmando-aura/chapters",
-          "current": true,
+          "chaptersDir": "farmando-aura/versions/2.0/chapters",
           "model": "Claude Opus 4.8",
           "summary": "Reescrita completa. A descoberta do hack vira um gesto ritual: o \"six seven\"."
         },

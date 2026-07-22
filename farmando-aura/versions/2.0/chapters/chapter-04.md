@@ -9,7 +9,7 @@ characters:
 arcs-advanced:
   - descoberta-da-falha
 status: final
-word-count: 760
+word-count: 660
 ---
 
 
@@ -95,10 +95,6 @@ Lyra apareceu na borda da praça, sorrindo como quem vê o incêndio e já pensa
 — Não funciona assim — disse ele. — Não é transferível. É geometria. Timing. Quando muitos copiam, vira padrão. E padrão a máquina aprende.
 
 Lyra inclinou a cabeça. — Então você sabe mais que eles. Isso vale mais que Aura.
-
-— Sabe o que eu faço com quem sabe mais que os outros? — ela continuou, baixando a voz, quase gentil. — Eu não brigo. Eu viro a ponte. Hoje eu vendo o teu truque no meu canal. Amanhã, se a Custódia fechar tudo, eu vendo pra Custódia o mapa de quem farmou. Depois de amanhã, vendo aos dois o serviço de arrumar a bagunça. — Deu de ombros. — Sempre tem um lado ganhando, Renato. Eu só faço questão de estar no que sobra.
-
-Foi a primeira vez que ele viu, inteira, a mecânica dela. Lyra não tinha lado. Tinha direção — a do vento. E o vento, ele começava a sentir, estava prestes a virar.
 
 Renato recuou.
 

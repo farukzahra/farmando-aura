@@ -10,8 +10,8 @@ window.LIBRARY = {
       "subGenre": "distopia filosófica",
       "era": "2318",
       "chapters": 10,
-      "currentVersion": "2.0",
-      "versionCount": 2
+      "currentVersion": "3.0",
+      "versionCount": 3
     }
   ]
 };

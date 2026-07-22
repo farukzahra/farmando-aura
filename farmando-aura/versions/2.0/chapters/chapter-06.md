@@ -9,7 +9,7 @@ characters:
 arcs-advanced:
   - descoberta-da-falha
 status: final
-word-count: 730
+word-count: 640
 ---
 
 
@@ -54,11 +54,7 @@ Lyra interceptou-o no corredor da praça.
 
 — Em influência. — Lyra sorriu. — Aura é número. Influência é quem controla o número. Você deu um nome novo a um gesto velho. Sabe o que é isso? É fundar uma igreja.
 
-— Então funda a sua — disse Renato.
-
-— Já fundei. — O sorriso não vacilou. — Só me falta o texto sagrado, que é o teu mapa. Sem ele, minha igreja é fé sem milagre. — Ela se aproximou, a voz caindo para um tom de confidência que não era confiança, era estratégia. — E já mandei mensagem pro Núcleo, sabia? Ofereci moderar o canal. Ajudar a "estabilizar o setor". Ainda não responderam. Mas vão. Sempre respondem pra quem oferece ordem no meio do caos.
-
-Renato contornou-a. Mas a frase ficou grudada. *Ordem no meio do caos.* Ela já estava vendendo o incêndio como se fosse o bombeiro — e o pior é que Renato sabia que ia funcionar.
+Renato contornou-a.
 
 Passou o dia nos terminais públicos — não farmando, **lendo**. Logs de manutenção. Históricos de sensor. Relatórios comunitários que ninguém abria desde 2290. Era o que sabia fazer: ser invisível e olhar.
 

@@ -9,7 +9,7 @@ characters:
 arcs-advanced:
   - descoberta-da-falha
 status: final
-word-count: 750
+word-count: 660
 ---
 
 
@@ -62,11 +62,7 @@ Renato não respondeu. Sentiu o frio de ter sido lido pela metade.
 
 Lyra inclinou a cabeça, estudando-o como quem avalia um investimento. — A Custódia está observando o setor. Isso significa duas coisas: ou vão premiar alguém, ou vão punir. Se for premiar, quero estar perto. Se for punir… — deu de ombros — prefiro não estar sozinha.
 
-— Você fala como quem já caiu — disse Renato.
-
-Ela não negou. Por um segundo, o cálculo saiu do rosto e sobrou só a pessoa. — Nasci com dezoito. Subi cada ponto arranhando parede. Sei exatamente quanto pesa despencar, porque despenquei uma vez, aos vinte e dois, e passei três anos sendo clima como você. — O sorriso voltou, mas mais fino. — Nunca mais. Entende? Qualquer brecha que me segure lá em cima, eu agarro com as duas mãos.
-
-Ele entendeu então o que a Aura fazia às pessoas. Não apenas as elevava. As tornava calculistas — e, por baixo do cálculo, apavoradas. Lyra não queria amizade. Queria não cair. Era quase compreensível. Era isso que a tornava perigosa.
+Ele entendeu então o que a Aura fazia às pessoas. Não apenas as elevava. As tornava calculistas. Lyra não queria amizade. Queria posição relativa.
 
 Renato saiu do Fórum antes do discurso de abertura.
 

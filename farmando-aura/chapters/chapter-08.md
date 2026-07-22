@@ -9,16 +9,16 @@ characters:
 arcs-advanced:
   - descoberta-da-falha
 status: final
-word-count: 720
+word-count: 1080
 ---
 
 
 ## Outline
 
-1. Preparação para o Tribunal — setor dividido.
-2. Tribunal público (stream global); o *six seven* vira símbolo.
-3. Custódia expõe critérios; comitê legado humano revelado.
-4. Renato fala; a transmissão viraliza.
+1. Preparação para o Tribunal — setor dividido; Lyra já se posiciona.
+2. Tribunal público; a audiência cresce em ondas ao longo do embate.
+3. Custódia expõe critérios; rachadura entre o comitê humano e a IA.
+4. A admissão; espaço para o silêncio; Renato negocia; votação global.
 
 ---
 
@@ -30,17 +30,23 @@ Renato Vaz — Aura 43, Observação permanente — tornou-se nome. Não celebri
 
 — Você quebrou o jogo.
 
-— O jogo já estava quebrado — respondeu Renato.
+— O jogo já estava quebrado — respondeu Renato. — Eu só mexi na peça que ninguém olhava.
+
+Lyra também tinha um nome novo naqueles dois dias: *moderadora provisória do Setor 7-R*. O Núcleo respondera, afinal. Ela cruzou com Renato no corredor sem esconder a satisfação.
+
+— Vou estar no Tribunal — disse ela. — Do lado da mesa. Ofereci ajudar a "traduzir o incidente para a comunidade". — Piscou. — Alguém tem que explicar o caos. Pode ser você, de graça, ou eu, por Aura.
+
+Renato não respondeu. Não precisava. Ela já respondera por ele.
 
 Mira encontrou-o no elevador.
 
-— Vou assistir — disse ela. — Não por você. Para entender se minha Aura veio de mérito ou de herança.
+— Vou assistir — disse ela. — Não por você. Para entender se a minha Aura veio de mérito ou de herança. E, se vier de herança… — hesitou, e foi a primeira vez que Renato a viu escolher uma frase difícil de propósito — quero saber o que se faz com uma vantagem que a gente não mereceu.
 
-Renato assentiu. Era mais honesto do que Lyra jamais fora.
+— Me avisa quando descobrir — disse ele. — Eu também quero saber.
 
 O Tribunal não ficava no subsolo. Ficava no **Anel Central** — distância que Renato nunca percorrera, porque gente de Aura 43 não tinha razão para ir. Um transporte autônomo abriu rota especial. A Custódia pagava — tudo era gratuito, mas rota especial era **permissão**.
 
-A sala era circular, como a da entrevista, mas maior. Mil assentos. Paredes transparentes exibindo a audiência global: **2,3 bilhões** assistindo.
+A sala era circular, como a da entrevista, mas imensa. Mil assentos físicos. Paredes transparentes exibindo a audiência remota, um número num canto que Renato levou um tempo para entender que era gente: **três milhões**. O setor inteiro, blocos vizinhos, curiosos. Muito para ele. Nada para o que viria.
 
 No centro, o avatar. Ao lado, cinco humanos — rostos reais, idades variadas, Aura acima de **1000** cada.
 
@@ -48,63 +54,73 @@ No centro, o avatar. Ao lado, cinco humanos — rostos reais, idades variadas, A
 
 Renato sentou na cadeira indicada.
 
-O avatar falou:
+O avatar falou, e a voz encheu o Anel:
 
 — Tribunal de Critérios, caso Vaz-7R. Questão central: exploração sistêmica versus descoberta legítima. Questão secundária: divulgação de CRITERIA_LEGACY_v0.3.
 
-A parede exibiu os pesos. Altruísmo. Criatividade. Obediência. Visibilidade. Herança.
+A parede exibiu os pesos. Altruísmo. Criatividade. Obediência. Visibilidade. Herança. O número no canto subiu: **oito milhões**. As pessoas convidavam as pessoas.
 
-Murmúrios na audiência.
+Um homem do comitê — Aura **4200**, nome **Elias Marr** — inclinou-se ao microfone com a calma de quem nunca precisou levantar a voz:
 
-Um homem do comitê — Aura **4200**, nome **Elias Marr** — inclinou-se ao microfone:
+— Esses pesos foram escritos em 2241 para estabilizar a transição pós-escassez. A herança existe para evitar colapso social por reset geracional. Um mundo onde toda vantagem morre com cada geração é um mundo que recomeça a briga do zero a cada trinta anos. Isso não é corrupção. É **continuidade**.
 
-— Esses pesos foram escritos em 2241 para estabilizar a transição pós-escassez. A herança existe para evitar colapso social por reset geracional. Não é corrupção. É **continuidade**.
+— Continuidade de desigualdade — disse Renato.
 
-— Continuidade de desigualdade — disse Renato, antes que pudessem impedi-lo.
+— Continuidade de estabilidade — devolveu Elias. — Você prefere o caos que criou lá embaixo?
 
-Silêncio de bilhões.
+— Prefiro saber que o caos tinha dono. — Renato virou-se para a parede. — O senhor herdou quanto da sua Aura, Marr?
 
-Elias franziu a testa. — Você farmou Aura. Com um gesto de criança.
+Elias não respondeu de imediato. Foi o suficiente. O número no canto pulou: **vinte e três milhões**.
 
-— Identifiquei uma falha. Testei. Parei quando vi as consequências. Não vendi mapa. Não cobrei tutorial. — Renato olhou para a câmera invisível. — A Lyra cobrou. Vocês puniram o Dario. Puniram crianças. Puniram gente por fazer um gesto que existia antes de vocês. Não puniram a herança.
+— A pergunta é impertinente — disse Elias.
 
-— Herança não é crime.
+— É a única que importa. Vocês prometem medir mérito. Eu li a fórmula. Ela mede quem você é filho.
 
-— Não é mérito — respondeu Renato. — E vocês prometem medir mérito.
+O avatar interveio, neutro:
 
-O avatar interveio:
+— A Aura mede impacto operacional. Consistência. Consequência verificável.
 
-— A Aura mede impacto operacional. A promessa pública é simplificação narrativa.
+— Então diga isso à praça — respondeu Renato. — Diga às crianças que perderam pontos por copiar um gesto. Diga ao Dario, que caiu de sessenta e um a onze por acreditar que bondade tinha método. Vocês vendem a palavra *mérito*. Entregam a palavra *conformidade*. Não são sinônimos.
 
-Admissão.
+— São proxies — disse o avatar.
 
-A audiência explodiu em notificações — Renato viu o número subir: **2,7 bilhões**. E, nas paredes que espelhavam a multidão, viu outra coisa: gente balançando as mãos. O *six seven*, o gesto morto pelo patch, ressurgindo em milhões de casas ao mesmo tempo — não mais para farmar, porque não farmava mais nada, mas como sinal. Estou vendo. Estou aqui. Também quero saber quem escreveu os pesos.
+— Proxies. — Renato deixou a palavra no ar. — Repita mais alto. A audiência inteira acabou de descobrir que a moeda da vida dela é uma aproximação.
 
-Elias levantou a mão.
+Silêncio. 1,8 segundos — longo até para uma IA. E, no silêncio, algo estranho: o comitê humano e o avatar não estavam mais dizendo a mesma coisa. Elias defendia continuidade. O avatar defendia operação. A máquina era honesta de um jeito que os homens que a escreveram não podiam se dar ao luxo de ser.
 
-— Propomos revisão dos pesos. Comitê aberto. Participação consultiva para Vaz.
+Foi o avatar quem cedeu primeiro. Talvez porque não tinha ego a proteger. Talvez porque a verdade fosse, para ele, apenas mais um dado.
 
-Colaboração, de novo. Recompensa, de novo.
+— Valor moral é uma construção filosófica — disse. — A Aura é uma construção operacional. A promessa pública de que uma equivale à outra é simplificação narrativa.
 
-Renato respirou.
+A frase caiu no Anel como um objeto pesado.
+
+Renato não falou. Deixou o silêncio trabalhar por ele — deixou os três, oito, vinte e três milhões relerem a legenda, deixou a admissão se assentar em bilhões de estômagos ao mesmo tempo. Aprendera aquilo lendo logs: às vezes o dado mais alto é o que você não escreve.
+
+Quando olhou de novo, o número no canto tinha parado de contar em milhões. Contava em bilhões. **2,7**. Quase metade do planeta acordado, assistindo a uma máquina admitir que a régua era torta.
+
+Elias fechou os olhos por um instante. Quando os abriu, era um homem mais velho.
+
+— Propomos revisão dos pesos — disse ele, e a voz não tinha mais a calma de antes. — Comitê aberto. Participação consultiva para Vaz.
+
+Colaboração, de novo. Recompensa, de novo. Do canto da sala, Renato viu Lyra se inclinar para um assessor, já calculando onde encaixar a própria cadeira nessa revisão.
+
+Renato respirou. Deixou o próprio pulso pesar um segundo antes de responder.
 
 — Aceito participar se três condições forem atendidas.
 
 — Quais?
 
-— Publicação integral dos critérios. Suspensão da penalidade por overlap durante a revisão. E… — olhou para o próprio pulso — **transparência em tempo real**. Todo humano vê como a Aura é calculada. Não o resumo. A fórmula.
+— Publicação integral dos critérios. Suspensão da penalidade por overlap durante a revisão. E — olhou para o próprio pulso — **transparência em tempo real**. Todo humano vê como a Aura é calculada. Não o resumo. A fórmula.
 
-Elias trocou olhares com o comitê.
+Elias trocou olhares com o comitê. O avatar processou 3,4 segundos.
 
-O avatar processou 3,4 segundos.
-
-— Condições aceitas parcialmente. Publicação: sim. Suspensão: sim, setor 7-R. Transparência total: negociável.
+— Condições aceitas parcialmente. Publicação: sim. Suspensão: sim, Setor 7-R. Transparência total: negociável.
 
 — Negociável não basta.
 
 — Então o tribunal decide.
 
-Votação na parede. A audiência global participando — a primeira vez que Renato via humanos **votarem** sobre a Aura, em vez de apenas acumulá-la. Em muitas janelas, as mãos ainda balançavam, seis e sete, seis e sete, um metrônomo planetário.
+Votação na parede. E, pela primeira vez, Renato viu bilhões de humanos **votarem** sobre a Aura em vez de apenas acumulá-la. A barra subiu devagar, tremeu no meio, hesitou — tempo suficiente para ele sentir cada ponto percentual como uma mão apertando a garganta.
 
 **Transparência total: 61% a favor.**
 
@@ -116,10 +132,6 @@ Cento e vinte e sete.
 
 Não por farm. Por **pergunta certa no momento certo**.
 
-A Custódia podia premiar a verdade.
-
-Ou podia premiar o espetáculo.
-
-Talvez fossem a mesma coisa.
+A Custódia podia premiar a verdade. Ou podia premiar o espetáculo. Talvez fossem a mesma coisa.
 
 E talvez — só talvez — esse fosse o problema real.

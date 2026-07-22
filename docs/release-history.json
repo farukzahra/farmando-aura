@@ -1,7 +1,15 @@
 {
-  "currentVersion": "1.2.0",
-  "updatedAt": "2026-07-22T13:45:00.000Z",
+  "currentVersion": "1.3.0",
+  "updatedAt": "2026-07-22T13:54:00.000Z",
   "entries": [
+    {
+      "version": "1.3.0",
+      "date": "2026-07-22",
+      "title": "Farmando Aura v3.0 — Revisão Editorial",
+      "summary": "Nova versão do livro (v3.0) sobre a v2.0, seguindo recomendações editoriais: Tribunal dos Critérios expandido com audiência que cresce em ondas e embate filosófico mais longo; arcos de Lyra (virada para consultora agora semeada) e Mira (audita a própria Aura e age) aprofundados; impacto do guia de auditoria mostrado em outros blocos. A v2.0 fica preservada para comparação. Downloads PDF/EPUB/DOCX por versão.",
+      "type": "feat",
+      "commit": null
+    },
     {
       "version": "1.2.0",
       "date": "2026-07-22",
