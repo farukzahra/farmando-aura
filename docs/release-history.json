@@ -8,7 +8,7 @@
       "title": "Farmando Aura v5.0 — Humanizer",
       "summary": "Nova versão do livro reescrita com a skill Humanizer (blader/humanizer) sobre a v4.0 YA: mesma trama e fatos, prosa mais direta para comparação lado a lado no leitor. Downloads PDF, EPUB e DOCX da v5.0; skill Humanizer adicionada ao repositório.",
       "type": "feat",
-      "commit": null
+      "commit": "738c632"
     },
     {
       "version": "1.4.0",
