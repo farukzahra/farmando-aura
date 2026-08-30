@@ -78,17 +78,29 @@ git commit -m "chore: link release entry to commit <sha>"
 
 ## Step 7 — Push
 
-```bash
-git push origin HEAD
+**Always** authenticate from `C:\repo\secrets\github\pat.txt` (line starting with `ghp_`). Do not ask the user for a PAT before reading that file. Fallback: `C:\repo\faruk\.env` → `GITHUB_TOKEN`.
+
+```powershell
+$pat = Get-Content C:\repo\secrets\github\pat.txt | Where-Object { $_ -match '^ghp_' } | Select-Object -First 1
+git push "https://x-access-token:$pat@github.com/farukzahra/farmando-aura.git" HEAD:main
 ```
 
-If upstream is not set:
+If `gh` is installed and authenticated, `git push origin HEAD` is fine.
 
-```bash
-git push -u origin HEAD
+If upstream is not set, add `-u` or set tracking after the first push.
+
+Never print or paste the token in chat.
+
+## Step 8 — Verify deploy
+
+After push, confirm CI and production (use PAT from `pat.txt` for GitHub API if `gh` is missing):
+
+```powershell
+# Actions: latest run for HEAD SHA → status completed, conclusion success
+# Production: curl -I https://livros.faruk.dev.br → 200
 ```
 
-## Step 8 — Confirm
+## Step 9 — Confirm
 
 Report to the user:
 

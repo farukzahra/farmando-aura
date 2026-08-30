@@ -42,13 +42,13 @@ O PAT **não** vai para secrets do repo. Serve só na sua máquina para rodar `g
 ### Onde está (local, gitignored)
 
 ```text
-C:\repo\financeiro\planos\vps-secrets\github-pat.txt
+C:\repo\secrets\github\pat.txt
 ```
 
 - Linhas 1–6: comentários
 - Linha 7+: token (`ghp_...`)
 
-Pasta `planos/vps-secrets/` está no `.gitignore` do repo financeiro.
+Pasta `C:\repo\secrets\` está no `.gitignore` do repo financeiro.
 
 ### Se precisar gerar um PAT novo
 
@@ -56,7 +56,9 @@ Pasta `planos/vps-secrets/` está no `.gitignore` do repo financeiro.
 2. **Fine-grained** ou **Classic** com escopo mínimo:
    - `repo` (ou acesso ao repo `farmando-aura`)
    - **Secrets: read and write** (para `gh secret set`)
-3. Copiar o token **uma vez** e salvar só em `github-pat.txt` local (nunca no git).
+3. Copiar o token **uma vez** e salvar em `C:\repo\secrets\github\pat.txt` (nunca no git).
+
+> **Agentes:** sempre ler o PAT daqui antes de `git push`, `gh` ou chamadas à API GitHub. Não usar `financeiro/planos/vps-secrets/` (migrado para `C:\repo\secrets\`).
 
 ### Instalar GitHub CLI (`gh`)
 
@@ -73,8 +75,8 @@ gh --version
 ### Onde está (local, gitignored)
 
 ```text
-C:\repo\financeiro\planos\vps-secrets\deploy_key       ← privada (secret VPS_SSH_KEY)
-C:\repo\financeiro\planos\vps-secrets\deploy_key.pub   ← pública (já na VPS)
+C:\repo\secrets\vps\ssh\github-actions-vps-shared       ← privada (secret VPS_SSH_KEY)
+C:\repo\secrets\vps\ssh\github-actions-vps-shared.pub   ← pública (já na VPS)
 ```
 
 Infra compartilhada: mesma chave usada por financeiro, faruk, job-hunter, etc.  
@@ -132,7 +134,7 @@ Na máquina de dev, com `gh` instalado:
 
 ```powershell
 # 1. Autenticar (token só da linha do PAT, sem comentários)
-Get-Content C:\repo\financeiro\planos\vps-secrets\github-pat.txt | Select-Object -Skip 6 | gh auth login --with-token
+Get-Content C:\repo\secrets\github\pat.txt | Select-Object -Skip 6 | gh auth login --with-token
 gh auth status
 
 # 2. Secrets públicos (IP, paths — ok commitar estes valores na doc)
@@ -142,7 +144,7 @@ gh secret set VPS_PORT --repo farukzahra/farmando-aura --body "22"
 gh secret set DEPLOY_PATH --repo farukzahra/farmando-aura --body "/opt/farmando-aura"
 
 # 3. Chave privada — NUNCA echoar no terminal log; pipe direto do arquivo
-Get-Content C:\repo\financeiro\planos\vps-secrets\deploy_key -Raw | gh secret set VPS_SSH_KEY --repo farukzahra/farmando-aura
+Get-Content C:\repo\secrets\vps\ssh\github-actions-vps-shared -Raw | gh secret set VPS_SSH_KEY --repo farukzahra/farmando-aura
 
 # 4. Variable opcional
 gh variable set DOMAIN --repo farukzahra/farmando-aura --body "livros.faruk.dev.br"
@@ -162,7 +164,7 @@ gh variable list --repo farukzahra/farmando-aura
 4. **Variables → New variable**: `DOMAIN` = `livros.faruk.dev.br`
 
 Referência de nomes (sem valores sensíveis):  
-`financeiro/planos/vps-secrets/github-secrets-copiar.txt` — adaptar `DEPLOY_PATH` para `/opt/farmando-aura`.  
+`secrets/github-secrets-copiar.txt` — adaptar `DEPLOY_PATH` para `/opt/farmando-aura`.  
 **Ignorar** `POSTGRES_PASSWORD` e `AUTH_AUTH` — não usados neste projeto estático.
 
 ---
@@ -209,7 +211,7 @@ Editar capítulo → node site/scripts/build-all.js → /commit-push → push ma
 
 ## 9. Checklist rápido
 
-- [ ] PAT em `github-pat.txt` (local, gitignored)
+- [ ] PAT em `C:\repo\secrets\github\pat.txt` (local, gitignored)
 - [ ] `gh auth login` ok
 - [ ] Secrets: `VPS_HOST`, `VPS_USER`, `VPS_PORT`, `DEPLOY_PATH`, `VPS_SSH_KEY`
 - [ ] Variable `DOMAIN` (opcional)

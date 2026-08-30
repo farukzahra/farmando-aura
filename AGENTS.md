@@ -33,7 +33,7 @@ story-init → scaffold-book → chapter-writing / plot-structure
 | Scaffold site | `node site/scripts/scaffold-book.js {slug} --model "..."` | Registry + reader; sets `coverImage`, `versions[].model` |
 | Write | `chapter-writing`, etc. | Markdown in `{slug}/chapters/` |
 | Sync site | `node site/scripts/build-all.js` | After every chapter create/revise |
-| Verify | `verification-before-completion` | Após push: `gh run list` + `curl -I https://livros.faruk.dev.br` |
+| Verify | `verification-before-completion` | Após push: Actions API (PAT em `C:\repo\secrets\github\pat.txt`) + `curl -I https://livros.faruk.dev.br` |
 | Commit | `caveman-commit` | English, Conventional Commits — **only** via `/commit-push` or explicit request |
 | Version | `semantic-version` | Bump `docs/release-history.json` — **only** inside `/commit-push` |
 
@@ -70,6 +70,25 @@ story-init → scaffold-book → chapter-writing / plot-structure
 - Never force-push to `main`
 - Never skip hooks unless explicitly requested
 - Do not commit secrets
+
+## Secrets (local — always use these)
+
+**Never** ask the user for PAT/SSH before checking `C:\repo\secrets\`. Do not use paths antigos (`financeiro/planos/vps-secrets/`, `github-pat.txt` solto no repo).
+
+| Secret | Caminho canônico |
+|--------|------------------|
+| GitHub PAT (`ghp_...`) | `C:\repo\secrets\github\pat.txt` (linha que começa com `ghp_`) |
+| Chave SSH deploy (`VPS_SSH_KEY`) | `C:\repo\secrets\vps\ssh\github-actions-vps-shared` |
+| Fallback PAT (outros repos) | `C:\repo\faruk\.env` → `GITHUB_TOKEN` |
+
+**Push / `gh` / API GitHub:** ler o PAT de `pat.txt` e usar sem expor o token no chat. Exemplo PowerShell:
+
+```powershell
+$pat = Get-Content C:\repo\secrets\github\pat.txt | Where-Object { $_ -match '^ghp_' } | Select-Object -First 1
+git push "https://x-access-token:$pat@github.com/farukzahra/farmando-aura.git" HEAD:main
+```
+
+**Pós-push:** validar Actions e produção (ver `verification-before-completion`). Detalhes: [`docs/github-actions-deploy.md`](docs/github-actions-deploy.md).
 
 ## Build commands
 

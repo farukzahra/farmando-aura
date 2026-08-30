@@ -13,7 +13,7 @@ Site estático em **https://livros.faruk.dev.br**.
 | Domínio | `livros.faruk.dev.br` |
 | Servir | Caddy `file_server` → `/opt/farmando-aura/site/` |
 
-Arquivos sensíveis (PAT, chave SSH): apenas local em `financeiro/planos/vps-secrets/` — **nunca commitar**.
+Arquivos sensíveis (PAT, chave SSH): **`C:\repo\secrets\`** (gitignored) — **nunca commitar**. Ver [`github-actions-deploy.md`](github-actions-deploy.md).
 
 ## DNS (Registro.br)
 
