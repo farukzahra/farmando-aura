@@ -25,6 +25,15 @@
           "summary": "Versão jovem-adulto: todo o elenco principal é adolescente (13–16 anos). Renato, Lyra, Mira, Dario e Elias Marr reescritos para leitores teen; comitê do Tribunal vira Embaixadores Jovens."
         },
         {
+          "id": "5.0",
+          "label": "5.0 — Humanizer",
+          "date": "2026-08",
+          "chaptersDir": "farmando-aura/versions/5.0/chapters",
+          "model": "Humanizer skill v2.11.2 (blader/humanizer)",
+          "synopsisFile": "farmando-aura/versions/5.0/sinopse-humanizer.md",
+          "summary": "Reescrita com a skill Humanizer sobre a v4.0: mesma trama e fatos, prosa mais direta, menos padrões típicos de texto de IA. Use junto com a 4.0 para comparar."
+        },
+        {
           "id": "3.0",
           "label": "3.0 — Revisão Editorial",
           "date": "2026-07",

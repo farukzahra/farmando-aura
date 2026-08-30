@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T14:36:33.784Z",
+  "generatedAt": "2026-08-30T11:17:43.018Z",
   "books": {
     "farmando-aura": {
       "title": "Farmando Aura",
@@ -19,6 +19,23 @@
             },
             "docx": {
               "path": "downloads/farmando-aura-4.0.docx",
+              "available": true
+            }
+          }
+        },
+        "5.0": {
+          "label": "5.0 — Humanizer",
+          "files": {
+            "pdf": {
+              "path": "downloads/farmando-aura-5.0.pdf",
+              "available": true
+            },
+            "epub": {
+              "path": "downloads/farmando-aura-5.0.epub",
+              "available": true
+            },
+            "docx": {
+              "path": "downloads/farmando-aura-5.0.docx",
               "available": true
             }
           }

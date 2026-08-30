@@ -11,7 +11,7 @@ window.LIBRARY = {
       "era": "2318",
       "chapters": 10,
       "currentVersion": "4.0",
-      "versionCount": 4
+      "versionCount": 5
     }
   ]
 };
