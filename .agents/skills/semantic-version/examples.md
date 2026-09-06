@@ -1,50 +1,50 @@
 # Examples
 
-## New chapter + reader update (minor bump)
+## New feature (minor bump)
 
-`currentVersion`: `0.1.0` → `0.2.0`
+`currentVersion`: `0.14.2` → `0.15.0`
 
 ```json
 {
-  "version": "0.2.0",
-  "date": "2026-07-21",
-  "title": "Capítulos 2–5 e leitor web",
-  "summary": "Quatro novos capítulos, índice por capítulo no site e dark mode.",
+  "version": "0.15.0",
+  "date": "2026-07-07",
+  "title": "Vuetify UI migration",
+  "summary": "Replaced PrimeVue with Vuetify 3 and a blue-orange theme while keeping tables, filters, and modals.",
   "type": "feat",
-  "commit": null
+  "commit": "9f3a1bc"
 }
 ```
 
-## Download formats (minor bump)
+## Bugfix (patch bump)
 
-`currentVersion`: `0.2.0` → `0.3.0`
-
-```json
-{
-  "version": "0.3.0",
-  "date": "2026-07-21",
-  "title": "Download PDF, EPUB e DOCX",
-  "summary": "Botões de download no menu lateral; build automático via script.",
-  "type": "feat",
-  "commit": null
-}
-```
-
-## Typo fix in chapter — patch bump
-
-`currentVersion`: `1.0.0` → `1.0.1`
+`currentVersion`: `0.15.0` → `0.15.1`
 
 ```json
 {
-  "version": "1.0.1",
-  "date": "2026-07-22",
-  "title": "Correções de texto no capítulo 3",
-  "summary": "Revisão de diálogos e sincronização do leitor e downloads.",
+  "version": "0.15.1",
+  "date": "2026-07-08",
+  "title": "Transactions table without pagination",
+  "summary": "The main transactions table now shows every row for the filtered period at once.",
   "type": "fix",
-  "commit": null
+  "commit": "c4e8120"
 }
 ```
 
 ## Internal refactor — no entry
 
-Changed sync script structure, no reader impact → **do not** edit `docs/release-history.json`.
+Changed service layer structure, no API or UI change → **do not** edit `docs/release-history.json`.
+
+## Breaking change (major bump)
+
+`currentVersion`: `0.15.6` → `1.0.0`
+
+```json
+{
+  "version": "1.0.0",
+  "date": "2026-07-10",
+  "title": "Category IDs are now UUIDs",
+  "summary": "Categories use stable UUID ids. Run the migration before deploying; CSV import mapping was updated.",
+  "type": "breaking",
+  "commit": "d71af02"
+}
+```

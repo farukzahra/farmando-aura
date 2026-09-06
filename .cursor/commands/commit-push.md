@@ -1,11 +1,11 @@
 # Commit and push
 
-Commit all staged/unstaged project changes and push to the tracked remote branch. Follow Farmando Aura git and versioning conventions.
+Commit project changes, push to the remote branch, wait for GitHub Actions when configured, and verify production with a real page check (not a health endpoint alone).
 
 ## Preconditions
 
-- User explicitly invoked `/commit-push` — you may commit and push.
-- Never commit secrets (`.env`, credentials, keys).
+- User invoked **`/commit-push`** or explicitly asked to commit and push.
+- Never commit secrets (`.env`, credentials, keys, PATs).
 - Never force-push to `main`/`master`.
 - Never skip hooks unless the user explicitly asked.
 - Never amend unless user rules allow it.
@@ -20,39 +20,30 @@ git log -5 --oneline
 git branch -vv
 ```
 
-Read the diff. Decide if this is a user-visible deliverable that needs a version bump.
+Read the diff. Decide whether a release-history bump is needed.
 
-## Step 2 — Pre-commit build (when content changed)
+## Step 2 — Version bump (`semantic-version` skill)
 
-If any file under `{slug}/chapters/` or `{slug}/sinopse-capa.md` (any book in `site/books.json`) changed:
+**Only when** `docs/release-history.json` exists in this repo.
 
-```bash
-node site/scripts/build-all.js
-```
+**This is the only step where the agent may bump version.** Do not edit `docs/release-history.json` outside `/commit-push`.
 
-Include updated `site/js/{slug}/chapters.js`, `site/js/library-data.js`, and `site/downloads/*` in the commit.
+Read and follow the **`semantic-version`** skill. If the change is user-visible (UI, API, behavior users notice) or a template deliverable (`AGENTS.md`, `docs/stack.md`, `.cursor/commands/`, new skills, etc.):
 
-## Step 3 — Version bump (`semantic-version` skill)
+1. Bump `docs/release-history.json` (feeds `/sobre` and changelogs).
+2. Include that file in the commit.
 
-**This is the only step where the agent may bump version.** Do not update `docs/release-history.json` during normal editing or commits outside `/commit-push`.
+Skip the bump for internal-only refactors, tests, CI-only changes, or docs with no user impact.
 
-If the change is user-visible (new/revised chapters, reader site, downloads, sinopse, AGENTS/docs):
+## Step 3 — Commit message (`caveman-commit` skill)
 
-1. Read `docs/release-history.json` (create at `0.1.0` if missing).
-2. Compute next `MAJOR.MINOR.PATCH` (feat → minor, fix → patch).
-3. Prepend a new entry (newest first) with `title` and `summary` in **Portuguese**.
-4. Update `currentVersion` and `updatedAt`.
-5. Include `docs/release-history.json` in the commit.
-
-Skip version bump for internal-only refactors with no reader impact.
-
-## Step 4 — Commit message (`caveman-commit` skill)
+Read and follow the **`caveman-commit`** skill.
 
 - Conventional Commits, **English**
 - Subject ≤50 chars when possible
 - Body only when "why" is not obvious
 
-## Step 5 — Commit
+## Step 4 — Commit
 
 ```bash
 git add <relevant files>
@@ -63,54 +54,81 @@ On Windows PowerShell, use a here-string for multi-line messages if needed.
 
 If nothing to commit, say so and stop — do not push.
 
-## Step 6 — Link release entry to commit
+## Step 5 — Link release entry to commit
 
-If `docs/release-history.json` was updated and the new entry has `"commit": null`:
+**After** the main commit, if `docs/release-history.json` was updated and the newest entry lacks `commit`:
 
-1. Get short SHA: `git rev-parse --short HEAD`
-2. Set `commit` on the new entry(ies) from this delivery
-3. Commit that fix:
+1. `git rev-parse --short HEAD`
+2. Set `commit` on the new entry
+3. Commit the link:
 
 ```bash
 git add docs/release-history.json
 git commit -m "chore: link release entry to commit <sha>"
 ```
 
-## Step 7 — Push
+## Step 6 — Push
 
-**Always** authenticate from `C:\repo\secrets\github\pat.txt` (line starting with `ghp_`). Do not ask the user for a PAT before reading that file. Fallback: `C:\repo\faruk\.env` → `GITHUB_TOKEN`.
-
-```powershell
-$pat = Get-Content C:\repo\secrets\github\pat.txt | Where-Object { $_ -match '^ghp_' } | Select-Object -First 1
-git push "https://x-access-token:$pat@github.com/farukzahra/farmando-aura.git" HEAD:main
+```bash
+git push origin HEAD
 ```
 
-If `gh` is installed and authenticated, `git push origin HEAD` is fine.
+If upstream is missing: `git push -u origin HEAD`.
 
-If upstream is not set, add `-u` or set tracking after the first push.
+**Push auth (Windows):** if HTTPS asks for a password and `gh` is unavailable, use PAT from `C:\repo\secrets\github\pat.txt` (line starting with `ghp_`).
 
-Never print or paste the token in chat.
+## Step 7 — GitHub Actions (when configured)
 
-## Step 8 — Verify deploy
+**Skip this step** if `.github/workflows/` does not exist.
 
-After push, confirm CI and production (use PAT from `pat.txt` for GitHub API if `gh` is missing):
+Deploy runs on GitHub Actions — do not SSH to VPS or run local deploy scripts as part of `/commit-push`.
+
+1. Resolve repo: `docs/commit-push.json` → `github.owner` + `github.repo`, else `git remote get-url origin`.
+2. Poll the workflow run for the pushed commit until success or timeout (~10 min):
 
 ```powershell
-# Actions: latest run for HEAD SHA → status completed, conclusion success
-# Production: curl -I https://livros.faruk.dev.br → 200
+& "C:\Program Files\GitHub CLI\gh.exe" run list --repo <owner>/<repo> --limit 5
+& "C:\Program Files\GitHub CLI\gh.exe" run watch --repo <owner>/<repo> --exit-status
 ```
 
-## Step 9 — Confirm
+Without `gh`: GitHub API with PAT from `C:\repo\secrets\github\pat.txt`.
 
-Report to the user:
+3. **If any required job fails:** read logs (`gh run view <id> --log-failed`), fix, commit, push, and repeat from Step 7. **Do not** report `/commit-push` done while Actions is red.
+
+## Step 8 — Verify production (real check)
+
+**Skip** when `docs/commit-push.json` has `"verify": null` or the repo has no production URL (libraries, templates, Android-only CI).
+
+Read **`docs/commit-push.json`** first (canonical per repo). Fallback order: `AGENTS.md` → `docs/deploy-vps.md` → `README.md`.
+
+### What counts as verification
+
+- Fetch the **`verifyUrl`** (or `productionUrl`) with HTTP GET.
+- Confirm **200** and that the page content matches **`expectInBody`** or **`expectTitle`** (product name, hero text, `<title>`, etc.).
+- **Do not** treat `/api/health` or `{"ok":true}` alone as sufficient when a user-facing URL is configured.
+- Optionally also hit a route mentioned in the release (e.g. `/sobre` after a version bump).
+
+### Android-only (`verify.type`: `android-ci`)
+
+No web URL. Confirm the **android-ci** (or named) workflow succeeded. Report Play Store / internal track notes from `AGENTS.md` if present.
+
+### Loop on failure
+
+If production check fails but Actions is green: investigate (cache, wrong branch, env), fix, push again, re-verify.
+
+## Step 9 — Report to user
+
+Always include:
 
 - Commit SHA(s) and message(s)
 - Branch pushed
 - New version from `release-history.json` if bumped
-- Remote URL if useful
+- **GitHub Actions:** run URL + status (or "no workflows in repo")
+- **Production:** the **`productionUrl`** from config — the URL you validated, what you checked on the page, and pass/fail
 
 ## Failures
 
-- Pre-commit hook failed → fix issues, **new commit** (never amend a failed hook commit unless user rules allow)
-- Push rejected → report error; do not force-push
-- No remote → tell user to add `origin` or run `git init` first
+- Pre-commit hook failed → fix, **new commit** (never amend a failed hook unless user rules allow)
+- Push rejected → report; do not force-push
+- No remote → tell user to add `origin`
+- Actions or production red → fix and re-push before closing

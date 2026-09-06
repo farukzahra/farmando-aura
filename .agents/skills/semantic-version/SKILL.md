@@ -7,20 +7,21 @@ description: Maintains a project release history JSON file with semantic version
 
 Maintain a single JSON file on disk that records product version and release entries. No database, no UI — the file is the source of truth for About screens, changelogs, or tooling to consume later.
 
-## Farmando Aura — when to bump
+## Faruk Base — when to bump
 
-In **Farmando Aura** (this repo):
+In **Faruk Base** (this template repo):
 
-- **Do not** update `docs/release-history.json` while editing chapters, site, or plans.
+- **Do not** update `docs/release-history.json` while editing docs, specs, plans, or code.
 - **Only** bump version when the user invokes **`/commit-push`** (or explicitly asks to record a release without that command).
 - Pair with `caveman-commit` in the same `/commit-push` run.
-- User-visible deliverables: new/revised chapters, reader site, PDF/EPUB/DOCX downloads, sinopse, public docs.
 
 ## Canonical file
 
 **Path:** `docs/release-history.json`
 
 Create `docs/` if missing. Never split history across multiple files.
+
+If the project already has `docs/release-history.json`, use it. Do not rename or relocate without explicit user request.
 
 ## JSON schema
 
@@ -78,6 +79,8 @@ Update `docs/release-history.json` in the **same `/commit-push` run** when:
 
 Do **not** update during normal editing, planning, or commits outside `/commit-push`.
 
+Do **not** update for: formatting, comments, dev-only config, test-only changes, or dependency bumps with no behavioral change.
+
 ## Workflow
 
 1. Read `docs/release-history.json` (create from template if absent).
@@ -86,9 +89,17 @@ Do **not** update during normal editing, planning, or commits outside `/commit-p
 4. Compute next version from `currentVersion` and bump rules.
 5. Prepend a new entry to `entries` with `version`, `date`, `title`, `summary`, `type`.
 6. Set `currentVersion` and `updatedAt`.
-7. After commit, add `commit` (short SHA) to the new entry if it was omitted.
+7. Align `package.json` / app manifests with `currentVersion` when those files exist in the project.
+8. After commit, add `commit` (short SHA) to the new entry if it was omitted.
 
-Pair with **caveman-commit** for the git message; the release `title`/`summary` are user-facing (Portuguese), not the commit subject (English).
+Pair with **caveman-commit** for the git message; the release `title`/`summary` are user-facing, not the commit subject.
+
+## Writing entries
+
+- **title**: what shipped — "Editable category codes", not "Update CategoryView.vue".
+- **summary**: why it matters — scope, migration notes, breaking behavior.
+- Match the project's UI language (Portuguese or English) for `title` and `summary`; keep JSON keys in English.
+- One entry per shipped version, not one per commit (unless each commit is a release).
 
 ## Validation checklist
 
@@ -98,7 +109,22 @@ Before finishing:
 - [ ] Version has exactly three numeric parts
 - [ ] Entries sorted newest-first
 - [ ] No duplicate `version` values
+- [ ] `type` is a allowed value
 - [ ] JSON is valid and pretty-printed with 2-space indent
+
+## Initializing a new project
+
+When the file does not exist:
+
+```json
+{
+  "currentVersion": "0.1.0",
+  "updatedAt": "2026-07-07T00:00:00.000Z",
+  "entries": []
+}
+```
+
+Add the first entry only when the first user-visible delivery ships.
 
 ## Examples
 

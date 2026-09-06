@@ -158,3 +158,18 @@ cd site && python -m http.server 8080
 ```
 
 Inform URL: http://localhost:8080
+
+## Superpowers workflow
+
+| Phase | Skill | Output |
+|-------|-------|--------|
+| Design | `brainstorming` | Approved design â†’ `docs/superpowers/specs/YYYY-MM-DD-*-design.md` |
+| Plan | `writing-plans` | `docs/superpowers/plans/YYYY-MM-DD-*.md` |
+| Build | stack skills + `tdd` | Code + tests |
+| Verify | `verification-before-completion` | Evidence before "done" |
+| Debug | `systematic-debugging` | Root cause before fix |
+| Ship | `/commit-push` | `semantic-version` + `caveman-commit` + push + CI |
+
+**Gates:** no feature code before approved spec; no "done" without verification; version bump only on `/commit-push`.
+
+Invoke `/init` to (re)bootstrap skills and folders.

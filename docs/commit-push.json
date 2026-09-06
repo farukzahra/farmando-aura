@@ -1,0 +1,9 @@
+﻿{
+    "github":  {
+                   "owner":  "farukzahra",
+                   "repo":  "farmando-aura"
+               },
+    "productionUrl":  "https://livros.faruk.dev.br",
+    "verifyUrl":  "https://livros.faruk.dev.br/",
+    "expectInBody":  "Aura"
+}
